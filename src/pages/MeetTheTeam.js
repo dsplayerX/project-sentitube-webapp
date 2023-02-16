@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function MeetTheTeam() {
   return (
-    <div>Meet The Team</div>
-  )
+    <div>
+      <h1>Meet The Team</h1>
+    </div>
+  );
 }
 
-export default MeetTheTeam
+export default MeetTheTeam;
