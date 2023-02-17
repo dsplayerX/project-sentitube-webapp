@@ -15,7 +15,7 @@ body {
 
 .nav {
   background-color: rgb(59, 57, 57);
-  color: rgb(37, 25, 25);
+  color: rgb(234, 69, 69);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,4 +34,9 @@ body {
 .nav a {
   color: inherit;
   text-decoration: none;
+}
+
+.teambcg{
+  background-color: rgb(249, 138, 113);
+  text-align: center;
 }
