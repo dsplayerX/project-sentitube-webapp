@@ -1,15 +1,18 @@
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import logo from './sentitube-icon.jpg';
+import logo from './2ng.png';
 
 function NavBar() {
   return (
     <nav className="nav">
+      <div className="div_logo">
       <Link to="/" className="site-logo">
         <img src={logo} alt="Logo" className="logo" />
       </Link>
+      </div>
       
-      <ul>
+      <div className="div_link" >
+      <ul className="nav_link">
         <li>
           <CustomLink to="/">Home</CustomLink>
         </li>
@@ -23,9 +26,10 @@ function NavBar() {
           <CustomLink to="/About">About</CustomLink>
         </li>
         <li>
-          <CustomLink to="/MeetTheTeam">MeetTheTeam</CustomLink>
+          <CustomLink to="/MeetTheTeam">Meet The Team</CustomLink>
         </li>
       </ul>
+      </div>
     </nav>
   );
 }
