@@ -11,13 +11,10 @@ body {
 /* below from here styles are belongs to nav bar  */
 
 .logo {
-  position: relative;
   width: 90px;
   height: auto;
-  margin-left: 0px;
+  margin-left: auto;
   
-  /* padding-top: 5%;
-  padding-left: 5%; */
 }
 
 .nav {
@@ -27,8 +24,8 @@ body {
     padding: 1rem;
     border-bottom: 1px solid #ffffff00;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
   
   
 }
@@ -41,6 +38,10 @@ body {
   align-items: center;
   color: rgb(0, 0, 0);
   font-size: 30px;
+}
+
+.nav_link li{
+  margin: 0 10px;
 }
 
 .nav ul {
