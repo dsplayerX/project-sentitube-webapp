@@ -6,21 +6,41 @@ body {
   margin: 0;
 }
 
+
+
+/* below from here styles are belongs to nav bar  */
+
 .logo {
-  width: 60px;
-  height: auto;;
-  padding-top: 5%;
-  padding-left: 5%;
+  position: relative;
+  width: 90px;
+  height: auto;
+  margin-left: 0px;
+  
+  /* padding-top: 5%;
+  padding-left: 5%; */
 }
 
 .nav {
-  background-color: rgb(59, 57, 57);
-  color: rgb(234, 69, 69);
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-bottom: 1px solid #ffffff00;
+    display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding-block-start: 0 1rem;
+  
+  
+}
+
+
+
+.nav_link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
 }
 
 .nav ul {
@@ -28,13 +48,15 @@ body {
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .nav a {
   color: inherit;
   text-decoration: none;
 }
+
+/* nav bar styles ends from here*/
 
 .teambcg{
   background-color: rgb(249, 138, 113);
