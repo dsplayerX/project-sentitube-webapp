@@ -6,13 +6,16 @@ body {
   margin: 0;
 }
 
-.site-title {
-  font-size: 2rem;
+.logo {
+  width: 60px;
+  height: auto;;
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
 .nav {
-  background-color: red;
-  color: white;
+  background-color: rgb(59, 57, 57);
+  color: rgb(37, 25, 25);
   display: flex;
   justify-content: space-between;
   align-items: center;
