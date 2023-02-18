@@ -8,7 +8,7 @@ function PerCommentResults() {
   });
 
   useEffect(() => {
-    fetch("/results").then((res) =>
+    fetch("http://127.0.0.1:5000/results").then((res) =>
       res.json().then((data) => {
         setdata({
           comments_list: data.Comments_list,
