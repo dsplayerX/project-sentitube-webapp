@@ -12,3 +12,352 @@ body {
   background-color: rgb(249, 138, 113);
   text-align: center;
 }
+
+
+/* below from here styles are belongs to MeetTheTeam page  */
+
+/* below from here styles are belongs to teammembers member1  */
+
+.member1 {
+  background-color: #b4b4b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 250px;
+  height: 430px;
+  margin-left: 2%;
+  margin-top: 1.5%;
+  position: fixed;
+}
+
+.member1:hover{
+  transform: scale(1.25);
+  background-color: #e8e8e8;
+  transition-duration: 0.5s;
+} 
+
+.Member1upper-container{
+  height: 100px;
+  width: 250px; 
+  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
+}
+
+
+.Member1image-container { 
+  width: 153px;
+  height: 80px;
+  margin-left: 60px;
+}
+
+.Member1lower-container{
+  margin-top: 60px;
+}
+
+.member1 img {
+  background: white;
+  width: 80%;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: (125px,45px);
+  margin-top: 30px;
+  
+}
+
+.member1-body {
+  padding: 20px;
+  height: 200px;
+}
+
+.member1-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.member1-text {
+  margin: 10px 0;
+}
+
+.member1-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* below from here styles are belongs to MeetTheTeam member2 */
+
+.member2 {
+  background-color: #b4b4b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 250px;
+  height: 430px;
+  margin-left: 22%;
+  margin-top: 1.5%;
+  position: fixed;
+}
+
+.member2:hover{
+  transform: scale(1.25);
+  background-color: #e8e8e8;
+  transition-duration: 0.5s;
+} 
+
+.Member2upper-container{
+  height: 100px;
+  width: 250px; 
+  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
+}
+
+
+.Member2image-container { 
+  width: 153px;
+  height: 80px;
+  margin-left: 60px;
+}
+
+.Member2lower-container{
+  margin-top: 60px;
+}
+
+.member2 img {
+  background: white;
+  width: 80%;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: (125px,45px);
+  margin-top: 30px;
+  
+}
+
+.member2-body {
+  padding: 20px;
+  height: 200px;
+}
+
+.member2-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.member2-text {
+  margin: 10px 0;
+}
+
+.member2-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* below from here styles are belongs to MeetTheTeam member3 */
+
+.member3 {
+  background-color: #b4b4b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 250px;
+  height: 430px;
+  margin-left: 42%;
+  margin-top: 1.5%;
+  position: fixed;
+}
+
+.member3:hover{
+  transform: scale(1.25);
+  background-color: #e8e8e8;
+  transition-duration: 0.5s;
+} 
+
+.Member3upper-container{
+  height: 100px;
+  width: 250px; 
+  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
+}
+
+
+.Member3image-container { 
+  width: 153px;
+  height: 80px;
+  margin-left: 60px;
+}
+
+.Member3lower-container{
+  margin-top: 60px;
+}
+
+.member3 img {
+  background: white;
+  width: 80%;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: (125px,45px);
+  margin-top: 30px;
+  
+}
+
+.member3-body {
+  padding: 20px;
+  height: 200px;
+}
+
+.member3-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.member3-text {
+  margin: 10px 0;
+}
+
+.member3-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* below from here styles are belongs to MeetTheTeam member4 */
+
+.member4 {
+  background-color: #b4b4b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 250px;
+  height: 430px;
+  margin-left: 62%;
+  margin-top: 1.5%;
+  position: fixed;
+}
+
+.member4:hover{
+  transform: scale(1.25);
+  background-color: #e8e8e8;
+  transition-duration: 0.5s;
+} 
+
+.Member4upper-container{
+  height: 100px;
+  width: 250px; 
+  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
+}
+
+
+.Member4image-container { 
+  width: 153px;
+  height: 80px;
+  margin-left: 60px;
+}
+
+.Member4lower-container{
+  margin-top: 60px;
+}
+
+.member4 img {
+  background: white;
+  width: 80%;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: (125px,45px);
+  margin-top: 30px;
+  
+}
+
+.member4-body {
+  padding: 20px;
+  height: 200px;
+}
+
+.member4-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.member4-text {
+  margin: 10px 0;
+}
+
+.member4-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* below from here styles are belongs to MeetTheTeam member5 */
+
+
+.member5 {
+  background-color: #b4b4b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 250px;
+  height: 430px;
+  margin-left: 82%;
+  margin-top: 1.5%;
+  position: fixed;
+}
+
+.member5:hover{
+  transform: scale(1.25);
+  background-color: #e8e8e8;
+  transition-duration: 0.5s;
+} 
+
+.Member5upper-container{
+  height: 100px;
+  width: 250px; 
+  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
+}
+
+
+.Member5image-container { 
+  width: 153px;
+  height: 80px;
+  margin-left: 60px;
+}
+
+.Member5lower-container{
+  margin-top: 60px;
+}
+
+.member5 img {
+  background: white;
+  width: 80%;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: (125px,45px);
+  margin-top: 30px;
+  
+}
+
+.member5-body {
+  padding: 20px;
+  height: 200px;
+}
+
+.member5-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.member5-text {
+  margin: 10px 0;
+}
+
+.member5-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}

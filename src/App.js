@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import TryItOut from "./pages/TryItOut";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+
 import { Route, Routes } from "react-router-dom";
 
 
@@ -20,6 +21,10 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
       </Routes>
+      <Routes>
+        <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
+      </Routes>
+      
     </div>
   );
 }
