@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import { Route, Routes } from "react-router-dom";
 
+
 // used for easy dev access (will delete from navbar later)
 import Results from "./pages/Results";
 import PerCommentResults from "./pages/PerCommentResults";
