@@ -18,7 +18,6 @@ function App() {
         <Route path="/TryItOut" element={<TryItOut />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
-        <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
       </Routes>
     </div>
   );
