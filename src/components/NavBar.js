@@ -14,7 +14,7 @@ function NavBar() {
       
 
       <div className="menu-icon" >
-        <h1>aa</h1>
+        <h1>a</h1>
       </div>
       <div className="div_link" >
       <ul className="nav_link">
