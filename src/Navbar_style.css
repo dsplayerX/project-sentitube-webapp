@@ -15,7 +15,6 @@
     border-bottom: 1px solid #ffffff00;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
   
   
@@ -45,4 +44,8 @@
     text-decoration: none;
   }
 
-  
+  .menu {
+    width: 50px;
+    height: auto;
+    margin-right: auto;
+  }
