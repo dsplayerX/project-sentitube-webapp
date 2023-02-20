@@ -2,36 +2,35 @@ import { click } from "@testing-library/user-event/dist/click";
 import React, {useState} from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import logo from './2ng.png';
+import menu from './Icons/menu.png'
 
 function NavBar() {
   const[click,setClick]= useState(false);
   return (
-    <nav className="nav">
-      
+    <nav className="nav">      
       <Link to="/" className="site-logo">
         <img src={logo} alt="Logo" className="logo" />
       </Link>
-      
-
       <div className="menu-icon" >
-        <h1>a</h1>
+        <img src={menu} alt="Logo" className="menu" />
       </div>
-      <div className="div_link" >
-      <ul className="nav_link">
-        <li>
-          <CustomLink to="/">Home</CustomLink>
-        </li>
-        <li>
-          <CustomLink to="/TryItOut">TryItOut</CustomLink>
-        </li>
-        <li>
-          <CustomLink to="/Contact">Contact</CustomLink>
-        </li>
-        <li>
-          <CustomLink to="/About">About</CustomLink>
-        </li>
-      </ul>
+      <div className="nav_link_div">
+        <ul className="nav_link">
+          <li>
+            <CustomLink to="/">Home</CustomLink>
+          </li>
+          <li>
+            <CustomLink to="/TryItOut">TryItOut</CustomLink>
+          </li>
+          <li>
+            <CustomLink to="/Contact">Contact</CustomLink>
+          </li>
+          <li>
+            <CustomLink to="/About">About</CustomLink>
+          </li>
+        </ul>
       </div>
+    
     </nav>
   );
 }
