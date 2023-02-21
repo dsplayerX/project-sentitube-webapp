@@ -9,7 +9,6 @@ import { Route, Routes } from "react-router-dom";
 
 // used for easy dev access (will delete from navbar later)
 import Results from "./pages/Results";
-import PerCommentResults from "./pages/PerCommentResults";
 import MeetTheTeam from "./pages/MeetTheTeam";
 function App() {
   return (
@@ -20,6 +19,9 @@ function App() {
         <Route path="/TryItOut" element={<TryItOut />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
+
+        <Route path="/Results" element={<Results />} />
+
       </Routes>
       <Routes>
         <Route path="/MeetTheTeam" element={<MeetTheTeam />} />

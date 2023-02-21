@@ -47,7 +47,7 @@ function PerCommentResults() {
               <td>{data.sentiment}</td>
               <td>{data.sarcasm}</td>
             </tr>
-          ))}
+          ))}          
         </tbody>
       </table>
     </div>
