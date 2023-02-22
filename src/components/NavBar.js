@@ -2,7 +2,7 @@ import { click } from "@testing-library/user-event/dist/click";
 import React, {useState} from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import logo from './Icons&Images/2ng.png';
-import menu from './Icons/menu.png'
+//import menu from './Icons/menu.png'
 
 function NavBar() {
   const[click,setClick]= useState(false);
