@@ -361,3 +361,17 @@ body {
   color: #007bff;
   text-decoration: none;
 }
+
+/* PerCommentResults */
+table{
+  width:100%;
+  border-collapse: collapse;
+  background-color: #ecc3ae;
+  overflow: scroll;
+}
+
+th, td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid red;
+}
