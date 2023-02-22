@@ -4,13 +4,14 @@ import TryItOut from "./pages/TryItOut";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Router, Routes } from "react-router-dom";
 
 
 // used for easy dev access (will delete from navbar later)
 import Results from "./pages/Results";
 import PerCommentResults from "./pages/PerCommentResults";
 import MeetTheTeam from "./pages/MeetTheTeam";
+
 function App() {
   return (
     <div className="App">
@@ -23,9 +24,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
-      </Routes>
+      </Routes> */
       
-    </div>
+    // </div>
   );
 }
 

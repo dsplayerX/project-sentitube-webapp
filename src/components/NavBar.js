@@ -7,12 +7,14 @@ import menu from './Icons/menu.png'
 function NavBar() {
   const[click,setClick]= useState(false);
   return (
-    <nav className="nav">      
-      <Link to="/" className="site-logo">
-        <img src={logo} alt="Logo" className="logo" />
-      </Link>
+    <nav className="nav">    
+      <div className="site-logo">  
+        <Link to="/" className="site-logo">
+          <img src={logo} alt="Logo" className="logo" />
+        </Link>
+      </div>
       <div className="menu-icon" >
-        <img src={menu} alt="Logo" className="menu" />
+        <img src={menu} alt="menu" className="menu"  />
       </div>
       <div className="nav_link_div">
         <ul className="nav_link">
