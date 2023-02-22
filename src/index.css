@@ -25,9 +25,9 @@ body {
   overflow: hidden;
   width: 250px;
   height: 430px;
-  margin-left: 2%;
-  margin-top: 1.5%;
-  position: fixed;
+  margin-left: 10px;
+  margin-top: 10px;
+  position: relative;
 }
 
 .member1:hover{
@@ -94,9 +94,9 @@ body {
   overflow: hidden;
   width: 250px;
   height: 430px;
-  margin-left: 22%;
-  margin-top: 1.5%;
-  position: fixed;
+  margin-left: 300px;
+  margin-top: -430px;
+  position:relative;
 }
 
 .member2:hover{
@@ -163,9 +163,9 @@ body {
   overflow: hidden;
   width: 250px;
   height: 430px;
-  margin-left: 42%;
-  margin-top: 1.5%;
-  position: fixed;
+  margin-left: 600px;
+  margin-top: -430px;
+  position:relative;
 }
 
 .member3:hover{
@@ -232,9 +232,9 @@ body {
   overflow: hidden;
   width: 250px;
   height: 430px;
-  margin-left: 62%;
-  margin-top: 1.5%;
-  position: fixed;
+  margin-left: 900px;
+  margin-top: -430px;
+  position: relative;
 }
 
 .member4:hover{
@@ -302,9 +302,9 @@ body {
   overflow: hidden;
   width: 250px;
   height: 430px;
-  margin-left: 82%;
-  margin-top: 1.5%;
-  position: fixed;
+  margin-left: 1200px;
+  margin-top: -430px;
+  position: relative;
 }
 
 .member5:hover{
