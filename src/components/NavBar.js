@@ -13,9 +13,6 @@ function NavBar() {
           <img src={logo} alt="Logo" className="logo" />
         </Link>
       </div>
-      <div className="menu-icon" >
-        <img src={menu} alt="menu" className="menu"  />
-      </div>
       <div className="nav_link_div">
         <ul className="nav_link">
           <li>
