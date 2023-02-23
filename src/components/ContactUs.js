@@ -9,14 +9,15 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_xjwjwwr",
+        "template_445fzij",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "eKt19qsgC23PDUezT"
       )
       .then(
         (result) => {
           console.log(result.text);
+          console.log("message sent");
         },
         (error) => {
           console.log(error.text);
