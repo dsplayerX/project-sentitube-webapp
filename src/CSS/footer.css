@@ -1,0 +1,9 @@
+:root{
+    --mainLight: #b5b8bb;
+    --mainDark: #000000;
+
+}
+
+.footer_middle{
+    background-color: #b5b8bb;
+}

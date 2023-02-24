@@ -4,6 +4,7 @@ import TryItOut from "./pages/TryItOut";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Navbarnew from "./components/Navbarnew"
+import Footer from "./components/Footer";
 
 import { Route, Router, Routes } from "react-router-dom";
 
@@ -23,41 +24,14 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Results" element={<Results />} />
           <Route path="/About" element={<About/>}/>
-       </Routes>
+          <Route path="/Results" element={<Results />} />
+        </Routes>
+        <Routes>
+          <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
+        </Routes>
+      
 
-
-
-
-
-      <Routes>
-        <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
-      </Routes>
-
-
-       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      {/* <NavBar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/TryItOut" element={<TryItOut />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Results" element={<Results />} />
-
-      </Routes>
-      <Routes>
-        <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
-      </Routes> */}
-      
+        <Footer/>
     </div>
   );
 }
