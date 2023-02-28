@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Results() {
   return (
     <div>
-      Results
+      <h1>Results</h1>
     </div>
-  )
+  );
 }
 
-export default Results
+export default Results;
