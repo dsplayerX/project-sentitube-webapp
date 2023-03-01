@@ -4,20 +4,12 @@ import { useLocation } from 'react-router-dom';
 function Results() {
 
   const location = useLocation
-  const results = location.state?.results;
+  const data = location.state;
 
   return (
     <div>
       <h1>Results</h1>
-      {results ? (
-        <ul>
-          {results.map((data) => (
-            <li key={data.id}>{data.name}</li>
-          ))}
-        </ul>
-      ) : (
-        <p>No results found</p>
-      )}
+      <p>{data}</p>
     </div>
   );
 }

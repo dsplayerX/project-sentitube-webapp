@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Results from "./Results";
 
 function TryItOut() {
   const [inputValue, setInputValue] = useState("");
   const navigate = useNavigate();
+
+  const[responseData, setResponseData] = useState(null);
 
   const handleButtonClick = async (event) => {
     event.preventDefault();
@@ -21,8 +24,10 @@ function TryItOut() {
           // Handle errors that occur during the request
           console.error(error);
         });
+        
       // request succeeded, navigate to results page
-      navigate("/Results", { state: { results: response.data } });
+      navigate("/Results", { state: response.data });
+      ///setResponseData(response.data);
     } catch (error) {
       // request failed, handle error
     }
@@ -46,6 +51,8 @@ function TryItOut() {
         onChange={handleInputChange}
       />
       <button onClick={handleButtonClick}>🔍 search</button>
+     {responseData && <Results data={responseData}/>}
+
     </div>
   );
 }
