@@ -19,14 +19,16 @@ function TryItOut() {
         .then((response) => {
           // Handle the response from the server
           console.log(response.data);
+          navigate("/Results", { state: response.data });
+
         })
         .catch((error) => {
           // Handle errors that occur during the request
           console.error(error);
         });
         
+        console.log(response.data);
       // request succeeded, navigate to results page
-      navigate("/Results", { state: response.data });
       ///setResponseData(response.data);
     } catch (error) {
       // request failed, handle error
@@ -51,7 +53,7 @@ function TryItOut() {
         onChange={handleInputChange}
       />
       <button onClick={handleButtonClick}>🔍 search</button>
-     {responseData && <Results data={responseData}/>}
+    
 
     </div>
   );
