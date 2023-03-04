@@ -42,7 +42,9 @@ export const ContactUsForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
+          console.log("Contact us message sent.");
+          alert("Message sent!");
+          window.location.reload();
         },
         (error) => {
           console.log(error.text);
@@ -51,15 +53,6 @@ export const ContactUsForm = () => {
   };
 
   return (
-    // <form ref={form} onSubmit={sendEmail}>
-    //   <label>Name</label>
-    //   <input type="text" name="from_name" />
-    //   <label>Email</label>
-    //   <input type="email" name="from_email" />
-    //   <label>Message</label>
-    //   <textarea name="message" />
-    //   <input type="submit" value="Send" />
-    // </form>
     <Form ref={form} onSubmit={sendEmail}>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>Name</Form.Label>
