@@ -4,57 +4,72 @@ import { Form, Button, Modal } from "react-bootstrap";
 
 export const ContactUsForm = () => {
   const [showModal, setShowModal] = useState(false);
+  const [formErrors, setFormErrors] = useState({});
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Getting current values of fields
-    const name = form.current.elements.from_name.value;
-    const email = form.current.elements.from_email.value;
-    const message = form.current.elements.message.value;
+    // Validating form and stores any error
+    const errors = validateForm();
 
-    // Checking if name and email are not empty
-    if (!name || !email) {
-      alert("Please provide your name and email address.");
-      return;
+    // If there are no errors proceed with message submission
+    if (Object.keys(errors).length === 0) {
+      // EmailJS form submission
+      emailjs
+        .sendForm(
+          "service_xjwjwwr",
+          "template_445fzij",
+          form.current,
+          "eKt19qsgC23PDUezT"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("Contact us message sent.");
+            setShowModal(true);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    } else {
+      setFormErrors(errors);
     }
-
-    // Checking if email is valid
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      alert("Please provide a valid email address.");
-      return;
-    }
-
-    // Checking if message is not empty
-    if (!message) {
-      alert("Please provide a message.");
-      return;
-    }
-
-    // EmailJS form submission
-    emailjs
-      .sendForm(
-        "service_xjwjwwr",
-        "template_445fzij",
-        form.current,
-        "eKt19qsgC23PDUezT"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("Contact us message sent.");
-          setShowModal(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
   };
 
+  // Function to validate the form's content
+  const validateForm = () => {
+    const errors = {};
+
+    // If name field is empty...
+    if (!form.current.from_name.value.trim()) {
+      errors.name = "Name is required";
+    }
+
+    // If email field is empty...
+    if (!form.current.from_email.value.trim()) {
+      errors.email = "Email is required";
+    } else if (
+      // validation to check the proper email formatting
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.current.from_email.value)
+    ) {
+      // If email is invalid...
+      errors.email = "Invalid email address";
+    }
+
+    // If message field is empty...
+    if (!form.current.message.value.trim()) {
+      errors.message = "Message is required";
+    }
+
+    return errors;
+  };
+
+  // Function to handle the closing of 'message sent' popup
   const handleCloseModal = () => {
     setShowModal(false);
-    window.location.reload();
+    window.location.reload(); // reloads the page on after closing popup
   };
 
   return (
@@ -62,7 +77,18 @@ export const ContactUsForm = () => {
       <Form ref={form} onSubmit={sendEmail}>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="Your name" name="from_name" />
+          <Form.Control
+            type="text"
+            placeholder="Your name"
+            name="from_name"
+            isInvalid={!!formErrors.name}
+          />
+          {/* showing errors below the form input field */}
+          {formErrors.name && (
+            <Form.Control.Feedback type="invalid">
+              {formErrors.name}
+            </Form.Control.Feedback>
+          )}
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Email address</Form.Label>
@@ -70,11 +96,27 @@ export const ContactUsForm = () => {
             type="email"
             placeholder="name@example.com"
             name="from_email"
+            isInvalid={!!formErrors.email}
           />
+          {formErrors.email && (
+            <Form.Control.Feedback type="invalid">
+              {formErrors.email}
+            </Form.Control.Feedback>
+          )}
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" name="message" rows={3} />
+          <Form.Control
+            as="textarea"
+            name="message"
+            rows={3}
+            isInvalid={!!formErrors.message}
+          />
+          {formErrors.message && (
+            <Form.Control.Feedback type="invalid">
+              {formErrors.message}
+            </Form.Control.Feedback>
+          )}
         </Form.Group>
         <Button className="submit-button" value="Send" type="submit">
           Send
