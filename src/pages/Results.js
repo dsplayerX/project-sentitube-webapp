@@ -1,26 +1,60 @@
-import React from "react";
+import {useState} from "react";
 //import { useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import {Container, Row, Col} from 'react-bootstrap'
 
+import PieChart from "../components/PieChart";
+import { UserData } from "./Data";
+import { UserData2 } from "./Data2";
 
 function Results() {
 
   //00const location = useLocation
   //const data = location.state;
 
-  return (
-    <div>
-      <h1>😁😐😩SentiTube😁😐😩</h1>
-      {/* <p>{data}</p> */}
+  const [userData, setUserData] = useState({
+    labels: UserData.map((data) => data.type),
+    datasets: [
+      {
+        label: "Users Gained",
+        data: UserData.map((data) => data.count),
+        backgroundColor: [
+          "#50AF95",
+          "#f3ba2f",
+          "#2a71d0",
+        ],
+        borderColor: "black",
+        borderWidth: 2,
+      },
+    ],
+  });
 
-      
+  const [userData2, setUserData2] = useState({
+    labels: UserData2.map((data) => data.type),
+    datasets: [
+      {
+        label: "Users Gained",
+        data: UserData2.map((data) => data.count),
+        backgroundColor: [
+          "#50AF95",
+          "#f3ba2f",
+        ],
+        borderColor: "black",
+        borderWidth: 2,
+      },
+    ],
+  });
+
+  return (
+    <div className="App">
+      App
+      {/* <p>{data}</p> */}
 
       <Container
         style={{
-          backgroundColor: 'rgb(51,51,255)',
-          color:'white'
+          backgroundColor: 'rgb(204,204,255)',
+          color:'rgb(51,51,255)'
         }}
       >
         <h4>Final Result</h4>
@@ -40,9 +74,26 @@ function Results() {
           
           </Col>
         </Row>
+        <Row>
+
+          <Col>
+            <h5>Sentiment Result</h5>
+            <div style={{ width: 260 }}>
+              <PieChart chartData={userData} />
+            </div>
+          </Col>
+
+          <Col>
+            <h5>Sarcasam Result</h5>
+            <div style={{ width: 260 }}>
+              <PieChart chartData={userData2} />
+            </div>
+          </Col>
+
+        </Row>
 
       </Container>
-        <br></br>
+      <br></br>
       <Container
         style={{
           backgroundColor: 'rgb(51,51,255)',
@@ -63,7 +114,6 @@ function Results() {
         </p>
 
       </Container>
-
     </div>
   );
 }
