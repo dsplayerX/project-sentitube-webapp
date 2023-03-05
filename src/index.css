@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -374,4 +376,24 @@ th, td{
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid red;
+}
+
+/*  Result Pagwe  */
+.Result_page h4{
+  color: red;
+  margin: 6px;
+}
+.Result_page .total{
+  background-color: rgb(249, 147, 113);
+  font-size: 24px;
+  text-align: center;
+  color: black;
+}
+.Result_page .chart-title{
+  color: white;
+  background-color: red;
+  text-align: center;
+  margin: 10px;
+  padding: 2px;
+  border-radius: 6px;
 }
