@@ -8,13 +8,10 @@ body {
   margin: 0;
 }
 
-
-
-.teambcg{
+.teambcg {
   background-color: rgb(249, 138, 113);
   text-align: center;
 }
-
 
 /* below from here styles are belongs to MeetTheTeam page  */
 
@@ -32,26 +29,25 @@ body {
   position: relative;
 }
 
-.member1:hover{
+.member1:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member1upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member1upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member1image-container { 
+.Member1image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member1lower-container{
+.Member1lower-container {
   margin-top: 60px;
 }
 
@@ -61,9 +57,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member1-body {
@@ -98,29 +93,28 @@ body {
   height: 430px;
   margin-left: 300px;
   margin-top: -430px;
-  position:relative;
+  position: relative;
 }
 
-.member2:hover{
+.member2:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member2upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member2upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member2image-container { 
+.Member2image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member2lower-container{
+.Member2lower-container {
   margin-top: 60px;
 }
 
@@ -130,9 +124,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member2-body {
@@ -167,29 +160,28 @@ body {
   height: 430px;
   margin-left: 600px;
   margin-top: -430px;
-  position:relative;
+  position: relative;
 }
 
-.member3:hover{
+.member3:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member3upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member3upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member3image-container { 
+.Member3image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member3lower-container{
+.Member3lower-container {
   margin-top: 60px;
 }
 
@@ -199,9 +191,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member3-body {
@@ -239,26 +230,25 @@ body {
   position: relative;
 }
 
-.member4:hover{
+.member4:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member4upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member4upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member4image-container { 
+.Member4image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member4lower-container{
+.Member4lower-container {
   margin-top: 60px;
 }
 
@@ -268,9 +258,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member4-body {
@@ -296,7 +285,6 @@ body {
 
 /* below from here styles are belongs to MeetTheTeam member5 */
 
-
 .member5 {
   background-color: #b4b4b4;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -309,26 +297,25 @@ body {
   position: relative;
 }
 
-.member5:hover{
+.member5:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member5upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member5upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member5image-container { 
+.Member5image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member5lower-container{
+.Member5lower-container {
   margin-top: 60px;
 }
 
@@ -338,9 +325,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member5-body {
@@ -365,31 +351,32 @@ body {
 }
 
 /* PerCommentResults */
-table{
-  width:100%;
+table {
+  width: 100%;
   border-collapse: collapse;
   background-color: #ecc3ae;
   overflow: scroll;
 }
 
-th, td{
+th,
+td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid red;
 }
 
 /*  Result Pagwe  */
-.Result_page h4{
+.Result_page h4 {
   color: red;
   margin: 6px;
 }
-.Result_page .total{
+.Result_page .total {
   background-color: rgb(249, 147, 113);
   font-size: 24px;
   text-align: center;
   color: black;
 }
-.Result_page .chart-title{
+.Result_page .chart-title {
   color: white;
   background-color: red;
   text-align: center;
