@@ -354,7 +354,7 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #ecc3ae;
+  background-color: #ff968a;
   overflow: scroll;
 }
 
@@ -367,20 +367,43 @@ td {
 
 /*  Result Pagwe  */
 .Result_page h4 {
-  color: red;
-  margin: 6px;
+  color: rgb(117, 137, 218);
+  margin: 16px;
+  font-size: 24px;
 }
 .Result_page .total {
-  background-color: rgb(249, 147, 113);
+  background-color: rgb(255, 201, 100);
   font-size: 24px;
   text-align: center;
   color: black;
+  font-family: 'Dosis', sans-serif;
 }
 .Result_page .chart-title {
   color: white;
   background-color: red;
   text-align: center;
   margin: 10px;
-  padding: 2px;
+  padding: 4px;
   border-radius: 6px;
+}
+.Result_page .chart-title1{
+  color: white;
+  background-color: red;
+  text-align: center;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 6px;
+}
+.Result_page .feedback-box{
+  background:rgb(255, 142, 142);
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.Result_page h6{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
 }
