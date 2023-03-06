@@ -70,7 +70,9 @@ function TryItOut() {
   return (
     <>
       <div>
-        <h1>Try It Out</h1>
+        <center>
+          <h2>Sentiment and Sarcasm analysis on YouTube videos.</h2>
+        </center>
       </div>
       <div>
         <Container className="tryitoutmain" style={{ color: "black" }}>
@@ -84,32 +86,28 @@ function TryItOut() {
               />
             </Form.Group>
             <Form.Group controlId="formNumResults">
-              <Form.Label column sm={6}>
-                Number of Comments to Analyse:
-              </Form.Label>
-              <Col sm={2}>
-                <DropdownButton
-                  id="num-results-dropdown"
-                  title={`${numResults}`}
-                  variant="secondary"
-                >
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
-                    100
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(250)}>
-                    250
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
-                    500
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
-                    1000
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
-                    5000
-                  </Dropdown.Item>
-                </DropdownButton>
-              </Col>
+              <Form.Label>Number of Comments to Analyse:</Form.Label>
+              <DropdownButton
+                id="num-results-dropdown"
+                title={`${numResults}`}
+                variant="secondary"
+              >
+                <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
+                  100
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => handleNumResultsSelect(250)}>
+                  250
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
+                  500
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
+                  1000
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
+                  5000
+                </Dropdown.Item>
+              </DropdownButton>
             </Form.Group>
 
             <Form.Group>
