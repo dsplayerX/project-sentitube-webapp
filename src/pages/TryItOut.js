@@ -16,7 +16,7 @@ function TryItOut() {
     event.preventDefault();
     try {
       const youtubeRegex =
-        /^(https?\:\/\/)?((www\.)?youtube\.com|youtu\.?be)\/.+$/;
+        /^(https?\:\/\/)?((www\.)?youtube\.com|youtu\.?be)\/(watch\?v=)?([a-zA-Z0-9\-_]+)$/;
       if (!youtubeRegex.test(inputValue)) {
         alert("Please enter a valid YouTube link");
         return;
