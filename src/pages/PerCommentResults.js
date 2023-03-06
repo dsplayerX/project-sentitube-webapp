@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { Table } from 'react-bootstrap';
 
 function PerCommentResults() {
   const location = useLocation();
@@ -31,13 +32,14 @@ function PerCommentResults() {
 
   function renderTable() {
     return (
-      <table>
+      <div className="table-wrapper">
+      <Table>
         <thead>
           <tr>
-            <th>Comment</th>
-            <th>Sentiment</th>
-            <th>Sarcasm</th>
-            <th>SentiResults</th>
+            <th scope="col">Comment</th>
+            <th scope="col">Sentiment</th>
+            <th scope="col">Sarcasm</th>
+            <th scope="col">SentiResults</th>
           </tr>
         </thead>
         <tbody>
@@ -50,7 +52,8 @@ function PerCommentResults() {
             </tr>
           ))}
         </tbody>
-      </table>
+      </Table>
+      </div>
     );
   }
 
