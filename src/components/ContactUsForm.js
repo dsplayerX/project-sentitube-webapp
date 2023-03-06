@@ -3,8 +3,9 @@ import emailjs from "@emailjs/browser";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import {Container, Row, Col, Button, Alert, Card, Form} from 'react-bootstrap'
+import {Container, Row, Col, Button, Card, Form} from 'react-bootstrap'
 
+import { MDBMedia } from 'mdbreact';
 
 export const ContactUsForm = () => {
   const form = useRef();
@@ -40,13 +41,21 @@ export const ContactUsForm = () => {
         <h4>Let's Chat</h4>
         <h5>Tell us about your thought about our page.</h5>
         
-        <Card className="nb-3" style={
-          {color:"red"}
-        }>
-          <Card.Title><i class="bi bi-envelope-at-fill" style={{ fontSize: 50, color:"black" }}></i></Card.Title>
-          <Card.Text>Our Mail</Card.Text>
-          <Card.Text>sentitube@gmail.com</Card.Text>
-        </Card>
+
+
+          
+
+    <Row className="image-text-container" noGutters>
+      <Col xs={6}>
+      <i class="bi bi-envelope-at-fill"></i>
+      </Col>
+      <Col xs={6}>
+        <h3 className="title">Email Us</h3>
+        <p className="text">sentitube@gmail.com</p>
+      </Col>
+    </Row>
+
+
 
         </Col>
 
