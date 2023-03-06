@@ -1,43 +1,36 @@
-import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 function PerCommentResults() {
-  const [data, setdata] = useState({
-    comments_list: "",
-    sentiment_list: "",
-    sarcasm_list: "",
-  });
+  const location = useLocation();
+  const data = location.state;
+  // console.log(data);
+  const commentsDictionary = data ? data["Comments Dictionary"] : null;
+  // console.log(commentsDictionary);
 
-  useEffect(() => {
-    fetch("http://127.0.0.1:5000/results").then((res) =>
-      res.json().then((data) => {
-        setdata({
-          comments_list: data.Comments_list,
-          sentiment_list: data.Sentiment_list,
-          sarcasm_list: data.Sarcasm_list,
-        });
-      })
-    );
-  }, []);
+  const tableData = commentsDictionary
+    ? Object.keys(commentsDictionary).map((key) => ({
+        comments: commentsDictionary[key]["rawcomment"],
+        sentiment:
+          commentsDictionary[key]["sentiment_predictions"] === 0
+            ? "Negative"
+            : commentsDictionary[key]["sentiment_predictions"] === 1
+            ? "Neutral"
+            : "Positive",
+        sarcasm:
+          commentsDictionary[key]["sarcasm_predictions"] === 0
+            ? "Not sarcastic"
+            : "Sarcastic",
+      }))
+    : [];
 
-  const tableData = [];
-  for (let i = 0; i < data.comments_list.length; i++) {
-    tableData.push({
-      comments: data.comments_list,
-      sentiment: data.sentiment_list,
-      sarcasm: data.sarcasm_list,
-    });
-  }
-
-  return (
-    <div className="resultpage1">
-      <h4>Overall results for each comments</h4>
-
+  function renderTable() {
+    return (
       <table>
         <thead>
           <tr>
             <th>Comment</th>
-            <th>Sentiment Result</th>
-            <th>Sarcasm Result</th>
+            <th>Sentiment</th>
+            <th>Sarcasm</th>
           </tr>
         </thead>
         <tbody>
@@ -47,9 +40,16 @@ function PerCommentResults() {
               <td>{data.sentiment}</td>
               <td>{data.sarcasm}</td>
             </tr>
-          ))}          
+          ))}
         </tbody>
       </table>
+    );
+  }
+
+  return (
+    <div className="Per_Comment_Results">
+      <h4>Overall results for each comment</h4>
+      <div>{renderTable()}</div>
     </div>
   );
 }

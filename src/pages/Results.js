@@ -1,4 +1,6 @@
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import PieChart from "../components/PieChart";
@@ -7,6 +9,7 @@ function Results() {
   const location = useLocation();
   const data = location.state;
   //console.log("parsed data" + data);
+  const navigate = useNavigate();
 
   const sentimentChartData = {
     labels: ["Positive", "Neutral", "Negative"],
@@ -36,10 +39,12 @@ function Results() {
 
   const handleButton = async (event) => {
     event.preventDefault();
-    try{
-
-    }catch(error){} 
-  }
+    try {
+      navigate("/PerCommentResults", { state: data });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="Result_page">
@@ -51,40 +56,41 @@ function Results() {
         <h4>Final Result...</h4>
         <Row
           style={{
-            background: "linear-gradient(45deg, rgb(254, 0, 0), rgb(255, 255, 100))",
+            background:
+              "linear-gradient(45deg, rgb(254, 0, 0), rgb(255, 255, 100))",
             color: "white",
             padding: "10px",
-            margin: "6px"
+            margin: "6px",
           }}
         >
           <Col
-          style={{
-            fontFamily:"'Dosis', sans-serif",
-            fontSize:"20px"
-            
-
-          }}
+            style={{
+              fontFamily: "'Dosis', sans-serif",
+              fontSize: "20px",
+            }}
           >
-            <p>Positve Comments  : {data["Positive Comments"]}</p>
-            <p>Neutral Comments  : {data["Neutral Comments"]}</p>
-            <p>Negative Comments  : {data["Negative Comments"]}</p>
-            <p>Sarcastic Comments  : {data["Sarcastic Comments"]}</p>
-            <p>Non-Sarcastic Comments  : {data["Nonsarcastic Comments"]}</p>
-            <p className="total">Total Comments  -- {data["Total Comments"]}</p>
+            <p>Positve Comments : {data["Positive Comments"]}</p>
+            <p>Neutral Comments : {data["Neutral Comments"]}</p>
+            <p>Negative Comments : {data["Negative Comments"]}</p>
+            <p>Sarcastic Comments : {data["Sarcastic Comments"]}</p>
+            <p>Non-Sarcastic Comments : {data["Nonsarcastic Comments"]}</p>
+            <p className="total">Total Comments -- {data["Total Comments"]}</p>
           </Col>
           <Col>
-            <Button varient='flat' size="xl"
-            style={{
-              backgroundColor:"white",
-              border:"4px",
-              color:'red',
-              borderRadius:"20px",
-              borderColor:"black"
-              
-            }}
-             onClick={handleButton}>
-              
-              Per Comment Results</Button>
+            <Button
+              varient="flat"
+              size="xl"
+              style={{
+                backgroundColor: "white",
+                border: "4px",
+                color: "red",
+                borderRadius: "20px",
+                borderColor: "black",
+              }}
+              onClick={handleButton}
+            >
+              Per Comment Results
+            </Button>
           </Col>
         </Row>
         <Row>
@@ -107,7 +113,7 @@ function Results() {
       <Container
         style={{
           color: "black",
-          margin: '10px auto'
+          margin: "10px auto",
         }}
       >
         <h4>Custom Feedback</h4>
