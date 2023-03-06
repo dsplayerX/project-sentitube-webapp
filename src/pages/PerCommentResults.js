@@ -25,7 +25,7 @@ function PerCommentResults() {
             ? "Senti Negative"
             : commentsDictionary[key]["sentitube_results"] === "positive"
             ? "Senti Positive"
-            : "-",
+            : "Neutral",
       }))
     : [];
 
