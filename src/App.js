@@ -25,7 +25,6 @@ function App() {
         <Route path="/Results" element={<Results />} />
         <Route path="/PerCommentResults" element={<PerCommentResults />} />
         <Route path="/About" element={<About />} />
-        <Route exact path="/Results" component={<Results />} />
         <Route
           exact
           path="/PerCommentResults"

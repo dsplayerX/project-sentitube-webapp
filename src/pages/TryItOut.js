@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Form, Button, Container } from "react-bootstrap";
 import { Dropdown, DropdownButton } from "react-bootstrap";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Modal } from "react-bootstrap";
 
 function TryItOut() {
+  const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [numResults, setNumResults] = useState(250); // default value is 100
   const navigate = useNavigate();
@@ -18,7 +19,8 @@ function TryItOut() {
       const youtubeRegex =
         /^(https?\:\/\/)?((www\.)?youtube\.com|youtu\.?be)\/(watch\?v=)?([a-zA-Z0-9\-_]+)$/;
       if (!youtubeRegex.test(inputValue)) {
-        alert("Please enter a valid YouTube link");
+        // alert("Please enter a valid YouTube link");
+        setShowModal(true);
         return;
       }
 
@@ -59,61 +61,81 @@ function TryItOut() {
     setNumResults(num);
   };
 
+  // Function to handle the closing of 'invalid youutbe link' popup
+  const handleCloseModal = () => {
+    setShowModal(false);
+    window.location.reload(); // reloads the page on after closing popup
+  };
+
   return (
-    <Container className="tryitoutmain" style={{ color: "black" }}>
-      <Form>
-        <Form.Group controlId="formYoutubeLink">
-          <Form.Label>YouTube Link</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Enter YouTube link"
-            value={inputValue}
-            onChange={handleInputChange}
-          />
-        </Form.Group>
+    <>
+      <div>
+        <h1>Try It Out</h1>
+      </div>
+      <div>
+        <Container className="tryitoutmain" style={{ color: "black" }}>
+          <Form>
+            <Form.Group controlId="formYoutubeLink">
+              <Form.Control
+                type="text"
+                placeholder="Enter YouTube link"
+                value={inputValue}
+                onChange={handleInputChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="formNumResults">
+              <Form.Label column sm={6}>
+                Number of Comments to Analyse:
+              </Form.Label>
+              <Col sm={2}>
+                <DropdownButton
+                  id="num-results-dropdown"
+                  title={`${numResults}`}
+                  variant="secondary"
+                >
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
+                    100
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(250)}>
+                    250
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
+                    500
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
+                    1000
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
+                    5000
+                  </Dropdown.Item>
+                </DropdownButton>
+              </Col>
+            </Form.Group>
 
-        <Form.Group controlId="formNumResults">
-          <Col>
-            <Row>
-              <Form.Label>Number of Results</Form.Label>
-            </Row>
-            <Row>
-              <DropdownButton
-                id="num-results-dropdown"
-                title={`${numResults}`}
-                variant="secondary"
+            <Form.Group>
+              <Button
+                variant="primary"
+                onClick={handleButtonClick}
+                disabled={isAnalysing}
               >
-                <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
-                  100
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(250)}>
-                  250
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
-                  500
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
-                  1000
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
-                  5000
-                </Dropdown.Item>
-              </DropdownButton>
-            </Row>
-          </Col>
-        </Form.Group>
-
-        <Form.Group>
-          <Button
-            variant="primary"
-            onClick={handleButtonClick}
-            disabled={isAnalysing}
-          >
-            {isAnalysing ? "Analyzing..." : "Analyze"}
-          </Button>
-        </Form.Group>
-      </Form>
-    </Container>
+                {isAnalysing ? "Analyzing..." : "Analyze"}
+              </Button>
+            </Form.Group>
+          </Form>
+          <Modal show={showModal} onHide={handleCloseModal}>
+            <Modal.Header closeButton>
+              <Modal.Title>Enter a valid YouTube link</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Please enter a valid youtube link.</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleCloseModal}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
+        </Container>
+      </div>
+    </>
   );
 }
 export default TryItOut;
