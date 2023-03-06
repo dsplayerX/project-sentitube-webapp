@@ -354,7 +354,7 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #ff968a;
+  /* background-color: #ff968a; */
   overflow: scroll;
 }
 
@@ -410,4 +410,8 @@ td {
 .table-wrapper {
   height: 600px;
   overflow-y: scroll;
+}
+.commentCol{
+  max-width:600px;
+  height: auto;
 }

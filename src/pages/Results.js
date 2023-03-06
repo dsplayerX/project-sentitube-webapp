@@ -16,7 +16,7 @@ function Results() {
     labels: ["Positive", "Negative"],
     datasets: [
       {
-        label: "Final Sentiment Analysis",
+        label: "SentiTube Result",
         data: [
           data["Sentitube Positve"],
           data["Sentitube Negative"],
@@ -83,7 +83,7 @@ function Results() {
             marginBottom:"10px"
           }}
         >
-            <h5 className="chart-title1">Final Sentiment Result</h5>
+            <h5 className="chart-title1">SentiTube Result</h5>
             <div style={{ width: 340 }}>
               <PieChart chartData={finalsentiChartData} />
             </div>

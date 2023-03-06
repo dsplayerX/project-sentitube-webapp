@@ -33,7 +33,7 @@ function PerCommentResults() {
   function renderTable() {
     return (
       <div className="table-wrapper">
-      <Table>
+      <Table class="table table-striped">  
         <thead>
           <tr>
             <th scope="col">Comment</th>
@@ -45,7 +45,7 @@ function PerCommentResults() {
         <tbody>
           {tableData.map((data, index) => (
             <tr key={index}>
-              <td>{data.comments}</td>
+              <td className="commentCol">{data.comments}</td>
               <td>{data.sentiment}</td>
               <td>{data.sarcasm}</td>
               <td>{data.sentiresult}</td>
