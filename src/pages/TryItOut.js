@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Form, Button, Container } from "react-bootstrap";
 import { Dropdown, DropdownButton } from "react-bootstrap";
-import { FormGroup, FormLabel, FormControl, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 function TryItOut() {
   const [inputValue, setInputValue] = useState("");
@@ -15,8 +15,16 @@ function TryItOut() {
   const handleButtonClick = async (event) => {
     event.preventDefault();
     try {
+      const youtubeRegex =
+        /^(https?\:\/\/)?((www\.)?youtube\.com|youtu\.?be)\/.+$/;
+      if (!youtubeRegex.test(inputValue)) {
+        alert("Please enter a valid YouTube link");
+        return;
+      }
+
       // Set isAnalysing to true
       setIsAnalysing(true);
+
       const response = await axios
         .post("http://localhost:5000/analysisresults", {
           userinput: inputValue,
