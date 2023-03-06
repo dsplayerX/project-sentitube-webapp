@@ -415,3 +415,10 @@ td {
   max-width:600px;
   height: auto;
 }
+
+
+/* Try It Out*/
+.page-title h2{
+  margin: 16px;
+  color: #2d00f7;
+}

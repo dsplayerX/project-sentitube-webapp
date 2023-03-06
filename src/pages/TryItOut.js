@@ -69,15 +69,23 @@ function TryItOut() {
 
   return (
     <>
-      <div>
+      <div className="page-title">
         <center>
           <h2>Sentiment and Sarcasm analysis on YouTube videos.</h2>
         </center>
       </div>
       <div>
-        <Container className="tryitoutmain" style={{ color: "black" }}>
+        <Container className="tryitoutmain" style={{ 
+          color: "black",
+          marginBottom:"100px"
+          }}
+          >
           <Form>
-            <Form.Group controlId="formYoutubeLink">
+            <Form.Group controlId="formYoutubeLink"
+              style={{
+                marginBottom:"10px"
+              }}
+            >
               <Form.Control
                 type="text"
                 placeholder="Enter YouTube link"
@@ -85,7 +93,13 @@ function TryItOut() {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Group controlId="formNumResults">
+            <Form.Group controlId="formNumResults"
+              style={{
+                display:"flex",
+                flexDirection:"row",
+                gap:"12px"
+              }}
+            >
               <Form.Label>Number of Comments to Analyse:</Form.Label>
               <DropdownButton
                 id="num-results-dropdown"
@@ -115,6 +129,15 @@ function TryItOut() {
                 variant="primary"
                 onClick={handleButtonClick}
                 disabled={isAnalysing}
+                style = {{
+                  color:"rgb(102,0,102)",
+                  backgroundColor:"white",
+                  fontSize:"24px",
+                  padding:"8px",
+                  borderRadius:"28px",
+                  border:"6px rgb(102,0,102) solid",
+                  width:"200px"
+                }}
               >
                 {isAnalysing ? "Analyzing..." : "Analyze"}
               </Button>
