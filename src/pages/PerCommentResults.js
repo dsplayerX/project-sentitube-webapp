@@ -20,6 +20,12 @@ function PerCommentResults() {
           commentsDictionary[key]["sarcasm_predictions"] === 0
             ? "Not sarcastic"
             : "Sarcastic",
+        sentiresult:
+          commentsDictionary[key]["sentitube_results"] === "negative"
+            ? "Senti Negative"
+            : commentsDictionary[key]["sentitube_results"] === "positive"
+            ? "Senti Positive"
+            : "-",
       }))
     : [];
 
@@ -31,6 +37,7 @@ function PerCommentResults() {
             <th>Comment</th>
             <th>Sentiment</th>
             <th>Sarcasm</th>
+            <th>SentiResults</th>
           </tr>
         </thead>
         <tbody>
@@ -39,6 +46,7 @@ function PerCommentResults() {
               <td>{data.comments}</td>
               <td>{data.sentiment}</td>
               <td>{data.sarcasm}</td>
+              <td>{data.sentiresult}</td>
             </tr>
           ))}
         </tbody>

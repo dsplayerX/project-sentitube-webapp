@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import {CustomFeedback} from './Data2'
+import { CustomFeedback } from "./CustomFeedbacks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import PieChart from "../components/PieChart";
@@ -47,17 +47,11 @@ function Results() {
     }
   };
 
-  //positive comment persentage
-  var posit_per =  (data["Positive Comments"]/data["Total Comments"])*100; 
-  //negative comment persentage
-  var negative_per =  (data["Negative Comments"]/data["Total Comments"])*100; 
-  
   ////
-  console.log(data["final_per"])
-  const feedbackItem = CustomFeedback.find((item) => item.id === 3);  ////
-  
-  
-
+  console.log(data["CustomFeedbackNo"]);
+  const feedbackItem = CustomFeedback.find(
+    (item) => item.id === data["CustomFeedbackNo"]
+  ); ////
 
   return (
     <div className="Result_page">
@@ -66,7 +60,7 @@ function Results() {
           color: "rgb(51,51,255)",
         }}
       >
-        <h4>Final Result...</h4>
+        <h4>Final Result</h4>
         <Row
           style={{
             background:
@@ -110,14 +104,14 @@ function Results() {
           <Col>
             <h5 className="chart-title">Sentiment Result</h5>
             <div style={{ width: 260 }}>
-              <PieChart chartData={sarcasmChartData} />
+              <PieChart chartData={sentimentChartData} />
             </div>
           </Col>
 
           <Col>
             <h5 className="chart-title">Sarcasam Result</h5>
             <div style={{ width: 260 }}>
-              <PieChart chartData={sentimentChartData} />
+              <PieChart chartData={sarcasmChartData} />
             </div>
           </Col>
         </Row>
@@ -131,7 +125,7 @@ function Results() {
       >
         <h4>Custom Feedback</h4>
 
-        <p>{feedbackItem.text}</p> 
+        <p>{feedbackItem.text}</p>
       </Container>
     </div>
   );
