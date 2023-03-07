@@ -4,7 +4,7 @@ import { Navbar, Container, Nav, NavDropdown, Offcanvas, Form, FormControl,Butto
 import { Link } from 'react-router-dom';
 import logo from './Icons&Images/2ng.png';
 
-function Navbar_SentiTube() {
+function NavBar() {
   return (
       <>  
         <Navbar bg="light" expand="lg">  
@@ -36,4 +36,4 @@ function Navbar_SentiTube() {
   );
 }
 
-export default Navbar_SentiTube;
+export default NavBar;

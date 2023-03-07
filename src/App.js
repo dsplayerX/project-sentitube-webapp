@@ -2,7 +2,7 @@ import Home from "./pages/Home";
 import TryItOut from "./pages/TryItOut";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Navbar_SentiTube from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 import { Route, Router, Routes } from "react-router-dom";
@@ -15,7 +15,7 @@ import PerCommentResults from "./pages/PerCommentResults";
 function App() {
   return (
     <div className="App">
-      <Navbar_SentiTube />
+      <NavBar/>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/TryItOut" element={<TryItOut />} />
