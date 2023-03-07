@@ -77,16 +77,27 @@ export const ContactUsForm = () => {
     <>
       <Form ref={form} onSubmit={sendEmail}
         style={{
-          color:"black"
+          color:"black",
+          padding:"16px",
+          marginTop:"10px",
+          marginBottom:"20px",
+          borderRadius:"10px",
+          textAlign:"left",
+          border:".5px red solid",
+          width:"80%"
         }}
       >
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label>Name</Form.Label>
+          {/* <Form.Label>Name</Form.Label> */}
           <Form.Control
             type="text"
-            placeholder="Your name"
+            placeholder="Your Name"
             name="from_name"
             isInvalid={!!formErrors.name}
+            style={{
+              backgroundColor:"rgb(255,240,220)",
+              border:"none"
+            }}
           />
           {/* showing errors below the form input field */}
           {formErrors.name && (
@@ -96,12 +107,16 @@ export const ContactUsForm = () => {
           )}
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label>Email address</Form.Label>
+          {/* <Form.Label>Email address</Form.Label> */}
             <Form.Control
               type="email"
-              placeholder="name@example.com"
+              placeholder="Email"
               name="from_email"
               isInvalid={!!formErrors.email}
+              style={{
+                backgroundColor:"rgb(255,240,220)",
+                border:"none"
+              }}
             />
             {formErrors.email && (
               <Form.Control.Feedback type="invalid">
@@ -110,12 +125,20 @@ export const ContactUsForm = () => {
             )}
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Message</Form.Label>
+          <Form.Label
+            style={{
+              fontFamily: "'Signika Negative', sans-serif"
+            }}
+          >Message Us</Form.Label>
           <Form.Control
             as="textarea"
             name="message"
-            rows={3}
+            rows={6}
             isInvalid={!!formErrors.message}
+            style={{
+              backgroundColor:"rgb(255,240,220)",
+              border:"none"
+            }}
           />
           {formErrors.message && (
             <Form.Control.Feedback type="invalid">
@@ -123,7 +146,15 @@ export const ContactUsForm = () => {
             </Form.Control.Feedback>
           )}
         </Form.Group>
-        <Button className="submit-button" value="Send" type="submit">
+        <Button className="submit-button" value="Send" type="submit"
+          style={{
+            backgroundColor:"red",
+            padding:"5px",
+            width:"120px",
+            borderRadius:"10px",
+            margin:"10px"
+          }}
+        >
           Send
         </Button>
         </Form>
