@@ -1,49 +1,39 @@
-import { click } from "@testing-library/user-event/dist/click";
-import React, {useState} from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
+import 'bootstrap/dist/css/bootstrap.min.css';  
+import { Navbar, Container, Nav, NavDropdown, Offcanvas, Form, FormControl,Button } from 'react-bootstrap'; 
+import { Link } from 'react-router-dom';
 import logo from './Icons&Images/2ng.png';
-//import menu from './Icons/menu.png'
 
-function NavBar() {
-  const[click,setClick]= useState(false);
+function Navbar_SentiTube() {
   return (
-    <nav className="nav">    
-      <div className="site-logo">  
-        <Link to="/" className="site-logo">
-          <img src={logo} alt="Logo" className="logo" />
-        </Link>
-      </div>
-      <div className="nav_link_div">
-        <ul className="nav_link">
-          <li>
-            <CustomLink to="/">Home</CustomLink>
-          </li>
-          <li>
-            <CustomLink to="/TryItOut">TryItOut</CustomLink>
-          </li>
-          <li>
-            <CustomLink to="/Contact">Contact</CustomLink>
-          </li>
-          <li>
-            <CustomLink to="/About">About</CustomLink>
-          </li>
-        </ul>
-      </div>
-    
-    </nav>
+      <>  
+        <Navbar bg="light" expand="lg">  
+        <Container fluid>  
+            <Navbar.Brand as={Link} to="/">
+                <img src={logo} alt="Logo" className="logo" />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="offcanvasNavbar" />  
+            <Navbar.Offcanvas  
+                id="offcanvasNavbar"  
+                aria-labelledby="offcanvasNavbarLabel"  
+                placement="end"  
+            >  
+            <Offcanvas.Header closeButton>  
+                <Offcanvas.Title id="offcanvasNavbarLabel">Sidebar</Offcanvas.Title>  
+            </Offcanvas.Header>  
+            <Offcanvas.Body>  
+                <Nav className="justify-content-end flex-grow-1 pe-3">  
+                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                    <Nav.Link as={Link} to="/TryItOut">TryItOut</Nav.Link>
+                    <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
+                    <Nav.Link as={Link} to="/About">About</Nav.Link>    
+                </Nav>  
+            </Offcanvas.Body>  
+            </Navbar.Offcanvas>  
+        </Container>  
+        </Navbar>  
+    </>  
   );
 }
 
-export default NavBar;
-
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
+export default Navbar_SentiTube;

@@ -1,9 +1,8 @@
-import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import TryItOut from "./pages/TryItOut";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Navbarnew from "./components/Navbarnew";
+import Navbar_SentiTube from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import { Route, Router, Routes } from "react-router-dom";
@@ -16,7 +15,7 @@ import PerCommentResults from "./pages/PerCommentResults";
 function App() {
   return (
     <div className="App">
-      <Navbarnew />
+      <Navbar_SentiTube />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/TryItOut" element={<TryItOut />} />
