@@ -20,7 +20,6 @@ function Contact() {
             style={{
               color:"black",
               fontSize:"36px",
-              fontFamily: "'Anton', sans-serif",
               margin:"40px",
               width:"280px"
             }}

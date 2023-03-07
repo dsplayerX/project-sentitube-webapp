@@ -125,11 +125,7 @@ export const ContactUsForm = () => {
             )}
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label
-            style={{
-              fontFamily: "'Signika Negative', sans-serif"
-            }}
-          >Message Us</Form.Label>
+          <Form.Label>Message Us</Form.Label>
           <Form.Control
             as="textarea"
             name="message"
