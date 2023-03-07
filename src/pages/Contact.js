@@ -1,7 +1,9 @@
 import React from "react";
 import { ContactUsForm } from "../components/ContactUsForm";
-import { Form, Button, Modal, Container, Row, Col, Card } from "react-bootstrap";
+import { Form, Button, Image, Container, Row, Col, Card } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import email from '../images/email.jpg';
+
 
 function Contact() {
   return (
@@ -14,7 +16,28 @@ function Contact() {
       >
         <Row>
           <Col>
-          <Card className='nb-3'
+          <Col
+            style={{
+              color:"black",
+              fontSize:"36px",
+              fontFamily: "'Anton', sans-serif",
+              margin:"40px",
+              width:"280px"
+            }}
+          >
+            <p>Tell Us About Our Web Page</p>
+          </Col>
+          <Col
+            style={{
+              marginTop:"60px",
+              textAlign:"left"
+            }}
+          >
+          <Image src={email} />
+          </Col>
+            
+          
+          {/* <Card className='nb-3'
             style={{
               backgroundColor:"rgb(51,204,51)",
               border:"2px green solid",
@@ -23,10 +46,7 @@ function Contact() {
               marginTop:"80px"
              }}
           >
-              <Card.Body 
-                
-              
-              >
+              <Card.Body >
                 <Card.Title
                  style={{
                   fontSize:"20px",
@@ -43,7 +63,8 @@ function Contact() {
                 sentitube@gmail.com
               </Card.Text>
               </Card.Body>
-            </Card>
+            </Card> */}
+            
           </Col>
           <Col>
           <ContactUsForm />
