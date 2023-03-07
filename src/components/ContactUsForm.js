@@ -83,7 +83,6 @@ export const ContactUsForm = () => {
           marginBottom:"20px",
           borderRadius:"10px",
           textAlign:"left",
-          border:".5px red solid",
           width:"80%"
         }}
       >

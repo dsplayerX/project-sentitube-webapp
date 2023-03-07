@@ -129,14 +129,15 @@ function TryItOut() {
                 variant="primary"
                 onClick={handleButtonClick}
                 disabled={isAnalysing}
+                className="try-button-hover"
                 style = {{
-                  color:"rgb(102,0,102)",
-                  backgroundColor:"white",
+                  color:"red",
+                  backgroundColor:"rgb(255,201,201)",
                   fontSize:"24px",
-                  padding:"8px",
+                  padding:"10px",
+                  border:"1px red solid",
                   borderRadius:"28px",
-                  border:"6px rgb(102,0,102) solid",
-                  width:"200px"
+                  width:"160px"
                 }}
               >
                 {isAnalysing ? "Analyzing..." : "Analyze"}

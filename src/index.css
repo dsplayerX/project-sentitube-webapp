@@ -374,11 +374,11 @@ td {
   font-size: 24px;
 }
 .Result_page .total {
-  background-color: rgb(255, 201, 100);
   font-size: 24px;
   text-align: center;
   color: black;
   font-family: 'Dosis', sans-serif;
+  text-align: right;
 }
 .Result_page .chart-title {
   color: white;
@@ -397,9 +397,8 @@ td {
   border-radius: 6px;
 }
 .Result_page .feedback-box{
-  background:rgb(255, 142, 142);
+  background:rgb(251, 179, 179);
   padding: 20px;
-  border: 2px solid red;
   border-radius: 10px;
 }
 .Result_page h6{
@@ -409,18 +408,30 @@ td {
   width: 180px;
   text-align: center;
 }
+
+/*  Per Comment Results */
+
 .table-wrapper {
-  height: 600px;
+  height: 468px;
   overflow-y: scroll;
+}
+.table-wrapper .title-column{
+  background-color: #ff4a4a;
 }
 .commentCol{
   max-width:600px;
   height: auto;
 }
 
-
 /* Try It Out*/
-.page-title h2{
+.page-title h2,
+.Per_Comment_Results h2{
   margin: 16px;
-  color: #2d00f7;
+  color: #b43535;
+  text-align: center;
+}
+
+.try-button-hover:hover{
+  background-color: rgb(177, 155, 251);
+  border: 2px solid red;
 }

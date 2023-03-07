@@ -33,9 +33,13 @@ function PerCommentResults() {
   function renderTable() {
     return (
       <div className="table-wrapper">
-      <Table class="table table-striped">  
+      <Table class="table table-striped"
+        style={{
+          margin:"20px"
+        }}
+      >  
         <thead>
-          <tr>
+          <tr className="title-column">
             <th scope="col">Comment</th>
             <th scope="col">Sentiment</th>
             <th scope="col">Sarcasm</th>
@@ -59,7 +63,7 @@ function PerCommentResults() {
 
   return (
     <div className="Per_Comment_Results">
-      <h4>Overall results for each comment</h4>
+      <h2>Overall results for each comment</h2>
       <div>{renderTable()}</div>
     </div>
   );

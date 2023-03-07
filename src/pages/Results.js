@@ -12,6 +12,7 @@ function Results() {
   //console.log("parsed data" + data);
   const navigate = useNavigate();
 
+  // pie chart data for sentitube results
   const finalsentiChartData = {
     labels: ["Positive", "Negative"],
     datasets: [
@@ -26,6 +27,7 @@ function Results() {
     ],
   };
 
+  // pie chart data for sentiment results
   const sentimentChartData = {
     labels: ["Positive", "Neutral", "Negative"],
     datasets: [
@@ -41,7 +43,8 @@ function Results() {
     ],
   };
 
-  const sarcasmChartData = {
+  // pie chart data for sarcasm results
+  const sarcasmChartData =  {
     labels: ["Sarcastic", "Non-Sarcastic"],
     datasets: [
       {
@@ -52,6 +55,7 @@ function Results() {
     ],
   };
 
+  // This handleButton function handles the button click event and navigates to the PerCommentResults page
   const handleButton = async (event) => {
     event.preventDefault();
     try {
@@ -174,6 +178,7 @@ function Results() {
                   color: "red",
                   borderRadius: "20px",
                   borderColor: "red",
+                  textAlign: "left"
                 }}
                 onClick={handleButton}
               >
