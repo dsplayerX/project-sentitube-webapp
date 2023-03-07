@@ -2,7 +2,7 @@ import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import { Navbar, Container, Nav, NavDropdown, Offcanvas, Form, FormControl,Button } from 'react-bootstrap'; 
 import { Link } from 'react-router-dom';
-import logo from './Icons&Images/2ng.png';
+import logo from '../images/senti_logo.png';
 
 function NavBar() {
   return (
