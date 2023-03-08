@@ -12,16 +12,17 @@ function Results() {
   //console.log("parsed data" + data);
   const navigate = useNavigate();
 
+  // Testing response
+  console.log("Video Title: ", data["Video Title"]);
+  console.log("Video Id: ", data["Video Id"]);
+
   // pie chart data for sentitube results
   const finalsentiChartData = {
     labels: ["Positive", "Negative"],
     datasets: [
       {
         label: "SentiTube Result",
-        data: [
-          data["Sentitube Positve"],
-          data["Sentitube Negative"],
-        ],
+        data: [data["Sentitube Positve"], data["Sentitube Negative"]],
         backgroundColor: ["#009900", "#E92611"],
       },
     ],
@@ -44,7 +45,7 @@ function Results() {
   };
 
   // pie chart data for sarcasm results
-  const sarcasmChartData =  {
+  const sarcasmChartData = {
     labels: ["Sarcastic", "Non-Sarcastic"],
     datasets: [
       {
@@ -76,27 +77,35 @@ function Results() {
       <Container
         style={{
           color: "rgb(51,51,255)",
-          marginBottom:"20px"
+          marginBottom: "20px",
         }}
       >
-        
-        <Row 
-          style={{ 
+        <Row
+          style={{
             textAlign: "center",
             justifyContent: "center",
-            marginBottom:"10px"
+            marginBottom: "10px",
           }}
         >
-            <h5 className="chart-title1">SentiTube Result</h5>
-            <div style={{ width: 340 }}>
-              <PieChart chartData={finalsentiChartData} />
-            </div>
+          <div>
+            <h3>Video Title: {data["Video Title"]}</h3>
+            <img
+              src={`https://img.youtube.com/vi/${data["Video Id"]}/maxresdefault.jpg`}
+              height={"400px"}
+              alt={"Thumbnail of " + data["Video Title"]}
+            />
+            {/* https://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api */}
+          </div>
+          <h5 className="chart-title1">SentiTube Result</h5>
+          <div style={{ width: 340 }}>
+            <PieChart chartData={finalsentiChartData} />
+          </div>
         </Row>
         <Row>
           <Col>
             <h5 className="chart-title">Sentiment Result</h5>
             <div style={{ width: 260 }}>
-              <PieChart chartData={sentimentChartData}/>
+              <PieChart chartData={sentimentChartData} />
             </div>
           </Col>
 
@@ -108,7 +117,7 @@ function Results() {
           </Col>
         </Row>
       </Container>
-      
+
       <Container
         style={{
           color: "black",
@@ -130,44 +139,46 @@ function Results() {
           }}
         >
           <Row>
-          <Col
-            style={{
-              fontFamily: "'Dosis', sans-serif",
-              fontSize: "20px",
-              textAlign:"left"
-            }}
-          >
-            <h6>Final Senti Result</h6>
-            <p>Senti Positve Comments : {data["Sentitube Positve"]}</p>
-            <p>Senti Negative Comments : {data["Sentitube Negative"]}</p>
-          </Col>
-          <Col
-          style={{
-            fontFamily: "'Dosis', sans-serif",
-            fontSize: "20px",
-            textAlign:"left"
-          }}
-          >
-            <h6>Sentiment Result</h6>
-            <p>Positve Comments : {data["Positive Comments"]}</p>
-            <p>Neutral Comments : {data["Neutral Comments"]}</p>
-            <p>Negative Comments : {data["Negative Comments"]}</p></Col>
-          <Col
-          style={{
-            fontFamily: "'Dosis', sans-serif",
-            fontSize: "20px",
-            textAlign:"left"
-          }}
-          >
-            <h6>Sarcasam Result</h6>
-            <p>Sarcastic Comments : {data["Sarcastic Comments"]}</p>
-            <p>Non-Sarcastic Comments : {data["Nonsarcastic Comments"]}</p></Col>
+            <Col
+              style={{
+                fontFamily: "'Dosis', sans-serif",
+                fontSize: "20px",
+                textAlign: "left",
+              }}
+            >
+              <h6>Final Senti Result</h6>
+              <p>Senti Positve Comments : {data["Sentitube Positve"]}</p>
+              <p>Senti Negative Comments : {data["Sentitube Negative"]}</p>
+            </Col>
+            <Col
+              style={{
+                fontFamily: "'Dosis', sans-serif",
+                fontSize: "20px",
+                textAlign: "left",
+              }}
+            >
+              <h6>Sentiment Result</h6>
+              <p>Positve Comments : {data["Positive Comments"]}</p>
+              <p>Neutral Comments : {data["Neutral Comments"]}</p>
+              <p>Negative Comments : {data["Negative Comments"]}</p>
+            </Col>
+            <Col
+              style={{
+                fontFamily: "'Dosis', sans-serif",
+                fontSize: "20px",
+                textAlign: "left",
+              }}
+            >
+              <h6>Sarcasam Result</h6>
+              <p>Sarcastic Comments : {data["Sarcastic Comments"]}</p>
+              <p>Non-Sarcastic Comments : {data["Nonsarcastic Comments"]}</p>
+            </Col>
           </Row>
           <Row
-          style={{
-            marginTop:"20px"
-          }}
-          >                   
+            style={{
+              marginTop: "20px",
+            }}
+          >
             <Col>
               <Button
                 varient="flat"
@@ -178,7 +189,7 @@ function Results() {
                   color: "red",
                   borderRadius: "20px",
                   borderColor: "red",
-                  textAlign: "left"
+                  textAlign: "left",
                 }}
                 onClick={handleButton}
               >
@@ -186,13 +197,12 @@ function Results() {
               </Button>
             </Col>
             <Col>
-          <p className="total">Total Comments -- {data["Total Comments"]}</p>
-
-          </Col>
+              <p className="total">
+                Total Comments -- {data["Total Comments"]}
+              </p>
+            </Col>
           </Row>
-          
         </Row>
-
       </Container>
     </div>
   );

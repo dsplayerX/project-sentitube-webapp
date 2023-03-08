@@ -17,7 +17,8 @@ function TryItOut() {
     event.preventDefault();
     try {
       const youtubeRegex =
-        /^(https?\:\/\/)?((www\.)?youtube\.com|youtu\.?be)\/(watch\?v=)?([a-zA-Z0-9\-_]+)$/;
+        /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?v=)?([a-zA-Z0-9_-]{11})(?:&list=([a-zA-Z0-9_-]+))?(?:&t=(\d+))?/;
+      // /^(https?\:\/\/)?((www\.)?youtube\.com|youtu\.?be)\/(watch\?v=)?([a-zA-Z0-9\-_]+)$/;
       if (!youtubeRegex.test(inputValue)) {
         // alert("Please enter a valid YouTube link");
         setShowModal(true);
@@ -75,15 +76,18 @@ function TryItOut() {
         </center>
       </div>
       <div>
-        <Container className="tryitoutmain" style={{ 
-          color: "black",
-          marginBottom:"100px"
+        <Container
+          className="tryitoutmain"
+          style={{
+            color: "black",
+            marginBottom: "100px",
           }}
-          >
+        >
           <Form>
-            <Form.Group controlId="formYoutubeLink"
+            <Form.Group
+              controlId="formYoutubeLink"
               style={{
-                marginBottom:"10px"
+                marginBottom: "10px",
               }}
             >
               <Form.Control
@@ -93,11 +97,12 @@ function TryItOut() {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Group controlId="formNumResults"
+            <Form.Group
+              controlId="formNumResults"
               style={{
-                display:"flex",
-                flexDirection:"row",
-                gap:"12px"
+                display: "flex",
+                flexDirection: "row",
+                gap: "12px",
               }}
             >
               <Form.Label>Number of Comments to Analyse:</Form.Label>
@@ -130,14 +135,14 @@ function TryItOut() {
                 onClick={handleButtonClick}
                 disabled={isAnalysing}
                 className="try-button-hover"
-                style = {{
-                  color:"red",
-                  backgroundColor:"rgb(255,201,201)",
-                  fontSize:"24px",
-                  padding:"10px",
-                  border:"1px red solid",
-                  borderRadius:"28px",
-                  width:"160px"
+                style={{
+                  color: "red",
+                  backgroundColor: "rgb(255,201,201)",
+                  fontSize: "24px",
+                  padding: "10px",
+                  border: "1px red solid",
+                  borderRadius: "28px",
+                  width: "160px",
                 }}
               >
                 {isAnalysing ? "Analyzing..." : "Analyze"}
