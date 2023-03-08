@@ -6,12 +6,24 @@ import { Dropdown, DropdownButton } from "react-bootstrap";
 import { Row, Col, Modal } from "react-bootstrap";
 
 function TryItOut() {
+  const [modalMessage, setModalMessage] = useState(null); // state variable for modal message
+
   const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [numResults, setNumResults] = useState(250); // default value is 100
   const navigate = useNavigate();
 
   const [isAnalysing, setIsAnalysing] = useState(false);
+
+  // ---------------------- DOESN'T WORK YET ----------------------
+  // intercepts the error response and use the message returned by server
+  // axios.interceptors.response.use(
+  //   (response) => response,
+  //   (error) => {
+  //     const errorMessage = error.response.data.message || error.message;
+  //     return Promise.reject(new Error(errorMessage));
+  //   }
+  // );
 
   const handleButtonClick = async (event) => {
     event.preventDefault();
@@ -21,6 +33,7 @@ function TryItOut() {
       // /^(https?\:\/\/)?((www\.)?youtube\.com|youtu\.?be)\/(watch\?v=)?([a-zA-Z0-9\-_]+)$/;
       if (!youtubeRegex.test(inputValue)) {
         // alert("Please enter a valid YouTube link");
+        setModalMessage("Invalid YouTube link!");
         setShowModal(true);
         return;
       }
@@ -41,14 +54,24 @@ function TryItOut() {
         .catch((error) => {
           // Handle errors that occur during the request
           console.error(error);
+          console.log(error.message);
+          setModalMessage(
+            error.message +
+              "! Please ensure that the comments are not disabled on the video."
+          );
+          setShowModal(true);
         });
 
-      console.log(response.data);
+      //console.log(response.data);
       // request succeeded, navigate to results page
       ///setResponseData(response.data);
     } catch (error) {
       // request failed, handle error
       console.error(error);
+      console.log(error.message);
+
+      setModalMessage(error.message);
+      setShowModal(true);
     }
   };
 
@@ -151,9 +174,9 @@ function TryItOut() {
           </Form>
           <Modal show={showModal} onHide={handleCloseModal}>
             <Modal.Header closeButton>
-              <Modal.Title>Enter a valid YouTube link</Modal.Title>
+              <Modal.Title>Error</Modal.Title>
             </Modal.Header>
-            <Modal.Body>Please enter a valid youtube link.</Modal.Body>
+            <Modal.Body>{modalMessage}</Modal.Body>
             <Modal.Footer>
               <Button variant="secondary" onClick={handleCloseModal}>
                 Close
