@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Form, Button, Container } from "react-bootstrap";
 import { Dropdown, DropdownButton } from "react-bootstrap";
-import { Row, Col, Modal } from "react-bootstrap";
+import { Row, Col, Modal, Spinner } from "react-bootstrap";
 
 function TryItOut() {
   const [modalMessage, setModalMessage] = useState(null); // state variable for modal message
@@ -55,10 +55,7 @@ function TryItOut() {
           // Handle errors that occur during the request
           console.error(error);
           console.log(error.message);
-          setModalMessage(
-            error.message +
-              "! Please ensure that the comments are not disabled on the video."
-          );
+          setModalMessage(error.message + "!");
           setShowModal(true);
         });
 
@@ -159,16 +156,18 @@ function TryItOut() {
                 disabled={isAnalysing}
                 className="try-button-hover"
                 style={{
-                  color: "red",
-                  backgroundColor: "rgb(255,201,201)",
-                  fontSize: "24px",
+                  color: "white",
+                  backgroundColor: "red",
+                  fontSize: "28px",
                   padding: "10px",
-                  border: "1px red solid",
+                  border: "none",
                   borderRadius: "28px",
-                  width: "160px",
+                  width: "150px",
+                  height: "60px",
+                  transition: "background-color 0.3s ease-in-out",
                 }}
               >
-                {isAnalysing ? "Analyzing..." : "Analyze"}
+                {isAnalysing ? <Spinner animation="border" /> : "Analyse"}
               </Button>
             </Form.Group>
           </Form>

@@ -3,7 +3,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -377,7 +377,7 @@ td {
   font-size: 24px;
   text-align: center;
   color: black;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   text-align: right;
 }
 .Result_page .chart-title {
@@ -388,7 +388,7 @@ td {
   padding: 4px;
   border-radius: 6px;
 }
-.Result_page .chart-title1{
+.Result_page .chart-title1 {
   color: white;
   background-color: red;
   text-align: center;
@@ -396,12 +396,12 @@ td {
   padding: 4px;
   border-radius: 6px;
 }
-.Result_page .feedback-box{
-  background:rgb(251, 179, 179);
+.Result_page .feedback-box {
+  background: rgb(251, 179, 179);
   padding: 20px;
   border-radius: 10px;
 }
-.Result_page h6{
+.Result_page h6 {
   background-color: white;
   color: black;
   border-radius: 10px;
@@ -415,23 +415,28 @@ td {
   height: 468px;
   overflow-y: scroll;
 }
-.table-wrapper .title-column{
+.table-wrapper .title-column {
   background-color: #ff4a4a;
 }
-.commentCol{
-  max-width:600px;
+.commentCol {
+  max-width: 600px;
   height: auto;
 }
 
 /* Try It Out*/
 .page-title h2,
-.Per_Comment_Results h2{
+.Per_Comment_Results h2 {
   margin: 16px;
   color: #b43535;
   text-align: center;
 }
 
-.try-button-hover:hover{
-  background-color: rgb(177, 155, 251);
-  border: 2px solid red;
+.try-button-hover:hover {
+  background-color: rgb(117, 0, 0) !important;
+  color: red !important;
+  transition: "background-color 0.3s ease-in-out";
+}
+
+.try-button-hover:disabled {
+  padding-top: 12px !important;
 }
