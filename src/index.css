@@ -408,6 +408,14 @@ td {
   width: 180px;
   text-align: center;
 }
+.Result_page h5{
+  color: white;
+  background-color: red;
+  text-align: center;
+  margin-bottom: 18px;
+  padding: 4px;
+  border-radius: 6px;
+}
 
 /*  Per Comment Results */
 
