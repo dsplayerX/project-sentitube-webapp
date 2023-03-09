@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/project-sentitube-webapp/static/css/main.838e469c.css",
-    "main.js": "/project-sentitube-webapp/static/js/main.1b70086b.js",
+    "main.js": "/project-sentitube-webapp/static/js/main.89a83a88.js",
     "static/media/about_bgimage.jpg": "/project-sentitube-webapp/static/media/about_bgimage.48e702f74bc347538f38.jpg",
     "static/media/senti_logo.png": "/project-sentitube-webapp/static/media/senti_logo.9047c12e085efb841707.png",
     "index.html": "/project-sentitube-webapp/index.html",
     "main.838e469c.css.map": "/project-sentitube-webapp/static/css/main.838e469c.css.map",
-    "main.1b70086b.js.map": "/project-sentitube-webapp/static/js/main.1b70086b.js.map"
+    "main.89a83a88.js.map": "/project-sentitube-webapp/static/js/main.89a83a88.js.map"
   },
   "entrypoints": [
     "static/css/main.838e469c.css",
-    "static/js/main.1b70086b.js"
+    "static/js/main.89a83a88.js"
   ]
 }
