@@ -87,19 +87,26 @@ function Results() {
             marginBottom: "10px",
           }}
         >
+          <Col>
           <div>
-            <h3>Video Title: {data["Video Title"]}</h3>
+            <h5>Video Title: {data["Video Title"]}</h5>
             <img
               src={`https://img.youtube.com/vi/${data["Video Id"]}/maxresdefault.jpg`}
-              height={"400px"}
+              height={"auto"}
+              width={"80%"}
               alt={"Thumbnail of " + data["Video Title"]}
             />
             {/* https://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api */}
           </div>
+          </Col>
+
+          <Col>
           <h5 className="chart-title1">SentiTube Result</h5>
           <div style={{ width: 340 }}>
             <PieChart chartData={finalsentiChartData} />
           </div>
+          </Col>
+        
         </Row>
         <Row>
           <Col>
