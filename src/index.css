@@ -1,18 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
 * {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   margin: 0;
 }
 
-
-
-.teambcg{
+.teambcg {
   background-color: rgb(249, 138, 113);
   text-align: center;
 }
-
 
 /* below from here styles are belongs to MeetTheTeam page  */
 
@@ -30,26 +31,25 @@ body {
   position: relative;
 }
 
-.member1:hover{
+.member1:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member1upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member1upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member1image-container { 
+.Member1image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member1lower-container{
+.Member1lower-container {
   margin-top: 60px;
 }
 
@@ -59,9 +59,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member1-body {
@@ -96,29 +95,28 @@ body {
   height: 430px;
   margin-left: 300px;
   margin-top: -430px;
-  position:relative;
+  position: relative;
 }
 
-.member2:hover{
+.member2:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member2upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member2upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member2image-container { 
+.Member2image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member2lower-container{
+.Member2lower-container {
   margin-top: 60px;
 }
 
@@ -128,9 +126,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member2-body {
@@ -165,29 +162,28 @@ body {
   height: 430px;
   margin-left: 600px;
   margin-top: -430px;
-  position:relative;
+  position: relative;
 }
 
-.member3:hover{
+.member3:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member3upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member3upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member3image-container { 
+.Member3image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member3lower-container{
+.Member3lower-container {
   margin-top: 60px;
 }
 
@@ -197,9 +193,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member3-body {
@@ -237,26 +232,25 @@ body {
   position: relative;
 }
 
-.member4:hover{
+.member4:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member4upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member4upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member4image-container { 
+.Member4image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member4lower-container{
+.Member4lower-container {
   margin-top: 60px;
 }
 
@@ -266,9 +260,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member4-body {
@@ -294,7 +287,6 @@ body {
 
 /* below from here styles are belongs to MeetTheTeam member5 */
 
-
 .member5 {
   background-color: #b4b4b4;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -307,26 +299,25 @@ body {
   position: relative;
 }
 
-.member5:hover{
+.member5:hover {
   transform: scale(1.25);
   background-color: #e8e8e8;
   transition-duration: 0.5s;
-} 
-
-.Member5upper-container{
-  height: 100px;
-  width: 250px; 
-  background : linear-gradient(to left,#2d00f7,#ff0291) ; 
 }
 
+.Member5upper-container {
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
 
-.Member5image-container { 
+.Member5image-container {
   width: 153px;
   height: 80px;
   margin-left: 60px;
 }
 
-.Member5lower-container{
+.Member5lower-container {
   margin-top: 60px;
 }
 
@@ -336,9 +327,8 @@ body {
   height: 100px;
   border-radius: 50%;
   padding: 5px;
-  transform: (125px,45px);
+  transform: (125px, 45px);
   margin-top: 30px;
-  
 }
 
 .member5-body {
@@ -363,15 +353,98 @@ body {
 }
 
 /* PerCommentResults */
-table{
-  width:100%;
+table {
+  width: 100%;
   border-collapse: collapse;
-  background-color: #ecc3ae;
+  /* background-color: #ff968a; */
   overflow: scroll;
 }
 
-th, td{
+th,
+td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid red;
+}
+
+/*  Result Pagwe  */
+.Result_page h4 {
+  color: rgb(117, 137, 218);
+  margin: 16px;
+  font-size: 24px;
+}
+.Result_page .total {
+  font-size: 24px;
+  text-align: center;
+  color: black;
+  font-family: "Dosis", sans-serif;
+  text-align: right;
+}
+.Result_page .chart-title {
+  color: white;
+  background-color: red;
+  text-align: center;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 6px;
+}
+.Result_page .chart-title1 {
+  color: white;
+  background-color: red;
+  text-align: center;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 6px;
+}
+.Result_page .feedback-box {
+  background: rgb(251, 179, 179);
+  padding: 20px;
+  border-radius: 10px;
+}
+.Result_page h6 {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+}
+.Result_page h5{
+  color: white;
+  background-color: red;
+  text-align: center;
+  margin-bottom: 18px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+/*  Per Comment Results */
+
+.table-wrapper {
+  height: 468px;
+  overflow-y: scroll;
+}
+.table-wrapper .title-column {
+  background-color: #ff4a4a;
+}
+.commentCol {
+  max-width: 600px;
+  height: auto;
+}
+
+/* Try It Out*/
+.page-title h2,
+.Per_Comment_Results h2 {
+  margin: 16px;
+  color: #b43535;
+  text-align: center;
+}
+
+.try-button-hover:hover {
+  background-color: rgb(117, 0, 0) !important;
+  color: red !important;
+  transition: "background-color 0.3s ease-in-out";
+}
+
+.try-button-hover:disabled {
+  padding-top: 12px !important;
 }
