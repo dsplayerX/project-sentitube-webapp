@@ -1,8 +1,8 @@
 {
+  "homepage": "http://dsplayerX.github.io/project-sentitube-webapp",
   "name": "project-sentitube-webapp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "proxy": "http://localhost:5000",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",

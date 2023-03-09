@@ -42,7 +42,7 @@ function TryItOut() {
       setIsAnalysing(true);
 
       const response = await axios
-        .post("http://localhost:5000/analysisresults", {
+        .post("https://flask-production-06d2.up.railway.app/analysisresults", {
           userinput: inputValue,
           numresults: numResults,
         })
