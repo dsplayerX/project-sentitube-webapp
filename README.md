@@ -1,3 +1,15 @@
+# React WebApp for Project SentiTube
+
+This is the frontend of SentiTube. This repository contains a react webapp created with bootstrap. The webapp access Flask API for processing requests and has a fully functional contact us page. The website is responsive and has modern minimal UI design.
+
+# Other "Project SentiTube" Repositories
+
+Access other "Project SentiTube" repositories from below links.
+
+[Flask API (Backend)](https://github.com/dsplayerX/project-sentitube-flask-api) - The Flask API backend of SentiTube where the comments fetching, preprocessing and predicting takes place.
+[The Chrome Extension](https://github.com/dsplayerX/project-sentitube-chrome-extension) - A Chrome Extension that a user can easily access when watching a YouTube video that shows basic results to the user at a glance.
+[Project SentiTube Tests](https://github.com/dsplayerX/project-sentitube-tests) - This repository contains all the past machine learning modelling and mockup apis and webapps.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -28,6 +40,11 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run deploy`
+
+Deploys the website on GitHub pages after builing the production to the 'build' folder.\
+Deployed website can be found on [this link](https://dsplayerx.github.io/project-sentitube-webapp/).
 
 ### `npm run eject`
 
