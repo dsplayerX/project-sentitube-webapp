@@ -8,8 +8,9 @@ function About() {
       <h1><center>Vision & Mission</center></h1>
       <div class ="row">
         <div class="column">
-          <h2>Our Vision</h2>
-          <p>text ............</p>
+          <h1>Our Vision</h1>
+          <p>To provide accurate sentiment results and personalized commentary 
+            for YouTube videos by combining sentiment and sarcasm analysis.</p>
         </div>
 
         <div class ="column">
