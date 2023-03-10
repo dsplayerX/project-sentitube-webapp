@@ -102,13 +102,15 @@ function Results() {
 
           <Col>
           <h5 className="chart-title1">SentiTube Result</h5>
-          <div style={{ width: 340 }}>
+          <div style={{ width: 300 }} className="text-center">
             <PieChart chartData={finalsentiChartData} />
           </div>
           </Col>
         
         </Row>
-        <Row>
+        <Row style={{
+          marginBottom:"20px"
+        }}>
           <Col>
             <h5 className="chart-title">Sentiment Result</h5>
             <div style={{ width: 260 }}>
