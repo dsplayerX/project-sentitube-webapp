@@ -2,8 +2,7 @@ import React from "react";
 import { ContactUsForm } from "../components/ContactUsForm";
 import { Form, Button, Image, Container, Row, Col, Card } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import email from '../images/email.jpg';
-
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Contact() {
   return (
@@ -32,7 +31,15 @@ function Contact() {
               textAlign:"left"
             }}
           >
-          <Image src={email} />
+            
+              <div className="contact-container">
+                <div className="logo"><i class="bi bi-envelope-at-fill" style={{ fontSize: 40 }}></i>
+</div>
+                <div className="contacy-title">
+                  <h4>Mail Us</h4>
+                  <h5>sentitube@gmail.com</h5>
+                </div>
+              </div>
           </Col>
             
           

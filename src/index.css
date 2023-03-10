@@ -416,6 +416,9 @@ td {
   padding: 4px;
   border-radius: 6px;
 }
+.Result_page .text-center{
+  justify-content: center;
+}
 
 /*  Per Comment Results */
 
@@ -447,4 +450,23 @@ td {
 
 .try-button-hover:disabled {
   padding-top: 12px !important;
+}
+
+.contact-container{
+  background-color: #eeb9b9;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  padding: 10px;
+  border-radius: 6px;
+}
+.contact-container .logo{
+  margin-left: 1px;
+}
+.contact-container .contacy-title h4{
+  color: red;
+  font-size: 20px;
+}
+.contact-container .contacy-title h5{
+  font-size: 16px;
 }
