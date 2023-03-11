@@ -101,10 +101,17 @@ function Results() {
           </Col>
 
           <Col>
-          <h5 className="chart-title1">SentiTube Result</h5>
-          <div style={{ width: 300 }} className="text-center">
-            <PieChart chartData={finalsentiChartData} />
-          </div>
+            <h5 className="chart-title1">SentiTube Result</h5>
+            <div style={{ 
+              width: 300,
+              margin:"auto",
+              display:"flex",
+              justifyContent:"ccenter",
+              alignItems:"center" 
+            }} 
+            className="text-center">
+              <PieChart chartData={finalsentiChartData} />
+            </div>
           </Col>
         
         </Row>
@@ -113,14 +120,26 @@ function Results() {
         }}>
           <Col>
             <h5 className="chart-title">Sentiment Result</h5>
-            <div style={{ width: 260 }}>
+            <div style={{ 
+              width: 260,
+              margin:"auto",
+              display:"flex",
+              justifyContent:"ccenter",
+              alignItems:"center"  
+            }}>
               <PieChart chartData={sentimentChartData} />
             </div>
           </Col>
 
           <Col>
             <h5 className="chart-title">Sarcasam Result</h5>
-            <div style={{ width: 260 }}>
+            <div style={{ 
+              width: 260,
+              margin:"auto",
+              display:"flex",
+              justifyContent:"ccenter",
+              alignItems:"center"  
+            }}>
               <PieChart chartData={sarcasmChartData} />
             </div>
           </Col>
@@ -188,7 +207,14 @@ function Results() {
               marginTop: "20px",
             }}
           >
-            <Col>
+            <Col
+              style={{
+                margin:"auto",
+                display:"flex",
+                justifyContent:"left",
+                alignItems:"left" 
+              }}
+            >
               <Button
                 varient="flat"
                 size="xl"
