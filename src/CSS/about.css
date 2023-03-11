@@ -1,3 +1,4 @@
+/*Create two columns*/
 * {
     box-sizing: border-box;
   }
@@ -16,8 +17,13 @@
 
   }
 
+  /* h3 bold */
   h3.thick {
     font-weight: bold;
+  }
+
+  h1.thick{
+    font-weight: bolder;
   }
   
 
