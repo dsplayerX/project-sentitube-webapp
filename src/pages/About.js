@@ -5,7 +5,10 @@ import "../CSS/about.css";
 function About() {
   return (
     <div>
-      <h1><center><b>Vision & Mission</b></center></h1>
+      <h1 class="thick">What is SentiTube ?</h1>
+      <p>text.........</p>
+      
+      <h1 class="thick"><center>Vision & Mission</center></h1>
       <div class ="row">
         <div class="column">
           <h3 class ="thick">Our Vision</h3>
