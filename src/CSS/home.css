@@ -1,12 +1,5 @@
-.home_img_div{
+/* .welcome_note{
     padding-left: 1%;
-    width: 45%;
-    margin-left: 50%;
-    margin-top: -30%;
-}
-
-.welcome_note{
-    padding: 1%;
     width: 50%;
     margin-top: 10%;
 }
@@ -16,6 +9,94 @@
 }
 
 .welcome_note p{
+    
     padding-top: 5%;
+    font-size: 125%;
+}
+
+.home_img_div{
+    padding-left: 1%;
+    width: 45%;
+    margin-left: 50%;
+    margin-top: -30%;
+} */
+
+
+.welcome_note h1{
+    font-size: 400%;   
+}
+
+.row{
+    padding-left:2%;
+    
+
+}
+
+.welcome_note{
+    padding-top: 6%;
+    
+    
+}
+
+.welcome_note p{
+    padding-top: 3%;
+    padding-right:3%;
     font-size: 150%;
 }
+
+.home_img_div{
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+/*==== FADE IN RIGHT ===*/
+@-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
+
+  .animate__fadeInDown {
+    animation-name: animate__fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+  }
+  
+  @keyframes animate__fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
