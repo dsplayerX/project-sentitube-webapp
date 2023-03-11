@@ -1,4 +1,21 @@
-.home_img{
-    max-width: 100%;
-    height: auto;
+.home_img_div{
+    padding-left: 1%;
+    width: 45%;
+    margin-left: 50%;
+    margin-top: -30%;
+}
+
+.welcome_note{
+    padding: 1%;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.welcome_note h1{
+    font-size: 500%;   
+}
+
+.welcome_note p{
+    padding-top: 5%;
+    font-size: 150%;
 }
