@@ -57,10 +57,10 @@
   .button {border-radius: 12px;}
 
 
-  .card {
+  .card01 {
     box-sizing: border-box;
-    width: 550px;
-    height: 300px;
+    width: 350px;
+    height: 700px;
     background: rgba(217, 217, 217, 0.58);
     border: 1px solid white;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
@@ -76,11 +76,11 @@
     font-weight: bolder;
   }
   
-  .card:hover {
+  .card01:hover {
     border: 1px solid black;
     transform: scale(1.05);
   }
   
-  .card:active {
+  .card01:active {
     transform: scale(0.95) rotateZ(1.7deg);
   }
