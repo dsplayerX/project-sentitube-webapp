@@ -1,10 +1,29 @@
 import React from "react";
+import { useLocation } from "react-router";
+import { useNavigate } from "react-router";
 import { ContactUsForm } from "../components/ContactUsForm";
 import { Form, Button, Image, Container, Row, Col, Card } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Contact() {
+
+  const location = useLocation();
+  const data = location.state;
+
+  const navigate = useNavigate();
+
+  const handleButton = async (event) => {
+    event.preventDefault();
+    try{
+      
+      navigate("/FAQpage", {state:data})
+
+    }catch(error){
+      console.log(error);
+    }
+  }
+
   return (
     <div>
       
@@ -45,6 +64,7 @@ function Contact() {
                   fontSize:"18px",
                   border:"none"
                 }}
+                onClick={handleButton}
               >FAQ+</Button>
             </Row>
           </Col>

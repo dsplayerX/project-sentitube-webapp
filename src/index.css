@@ -468,8 +468,27 @@ td {
   color: red;
   font-size: 20px;
 }
+.faq-page h2{
+  margin: 16px;
+  color: #b43535;
+  text-align: center;
+}
 .contact-container a{
   font-size: 16px;
   color: black;
   text-decoration: none;
+}
+
+
+/*  FAQ page  */
+.faq-page .faq-box{
+  background-color: #f6bdbd;
+  display: flex;
+  flex-direction: row;
+  width:80%;
+  padding:10px 10px;
+  margin: 20px;
+}
+.faq-page .faq-box h6{
+  font-size: 20px;
 }
