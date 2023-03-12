@@ -4,7 +4,7 @@ import { useState } from "react";
 import { CustomFeedback } from "./CustomFeedbacks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import PieChart from "../components/PieChart";
+import Doughnut from "../components/DoughnutChart";
 
 function Results() {
   const location = useLocation();
@@ -110,7 +110,7 @@ function Results() {
               alignItems:"center" 
             }} 
             className="text-center">
-              <PieChart chartData={finalsentiChartData} />
+              <Doughnut chartData={finalsentiChartData} />
             </div>
           </Col>
         
@@ -127,7 +127,7 @@ function Results() {
               justifyContent:"ccenter",
               alignItems:"center"  
             }}>
-              <PieChart chartData={sentimentChartData} />
+              <Doughnut chartData={sentimentChartData} />
             </div>
           </Col>
 
@@ -140,7 +140,7 @@ function Results() {
               justifyContent:"ccenter",
               alignItems:"center"  
             }}>
-              <PieChart chartData={sarcasmChartData} />
+              <Doughnut chartData={sarcasmChartData} />
             </div>
           </Col>
         </Row>

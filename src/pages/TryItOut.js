@@ -165,6 +165,10 @@ function TryItOut() {
                   width: "150px",
                   height: "60px",
                   transition: "background-color 0.3s ease-in-out",
+                  margin:"auto",
+                  display:"flex",
+                  textAlign:"center",
+                  justifyContent:"center"
                 }}
               >
                 {isAnalysing ? <Spinner animation="border" /> : "Analyse"}
