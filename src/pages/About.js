@@ -35,12 +35,9 @@ function About() {
         </div>
       </div>
 
-      
-        
-
-
     
-
+    <br/>
+    
       <Link to="/MeetTheTeam">
         <button class="button">Go to MeetTheTeam page</button>
       </Link>
