@@ -4,6 +4,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import FAQpage from './pages/FAQpage'
 
 import { Route, Router, Routes } from "react-router-dom";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Results" element={<Results />} />
         <Route path="/PerCommentResults" element={<PerCommentResults />} />
         <Route path="/About" element={<About />} />
+        <Route path="/FAQpage" element={<FAQpage />} />
         <Route
           exact
           path="/PerCommentResults"
