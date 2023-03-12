@@ -27,7 +27,7 @@ function About() {
       </div>
 
       <Link to="/MeetTheTeam">
-        <button>Go to MeetTheTeam page</button>
+        <button class="button">Go to MeetTheTeam page</button>
       </Link>
     </div>
   );
