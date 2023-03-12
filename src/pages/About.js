@@ -4,14 +4,18 @@ import "../CSS/about.css";
 
 function About() {
   return (
-    <div>
+  <div>
+    
+    <div class = "row">
+      <div class ="column">
       <h1 class="thick"><center>What is SentiTube ?</center></h1>
       <p>We are PhoeniX group. This is the project that we have selected to 
         complete for the SDGP (Software Development Group Project),
         which is a subject that we are studying. SentiTube is the name of the project.
         Here, SentiTube performs a sentiment analysis of YouTube video comments 
         to provide insight into viewer comments and engagement. </p>
-      
+      </div>
+
       <h1 class="thick"><center>Vision & Mission</center></h1>
       <div class ="row">
         <div class="column">
@@ -29,11 +33,12 @@ function About() {
             and performance rate.</p>
         </div>
       </div>
+    </div>
 
       <Link to="/MeetTheTeam">
         <button class="button">Go to MeetTheTeam page</button>
       </Link>
-    </div>
+  </div>
   );
 }
 
