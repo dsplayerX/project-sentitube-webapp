@@ -12,7 +12,7 @@ function Home() {
         <div class="row">
           <div class="col-sm-12 col-md-6 welcome_note">
             <h1 id="animate-h1" class="text-start animate__animated animate__fadeInLeft"><b>Introducing SentiTube</b></h1>
-            <p className="text-start w-100 animate__animated welcome_note_p animate__fadeInDown"id="animate-p">
+            <p className="text-start animate__animated animate__fadeInLeft animate__delay-3"id="animate-p">
               Welcome to SentiTube! Our platform analyzes the sentiment of YouTube video 
               comments to provide you with valuable insights into how viewers feel about 
               the content they are watching. With our state-of-the-art sentiment analysis 
@@ -22,7 +22,7 @@ function Home() {
               audience's feedback and engagement. Try our sentiment analysis tool today and 
               unlock the power of audience insights for your YouTube videos!
             </p>
-            <div class="buttons d-flex justify-content-start animate__animated welcome_note_p animate__fadeInDown">
+            <div class="buttons d-flex justify-content-start">
               <Button class="btn btn-outline-secondary rounded-4" href="./TryItOut" variant="outline-secondary" >Try SentiTube</Button>        
               <Button variant="link">Download Chrome extention</Button>
             </div>
