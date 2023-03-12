@@ -14,19 +14,22 @@ function About() {
         to provide insight into viewer comments and engagement. </p>
     </div>
       <br/>
+      
       <div class ="row">
         <div class ="column">
-          <div class="card shadow">
+          <div class="card01">
+            <p align ="left">
             <h3 class ="thick">Our Vision</h3>
-            <p align ="left">To provide accurate sentiment results and personalized commentary 
+              To provide accurate sentiment results and personalized commentary 
             for YouTube videos by combining sentiment and sarcasm analysis.</p>
           </div>
         </div>
 
         <div class ="column">
-          <div class="card shadow">
+          <div class="card01">
+          <p align ="left">
           <h3 class ="thick">Our Mission</h3>
-          <p align ="left">To create, put into practice, and assess a solution that will make 
+            To create, put into practice, and assess a solution that will make 
             it simple and quick for YouTube users to locate worthwhile content. 
             To recognize both sentiments and sarcasm, it will use sentiment and 
             sarcasm analysis,which will increase the detection system's accuracy 
@@ -35,9 +38,9 @@ function About() {
         </div>
       </div>
 
-    
+
     <br/>
-    
+
       <Link to="/MeetTheTeam">
         <button class="button">Go to MeetTheTeam page</button>
       </Link>
