@@ -493,6 +493,15 @@ td {
   font-size: 20px;
 }
 
+.faq-page .faq-box .two:disabled{
+  color: red;
+  display: none;
+}
+.faq-page .faq-box .two{
+  color: blue;
+  display: ruby;
+}
+
 /*new css meet the team*/
 
 .overflow{
