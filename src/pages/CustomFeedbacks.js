@@ -5,35 +5,35 @@ export const CustomFeedback = [
   },
   {
     id: 1,
-    text: "Oh dear, it looks like this video has garnered quite a bit of negative feedback. All the comments are negative. According to SentiTube, it's a SentiNope video. But if you're still curious, it's best to go through the comments to see what’s wrong.",
+    text: "This video seems to have struck a nerve, as the comment section is flooded with negativity. SentiTube has flagged it as a SentiNope video, suggesting that caution is advised before delving in. However, if you're still curious, you could sift through the comments to uncover what's causing such a strong reaction.",
   },
   {
     id: 2,
-    text: "Oh my, the positivity ratio for this video is just a mere 5%! SentiTube suggests that you proceed with caution and check out the comments section before diving in. It's important to make an informed decision before investing your time into watching the video.",
+    text: "Beware, the positivity ratio of this video is alarmingly low, standing at a mere 5%. SentiTube warns that you should proceed with caution and take a peek at the comments section before investing your time. Making an informed decision is crucial when it comes to choosing what to watch.",
   },
   {
     id: 3,
-    text: "This video's positivity rate stands at 10%, which isn't exactly the best. It may be wise to skip this one and look for something else to watch. After all, your time is precious!",
+    text: "This video's positivity rate may not be the most impressive, standing at only 10%. Perhaps it's best to skip this one and move onto something else that will be more worth your precious time.",
   },
   {
     id: 4,
-    text: "It's not looking too great for this video, unfortunately. SentiTube has given it a SentiNope video score at 15% positivity. This might be a sign that the video might not be worth your time. But hey, you can always give it a quick glance to see if there's anything redeemable.",
+    text: "Unfortunately, it's not looking good for this video. SentiTube has classified it as a SentiNope video, with only 15% positivity. This could be a sign that it's not worth your time, but if you're still curious, you could give it a quick glance to see if there's anything redeemable.",
   },
   {
     id: 5,
-    text: "The positivity ratio for this video stands at 20%, which shows that there's still a glimmer of hope. SentiTube recommends checking out the comments section to see if it's worth your time.",
+    text: "Although the positivity ratio of this video is only at 20%, there could still be a glimmer of hope. SentiTube suggests checking out the comments section to determine if it's worth your while.",
   },
   {
     id: 6,
-    text: "SentiTube believes that this video is worth a shot, with a SentiApproved score of 25% positivity. It may not be perfect, but you might enjoy it. The 3:1 negativity ratio could be a debate in the comments section.",
+    text: "SentiTube believes that this video is worth a shot, with a SentiApproved score of 25% positivity. It may not be perfect, but you might enjoy it. The 3:1 negativity ratio in the comments section could be the source of some lively debates!",
   },
   {
     id: 7,
-    text: "With a 30% positivity rate, there are some positive comments about this video. However, it's still a good idea to read through the comments section to get a better understanding of the video's content.",
+    text: "With a 30% positivity rate, there are some positive comments about this video. However, it's still a good idea to read through the check out the per comment results to get a better understanding of the video's content.",
   },
   {
     id: 8,
-    text: "The YouTube comment section can be a challenging place, with more negative comments than positive. However, it's important to remember that not everyone will like or agree with your content. Use the negative comments as an opportunity to improve and grow, and appreciate the positive comments that you receive.      ",
+    text: "The YouTube comment section can be a challenging place, with more negative comments than positive. However, it's important to remember that not everyone will like or agree with your content. Use the negative comments as an opportunity to improve and grow, and appreciate the positive comments that you receive.",
   },
   {
     id: 9,
@@ -49,7 +49,7 @@ export const CustomFeedback = [
   },
   {
     id: 12,
-    text: "SentiTube is definitely recommending this video with a positivity rate of 50%. You may want to add this to your watchlist as soon as possible!",
+    text: "SentiTube is definitely recommending this video with a positivity rate of 50%. 50-50 ratio means this must be very controversial. IF you like those type of videos you may want to add this to your watchlist!",
   },
   {
     id: 13,
@@ -61,30 +61,30 @@ export const CustomFeedback = [
   },
   {
     id: 15,
-    text: "With a positivity rate of 65%, SentiTube has given this video a SentiApproved recommendation. This is a surefire sign that you should give it a chance.",
+    text: "SentiTube is giving this video a SentiApproved recommendation, with a positivity rate of 65%. That's a surefire sign that it's worth giving a chance.",
   },
   {
     id: 16,
-    text: "This video has a SentiApproved score of 70% positivity, which means that it's definitely worth your time. It might even become your new favorite video!",
+    text: "This video has managed to capture the hearts of our team here at SentiTube, and with a SentiApproved score of 70% positivity, we're confident that it will do the same for you. Get ready to sit back, relax, and enjoy one of the most uplifting and heartwarming videos you've ever seen.",
   },
   {
     id: 17,
-    text: "SentiTube is loving this video, and with a SentiApproved score of 75% positivity, it's easy to see why. You don't want to miss out on this one!",
+    text: "Brace yourself for a video that's sure to leave you feeling all warm and fuzzy inside! SentiTube is absolutely loving this video, and with a SentiApproved score of 75% positivity, it's easy to see why. Get ready to experience something truly special.",
   },
   {
     id: 18,
-    text: "This video is a must-watch, with an impressive SentiApproved score of 80% positivity. It's definitely worth the time investment, and you might even find yourself recommending it to others.",
+    text: "We're calling it - this video is an absolute must-watch! With an impressive SentiApproved score of 80% positivity, it's clear that this video is a cut above the rest. So sit back, relax, and prepare to be blown away by one of the most inspiring and uplifting videos you've ever seen.",
   },
   {
     id: 19,
-    text: "Wow! This video has an 85% positivity rate, making it a must-see for sure. SentiTube is definitely recommending it, and you might even find yourself watching it more.",
+    text: "This video is pure magic! With an 85% positivity rate, it's clear that this video is a true masterpiece that's sure to leave you feeling inspired and invigorated. Trust us, this is one video that you definitely don't want to miss.",
   },
   {
     id: 20,
-    text: "90% positivity means this video is amazing. It's clear that people are responding extremely positively to the content. SentiTube is giving it a SentiApproved recommendation.",
+    text: "Get ready to experience something truly incredible! With a 90% positivity rate, this video is an absolute knockout that's sure to leave you feeling absolutely amazing. SentiTube is giving this video our SentiApproved recommendation, so sit back, relax, and enjoy the ride.",
   },
   {
     id: 21,
-    text: "Congratulations, this video is a hit with a perfect score of 100% positivity, SentiTube definitely recommends it!",
+    text: "Drumroll, please...this video has earned a perfect score of 100% positivity, which means that it's an absolute masterpiece that's sure to leave you feeling inspired, uplifted, and invigorated. So what are you waiting for? Press play and get ready to experience something truly special.",
   },
 ];
