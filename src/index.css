@@ -408,7 +408,7 @@ td {
   width: 180px;
   text-align: center;
 }
-.Result_page h5{
+.Result_page h5 {
   color: white;
   background-color: red;
   text-align: center;
@@ -416,7 +416,7 @@ td {
   padding: 4px;
   border-radius: 6px;
 }
-.Result_page .text-center{
+.Result_page .text-center {
   justify-content: center;
 }
 
@@ -443,9 +443,8 @@ td {
 }
 
 .try-button-hover:hover {
-  background-color: rgb(117, 0, 0) !important;
-  color: red !important;
-  transition: "background-color 0.3s ease-in-out";
+  background-color: rgb(185, 0, 0) !important;
+  transition: "background-color 0.1s ease-in-out" !important;
 }
 
 .try-button-hover:disabled {
@@ -454,75 +453,73 @@ td {
 
 /*   Contact  */
 
-.contact-container{
-  background-color: rgb(255,240,220);
+.contact-container {
+  background-color: rgb(255, 240, 220);
   border-radius: 6px;
 }
-.contact-container .logo{
-  margin:auto;
-  display:flex;
-  justify-content:center;
-  align-items:left;
+.contact-container .logo {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: left;
 }
-.contact-container h4{
+.contact-container h4 {
   color: red;
   font-size: 20px;
 }
-.faq-page h2{
+.faq-page h2 {
   margin: 16px;
   color: #b43535;
   text-align: center;
 }
-.contact-container a{
+.contact-container a {
   font-size: 16px;
   color: black;
   text-decoration: none;
 }
 
-
 /*  FAQ page  */
-.faq-page .faq-box{
+.faq-page .faq-box {
   background-color: #f6bdbd;
   display: flex;
   flex-direction: row;
-  width:80%;
-  padding:10px 10px;
+  width: 80%;
+  padding: 10px 10px;
   margin: 20px;
 }
-.faq-page .faq-box h6{
+.faq-page .faq-box h6 {
   font-size: 20px;
 }
 
-.faq-page .faq-box .two:disabled{
+.faq-page .faq-box .two:disabled {
   color: red;
   display: none;
 }
-.faq-page .faq-box .two{
+.faq-page .faq-box .two {
   color: blue;
   display: ruby;
 }
 
 /*new css meet the team*/
 
-.overflow{
+.overflow {
   overflow: hidden;
 }
 
-.card{
+.card {
   transition: all 0.3s;
   height: 500px;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.1);
   overflow: hidden;
 }
 
-.card-img-top:hover{
+.card-img-top:hover {
   transform: scale(1.03);
   overflow: hidden;
 }
-
 
 .card-group {
   margin-top: 80px;

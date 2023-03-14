@@ -109,7 +109,7 @@ function Results() {
                 width: 300,
                 margin: "auto",
                 display: "flex",
-                justifyContent: "ccenter",
+                justifyContent: "center",
                 alignItems: "center",
               }}
               className="text-center"
@@ -130,7 +130,7 @@ function Results() {
                 width: 260,
                 margin: "auto",
                 display: "flex",
-                justifyContent: "ccenter",
+                justifyContent: "center",
                 alignItems: "center",
               }}
             >
@@ -145,7 +145,7 @@ function Results() {
                 width: 260,
                 margin: "auto",
                 display: "flex",
-                justifyContent: "ccenter",
+                justifyContent: "center",
                 alignItems: "center",
               }}
             >
