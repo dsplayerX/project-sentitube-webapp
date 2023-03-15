@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { Table } from 'react-bootstrap';
+import { Table } from "react-bootstrap";
 
 function PerCommentResults() {
   const location = useLocation();
@@ -23,9 +23,9 @@ function PerCommentResults() {
             : "Sarcastic",
         sentiresult:
           commentsDictionary[key]["sentitube_results"] === "negative"
-            ? "Senti Negative"
+            ? "SentiNegative"
             : commentsDictionary[key]["sentitube_results"] === "positive"
-            ? "Senti Positive"
+            ? "SentiPositive"
             : "Neutral",
       }))
     : [];
@@ -33,37 +33,46 @@ function PerCommentResults() {
   function renderTable() {
     return (
       <div className="table-wrapper">
-      <Table class="table table-striped"
-        style={{
-          margin:"20px"
-        }}
-      >  
-        <thead>
-          <tr className="title-column">
-            <th scope="col">Comment</th>
-            <th scope="col">Sentiment</th>
-            <th scope="col">Sarcasm</th>
-            <th scope="col">SentiResults</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tableData.map((data, index) => (
-            <tr key={index}>
-              <td className="commentCol">{data.comments}</td>
-              <td>{data.sentiment}</td>
-              <td>{data.sarcasm}</td>
-              <td>{data.sentiresult}</td>
+        <Table
+          class="table table-striped"
+          style={{
+            margin: "20px",
+          }}
+        >
+          <thead>
+            <tr className="title-column">
+              <th scope="col" style={{ width: "70%" }}>
+                Comment
+              </th>
+              <th scope="col" style={{ width: "10%" }}>
+                Sentiment
+              </th>
+              <th scope="col" style={{ width: "10%" }}>
+                Sarcasm
+              </th>
+              <th scope="col" style={{ width: "10%" }}>
+                SentiResults
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </Table>
+          </thead>
+          <tbody>
+            {tableData.map((data, index) => (
+              <tr key={index}>
+                <td className="commentCol">{data.comments}</td>
+                <td>{data.sentiment}</td>
+                <td>{data.sarcasm}</td>
+                <td>{data.sentiresult}</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
       </div>
     );
   }
 
   return (
     <div className="Per_Comment_Results">
-      <h2>Overall results for each comment</h2>
+      <h2>Per Comment Analysis Results</h2>
       <div>{renderTable()}</div>
     </div>
   );
