@@ -4,7 +4,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import FAQpage from './pages/FAQpage'
+import FAQs from "./pages/FAQs";
 
 import { Route, Router, Routes } from "react-router-dom";
 
@@ -12,11 +12,12 @@ import { Route, Router, Routes } from "react-router-dom";
 import Results from "./pages/Results";
 import MeetTheTeam from "./pages/MeetTheTeam";
 import PerCommentResults from "./pages/PerCommentResults";
+import ChromeExtension from "./pages/ChromeExtension";
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/TryItOut" element={<TryItOut />} />
@@ -25,7 +26,9 @@ function App() {
         <Route path="/Results" element={<Results />} />
         <Route path="/PerCommentResults" element={<PerCommentResults />} />
         <Route path="/About" element={<About />} />
-        <Route path="/FAQpage" element={<FAQpage />} />
+        <Route path="/FAQs" element={<FAQs />} />
+        <Route path="/ChromeExtension" element={<ChromeExtension />} />
+
         <Route
           exact
           path="/PerCommentResults"

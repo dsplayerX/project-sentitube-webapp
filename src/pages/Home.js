@@ -86,7 +86,9 @@ function Home() {
                 }}
               />
             </Button>
-            <Button variant="secondary">Download Chrome extention</Button>
+            <Button variant="secondary" href="./ChromeExtension">
+              Download Chrome Extention
+            </Button>
           </div>
         </div>
 

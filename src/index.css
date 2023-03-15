@@ -11,12 +11,11 @@ body {
   background-color: #f8f9fa;
 }
 
+/* below from here styles are belongs to MeetTheTeam page  */
 .teambcg {
   background-color: rgb(249, 138, 113);
   text-align: center;
 }
-
-/* below from here styles are belongs to MeetTheTeam page  */
 
 /* below from here styles are belongs to teammembers member1  */
 
@@ -520,7 +519,7 @@ tr:hover {
 
 /*  FAQ page  */
 .faq-page .faq-box {
-  background-color: #f6bdbd;
+  /* background-color: #f6bdbd; */
   display: flex;
   flex-direction: row;
   width: 80%;

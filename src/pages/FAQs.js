@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
 
-function FAQpage() {
+function FAQs() {
   const [isvisible, setVisible] = useState(true);
 
   const handleClick = () => {
@@ -23,6 +23,8 @@ function FAQpage() {
         style={{
           maxWidth: "1000px",
           backgroundColor: "#f6bdbd",
+          padding: "20px",
+          borderRadius: "10px",
           margin: "20px auto 20px",
         }}
       >
@@ -63,4 +65,4 @@ function FAQpage() {
   );
 }
 
-export default FAQpage;
+export default FAQs;
