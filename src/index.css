@@ -7,15 +7,16 @@
 }
 
 body {
+  min-height: 700px !important;
   margin: 0;
+  background-color: #f8f9fa;
 }
 
+/* below from here styles are belongs to MeetTheTeam page  */
 .teambcg {
   background-color: rgb(249, 138, 113);
   text-align: center;
 }
-
-/* below from here styles are belongs to MeetTheTeam page  */
 
 /* below from here styles are belongs to teammembers member1  */
 
@@ -397,7 +398,7 @@ td {
   border-radius: 6px;
 }
 .Result_page .feedback-box {
-  background: rgb(251, 179, 179);
+  background: #ffd8d8;
   padding: 20px;
   border-radius: 10px;
 }
@@ -421,26 +422,65 @@ td {
 }
 
 /*  Per Comment Results */
+.Per_Comment_Results {
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.page-title h2,
+.Per_Comment_Results h2 {
+  margin: 16px;
+  color: #ff0000;
+  text-align: center;
+}
 
 .table-wrapper {
-  height: 468px;
+  display: flex;
+  width: 100%;
+  height: 600px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
+
+@media (max-width: 800px) {
+  /* targeted for mobile devices */
+  .table-wrapper {
+    display: flex;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+}
+
 .table-wrapper .title-column {
   background-color: #ff4a4a;
 }
 .commentCol {
-  max-width: 600px;
   height: auto;
+  width: 70%;
+}
+
+thead tr {
+  background-color: #ff0000;
+  color: white;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #ffecec;
+}
+
+tr:hover {
+  background-color: #ffd6d6;
 }
 
 /* Try It Out*/
-.page-title h2,
-.Per_Comment_Results h2 {
-  margin: 16px;
-  color: #b43535;
-  text-align: center;
-}
 
 .try-button-hover:hover {
   background-color: rgb(185, 0, 0) !important;
@@ -480,7 +520,7 @@ td {
 
 /*  FAQ page  */
 .faq-page .faq-box {
-  background-color: #f6bdbd;
+  /* background-color: #f6bdbd; */
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -528,4 +568,17 @@ td {
   gap: 20px;
   padding: 10px;
   height: 600px;
+}
+
+/*  Chrome Page  */
+.chrome-page h2,
+h3 {
+  margin: 16px;
+  color: #b43535;
+  text-align: center;
+}
+.chrome-page h5 {
+  text-decoration: bold;
+  color: red;
+  margin-top: 20px;
 }

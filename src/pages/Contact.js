@@ -15,20 +15,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Contact() {
-  const location = useLocation();
-  const data = location.state;
-
-  const navigate = useNavigate();
-
-  const handleButton = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/FAQpage", { state: data });
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   return (
     <div>
       <Container>
@@ -67,6 +53,8 @@ function Contact() {
             </Row>
             <Row>
               <Button
+                href="./FAQs"
+                variant="secondary"
                 style={{
                   backgroundColor: "rgb(235, 178, 178)",
                   color: "red",
@@ -77,9 +65,8 @@ function Contact() {
                   fontSize: "18px",
                   border: "none",
                 }}
-                onClick={handleButton}
               >
-                FAQ+
+                FAQs
               </Button>
             </Row>
           </Col>
