@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="home">
       <div class="row">
-        <div class="col-sm-12 col-md-6 welcome_note">
+        <div class="col-sm-12 col-md-6  welcome_note">
           <h1
             id="animate-h1"
             class="text-start animate__animated animate__fadeInLeft"

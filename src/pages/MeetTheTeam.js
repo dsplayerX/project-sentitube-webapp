@@ -21,7 +21,7 @@ function MeetTheTeam() {
       <Card>
         <Card.Img variant="top" src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=1600" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>Pasindu Theekshana</Card.Title>
           <Card.Text>
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
