@@ -2,17 +2,17 @@ import React from "react";
 
 function ChromeExtension() {
   return (
-    <div>
+    <div className="chrome-page">
       <h2>Chrome Extention is not yet published to Chrome Web Store.</h2>
-      <h2>
+      <h3>
         but... you can download the Unpacked SentiTube Extension and install it
         your self.
-      </h2>
+      </h3>
 
       <h5>How to install the SentiTube Extension</h5>
 
-      <p>Download the "sentitubev1.zip" file from and extact it.</p>
-      <p>
+      <li>Download the "sentitubev1.zip" file from and extact it.</li>
+      <li>
         To download unpacked chrome extension of SentiTube{" "}
         <a
           target="_blank"
@@ -21,12 +21,12 @@ function ChromeExtension() {
           click here
         </a>
         .
-      </p>
-      <p>
+      </li>
+      <li>
         Then follow the below guide to install the extension in your own chrome
         browser.
-      </p>
-      <p>
+      </li>
+      <li>
         Read about{" "}
         <a
           target="_blank"
@@ -34,7 +34,7 @@ function ChromeExtension() {
         >
           how to install unpacked extensions.
         </a>
-      </p>
+      </li>
     </div>
   );
 }

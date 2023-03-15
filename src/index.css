@@ -568,3 +568,16 @@ tr:hover {
   padding: 10px;
   height: 600px;
 }
+
+
+/*  Chrome Page  */
+.chrome-page h2, h3{
+  margin: 16px;
+  color: #b43535;
+  text-align: center; 
+}
+.chrome-page h5{
+  text-decoration: bold;
+  color: red;
+  margin-top: 20px;
+}
