@@ -7,6 +7,7 @@
 }
 
 body {
+  min-height: 700px !important;
   margin: 0;
   background-color: #f8f9fa;
 }
@@ -569,14 +570,14 @@ tr:hover {
   height: 600px;
 }
 
-
 /*  Chrome Page  */
-.chrome-page h2, h3{
+.chrome-page h2,
+h3 {
   margin: 16px;
   color: #b43535;
-  text-align: center; 
+  text-align: center;
 }
-.chrome-page h5{
+.chrome-page h5 {
   text-decoration: bold;
   color: red;
   margin-top: 20px;
