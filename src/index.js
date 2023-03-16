@@ -6,7 +6,6 @@ import "./styles.css";
 import "./Navbar_style.css";
 import { HashRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./pages/About.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
