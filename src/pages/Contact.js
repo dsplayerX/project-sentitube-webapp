@@ -53,7 +53,7 @@ function Contact() {
             </Row>
             <Row>
               <Button
-                href="./FAQs"
+                href="./#/FAQs"
                 variant="secondary"
                 style={{
                   backgroundColor: "rgb(235, 178, 178)",

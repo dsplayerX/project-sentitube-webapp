@@ -62,7 +62,7 @@ function Home() {
           <div class="buttons d-flex justify-content-start">
             <Button
               class="btn btn-primary rounded-4"
-              href="./TryItOut"
+              href="./#/TryItOut"
               variant="primary"
               style={{
                 borderRadius: 20,
@@ -86,7 +86,7 @@ function Home() {
                 }}
               />
             </Button>
-            <Button variant="secondary" href="./ChromeExtension">
+            <Button variant="secondary" href="./#/ChromeExtension">
               Download Chrome Extention
             </Button>
           </div>
