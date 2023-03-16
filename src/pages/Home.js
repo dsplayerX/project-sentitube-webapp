@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import home_img from "../images/denys-nevozhai-w7YCquMkv2c-unsplash.jpg";
 import arrow from "../images/arrow-upper-right.png";
 import { Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "../CSS/home.css";
 import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
@@ -60,35 +61,36 @@ function Home() {
             insights for your YouTube videos!
           </p>
           <div class="buttons d-flex justify-content-start">
-            <Button
-              class="btn btn-primary rounded-4"
-              href="./#/TryItOut"
-              variant="primary"
-              style={{
-                borderRadius: 20,
-                backgroundColor: "red",
-                border: "none",
-                width: "10rem",
-                padding: "1rem",
-                marginRight: "1rem",
-                textAlign: "center",
-                justifyContent: "center",
-              }}
-            >
-              TrySentiTube
-              <Image
-                src={arrow}
-                alt="arrow"
+            <Link to="/TryItOut">
+              <Button
+                class="btn btn-primary rounded-4"
+                variant="primary"
                 style={{
-                  width: "15%",
-                  marginBottom: 2,
-                  paddingLeft: 5,
+                  borderRadius: 20,
+                  backgroundColor: "red",
+                  border: "none",
+                  width: "10rem",
+                  padding: "1rem",
+                  marginRight: "1rem",
+                  textAlign: "center",
+                  justifyContent: "center",
                 }}
-              />
-            </Button>
-            <Button variant="secondary" href="./#/ChromeExtension">
-              Download Chrome Extention
-            </Button>
+              >
+                TrySentiTube
+                <Image
+                  src={arrow}
+                  alt="arrow"
+                  style={{
+                    width: "15%",
+                    marginBottom: 2,
+                    paddingLeft: 5,
+                  }}
+                />
+              </Button>
+            </Link>
+            <Link to="/ChromeExtension">
+              <Button variant="secondary">Download Chrome Extention</Button>
+            </Link>
           </div>
         </div>
 

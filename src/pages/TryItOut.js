@@ -134,14 +134,17 @@ function TryItOut() {
                 <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
                   100
                 </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(250)}>
-                  250
+                <Dropdown.Item onClick={() => handleNumResultsSelect(300)}>
+                  300
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
                   500
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
                   1000
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => handleNumResultsSelect(2500)}>
+                  2500
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
                   5000
@@ -152,6 +155,7 @@ function TryItOut() {
             <Form.Group>
               <Button
                 variant="primary"
+                type="submit"
                 onClick={handleButtonClick}
                 disabled={isAnalysing}
                 className="try-button-hover"
