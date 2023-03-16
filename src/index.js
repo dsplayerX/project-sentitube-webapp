@@ -6,7 +6,8 @@ import "./styles.css";
 import "./Navbar_style.css";
 import { BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./pages/About.css";
+
+//import "../CSS/about.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

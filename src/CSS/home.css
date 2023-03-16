@@ -1,0 +1,26 @@
+.welcome_note h1{
+    font-size: 400%;   
+}
+
+.row{
+    padding-left:2%;
+    
+
+}
+
+.welcome_note{
+    padding-top: 6%;
+    
+    
+}
+
+.welcome_note p{
+    padding-top: 3%;
+    padding-right:3%;
+    font-size: 150%;
+}
+
+.home_img_div{
+    padding-top: 6%;
+    padding-bottom: 6%;
+}

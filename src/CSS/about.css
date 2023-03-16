@@ -1,0 +1,88 @@
+/*Create two columns*/
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    text-align: center;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    text-align: center;
+
+  }
+
+  
+
+
+  h3.thick {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h1.thick{
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .about {
+    background-color: #ffdddd;
+    border-left: 2px solid #f44336;
+    padding: 5%;
+  }
+
+  
+  
+  
+
+
+  
+  /*btton*/
+  .button {
+    background-color: #af4c59; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button {border-radius: 12px;}
+
+
+  .card01 {
+    box-sizing: border-box;
+    width: 600px;
+    height: 300px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+  }
+  
+  .card01:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card01:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }

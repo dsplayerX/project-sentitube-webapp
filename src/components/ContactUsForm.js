@@ -86,6 +86,9 @@ export const ContactUsForm = () => {
           width:"80%"
         }}
       >
+        
+        <Form.Label>Message Us</Form.Label>
+
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           {/* <Form.Label>Name</Form.Label> */}
           <Form.Control
@@ -124,7 +127,6 @@ export const ContactUsForm = () => {
             )}
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Message Us</Form.Label>
           <Form.Control
             as="textarea"
             name="message"
