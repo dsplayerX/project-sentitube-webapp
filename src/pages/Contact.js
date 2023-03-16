@@ -1,6 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router";
-import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 import { ContactUsForm } from "../components/ContactUsForm";
 import {
   Form,
@@ -52,22 +51,23 @@ function Contact() {
               </div>
             </Row>
             <Row>
-              <Button
-                href="./FAQs"
-                variant="secondary"
-                style={{
-                  backgroundColor: "rgb(235, 178, 178)",
-                  color: "red",
-                  padding: "5px",
-                  width: "100px",
-                  borderRadius: "4px",
-                  margin: "20px",
-                  fontSize: "18px",
-                  border: "none",
-                }}
-              >
-                FAQs
-              </Button>
+              <Link to="/FAQs">
+                <Button
+                  variant="secondary"
+                  style={{
+                    backgroundColor: "rgb(235, 178, 178)",
+                    color: "red",
+                    padding: "5px",
+                    width: "100px",
+                    borderRadius: "4px",
+                    margin: "20px",
+                    fontSize: "18px",
+                    border: "none",
+                  }}
+                >
+                  FAQs
+                </Button>
+              </Link>
             </Row>
           </Col>
           <Col
