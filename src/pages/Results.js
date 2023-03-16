@@ -4,7 +4,8 @@ import { useState } from "react";
 import { CustomFeedback } from "./CustomFeedbacks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import PieChart from "../components/PieChart";
+import Doughnut from "../components/DoughnutChart";
+import YoutubeEmbed from "../components/YoutubeFrame";
 
 function Results() {
   const location = useLocation();
@@ -88,38 +89,67 @@ function Results() {
           }}
         >
           <Col>
-          <div>
-            <h5>Video Title: {data["Video Title"]}</h5>
-            <img
-              src={`https://img.youtube.com/vi/${data["Video Id"]}/maxresdefault.jpg`}
-              height={"auto"}
-              width={"80%"}
-              alt={"Thumbnail of " + data["Video Title"]}
-            />
-            {/* https://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api */}
-          </div>
+            <div>
+              <h5>Video Title: {data["Video Title"]}</h5>
+              {/* <img
+                src={`https://img.youtube.com/vi/${data["Video Id"]}/maxresdefault.jpg`}
+                height={"auto"}
+                width={"80%"}
+                alt={"Thumbnail of " + data["Video Title"]}
+              /> */}
+              <YoutubeEmbed embedId={data["Video Id"]} />
+              {/* https://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api */}
+            </div>
           </Col>
 
           <Col>
-          <h5 className="chart-title1">SentiTube Result</h5>
-          <div style={{ width: 340 }}>
-            <PieChart chartData={finalsentiChartData} />
-          </div>
+            <h5 className="chart-title1">SentiTube Result</h5>
+            <div
+              style={{
+                width: 300,
+                margin: "auto",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="text-center"
+            >
+              <Doughnut chartData={finalsentiChartData} />
+            </div>
           </Col>
-        
         </Row>
-        <Row>
+        <Row
+          style={{
+            marginBottom: "20px",
+          }}
+        >
           <Col>
             <h5 className="chart-title">Sentiment Result</h5>
-            <div style={{ width: 260 }}>
-              <PieChart chartData={sentimentChartData} />
+            <div
+              style={{
+                width: 260,
+                margin: "auto",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Doughnut chartData={sentimentChartData} />
             </div>
           </Col>
 
           <Col>
             <h5 className="chart-title">Sarcasam Result</h5>
-            <div style={{ width: 260 }}>
-              <PieChart chartData={sarcasmChartData} />
+            <div
+              style={{
+                width: 260,
+                margin: "auto",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Doughnut chartData={sarcasmChartData} />
             </div>
           </Col>
         </Row>
@@ -186,7 +216,14 @@ function Results() {
               marginTop: "20px",
             }}
           >
-            <Col>
+            <Col
+              style={{
+                margin: "auto",
+                display: "flex",
+                justifyContent: "left",
+                alignItems: "left",
+              }}
+            >
               <Button
                 varient="flat"
                 size="xl"

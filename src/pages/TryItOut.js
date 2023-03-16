@@ -161,10 +161,14 @@ function TryItOut() {
                   fontSize: "28px",
                   padding: "10px",
                   border: "none",
-                  borderRadius: "28px",
+                  borderRadius: "20px",
                   width: "150px",
                   height: "60px",
                   transition: "background-color 0.3s ease-in-out",
+                  margin: "auto",
+                  display: "flex",
+                  textAlign: "center",
+                  justifyContent: "center",
                 }}
               >
                 {isAnalysing ? <Spinner animation="border" /> : "Analyse"}
