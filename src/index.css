@@ -496,6 +496,8 @@ tr:hover {
 .contact-container {
   background-color: rgb(255, 240, 220);
   border-radius: 6px;
+  padding: 4px;
+  margin-top: 20px;
 }
 .contact-container .logo {
   margin: auto;

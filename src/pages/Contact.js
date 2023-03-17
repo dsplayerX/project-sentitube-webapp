@@ -15,29 +15,21 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Contact() {
   return (
-    <div>
+    <div className="contsct-page">
       <Container>
         <Row>
-          <Col>
-            <Row
-              style={{
+          <Col style={{
                 color: "black",
                 fontSize: "36px",
-                width: "60%",
-                marginTop: "40px",
-              }}
-            >
+                width: "40%",
+                marginRight: "16px",
+                marginTop:"20px"
+              }}>
+            
               <p>
                 <b>We'd love to hear from you</b>
               </p>
-            </Row>
-
-            <Row
-              style={{
-                width: "60%",
-                marginTop: "20px",
-              }}
-            >
+           
               <div className="contact-container">
                 <div className="logo">
                   <i class="bi bi-envelope-at" style={{ fontSize: 40 }}></i>
@@ -49,8 +41,7 @@ function Contact() {
                   </a>{" "}
                 </h5>
               </div>
-            </Row>
-            <Row>
+           
               <Link to="/FAQs">
                 <Button
                   variant="secondary"
@@ -60,7 +51,6 @@ function Contact() {
                     padding: "5px",
                     width: "100px",
                     borderRadius: "4px",
-                    margin: "20px",
                     fontSize: "18px",
                     border: "none",
                   }}
@@ -68,14 +58,15 @@ function Contact() {
                   FAQs
                 </Button>
               </Link>
-            </Row>
+            
           </Col>
           <Col
             style={{
-              margin: "auto",
+              margin: "10px",
               display: "flex",
-              justifyContent: "right",
-              alignItems: "right",
+                width: "60%",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <ContactUsForm />
