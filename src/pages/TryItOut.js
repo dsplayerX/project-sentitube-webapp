@@ -90,9 +90,9 @@ function TryItOut() {
 
   return (
     <>
-      <div className="page-title" style={{paddingTop:"10%"}}>
+      <div className="page-title" style={{ paddingTop: "10px" }}>
         <center>
-          <h2>Sentiment and Sarcasm analysis on YouTube videos.</h2>
+          <h2>Sentiment and Sarcasm analysis on YouTube videos</h2>
         </center>
       </div>
       <div>
@@ -101,6 +101,7 @@ function TryItOut() {
           style={{
             color: "black",
             marginBottom: "100px",
+            paddingTop: "8%",
           }}
         >
           <Form>
@@ -125,12 +126,14 @@ function TryItOut() {
                 gap: "12px",
               }}
             >
-              <Form.Label style={{paddingTop:"3%"}}>Number of Comments to Analyse:</Form.Label>
+              <Form.Label style={{ paddingTop: "3%" }}>
+                Number of Comments to Analyse:
+              </Form.Label>
               <DropdownButton
                 id="num-results-dropdown"
                 title={`${numResults}`}
                 variant="secondary"
-                style={{paddingTop:"2.5%"}}
+                style={{ paddingTop: "2.5%" }}
               >
                 <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
                   100

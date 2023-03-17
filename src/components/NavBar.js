@@ -35,7 +35,12 @@ function NavBar() {
             placement="end"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">
+              <Offcanvas.Title
+                id="offcanvasNavbarLabel"
+                style={{
+                  paddingLeft: "3%",
+                }}
+              >
                 Sidebar
               </Offcanvas.Title>
             </Offcanvas.Header>
@@ -47,7 +52,10 @@ function NavBar() {
                 <Nav.Link
                   as={Link}
                   to="/"
-                  style={{ color: location.pathname === "/" ? "red" : "" }}
+                  style={{
+                    color: location.pathname === "/" ? "red" : "",
+                    paddingLeft: "3%",
+                  }}
                 >
                   Home
                 </Nav.Link>

@@ -282,21 +282,29 @@ h3 {
 }
 
 /*  Footer  */
-.main_footer{
+.main_footer {
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 5px;
   margin-top: 10px;
 }
-.main_footer h4{
+.main_footer h4 {
+  font-size: 20px;
+
+  color: #ff0000;
   margin-top: 40px;
+  margin-left: 30px;
 }
-.main_footer .list_unstyled{
+
+.main_footer .list_unstyled {
   color: #ff0000;
   text-decoration: none;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
 }
-.main_footer .link-name{
-  color: white;
+.main_footer .link-name {
   text-decoration: none;
+  color: rgb(255, 255, 255);
   font-size: 14px;
 }

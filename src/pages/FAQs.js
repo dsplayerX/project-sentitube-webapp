@@ -22,7 +22,6 @@ function FAQs() {
         className="mt-5"
         style={{
           maxWidth: "1000px",
-          backgroundColor: "#f6bdbd",
           padding: "20px",
           borderRadius: "10px",
           margin: "20px auto 20px",

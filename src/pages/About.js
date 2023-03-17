@@ -52,7 +52,9 @@ function About() {
         <div class="cardcolumn">
           <div class="cardab" align="justify">
             <div>
-              <h3 class="thick">Our Vision</h3>
+              <h3 class="thick" style={{ color: "red" }}>
+                Our Vision
+              </h3>
               <p>
                 To provide accurate sentiment results and personalized
                 commentary for YouTube videos by combining sentiment and sarcasm
@@ -65,7 +67,9 @@ function About() {
         <div class="cardcolumn">
           <div class="cardab" align="justify">
             <div>
-              <h3 class="thick">Our Mission</h3>
+              <h3 class="thick" style={{ color: "red" }}>
+                Our Mission
+              </h3>
               <p>
                 To create, put into practice, and assess a solution that will
                 make it simple and quick for YouTube users to locate worthwhile
