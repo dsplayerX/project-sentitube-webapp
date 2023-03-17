@@ -1,61 +1,35 @@
 import React from "react";
 import styled from "styled-components";
-// import "../CSS/footer.css"
+import {Container,Row,Col,} from "react-bootstrap";
+import { Link } from "react-router-dom";
+import logo from "../images/footer-logo.jpg";
 
 function Footer() {
   return(
     <div className="main_footer">
-      <div className="footer_middle" class="p-3 mb-2 bg-light text-dark">
-        <div className="Container">
-          <dev className="row">
-            {/*Colomns 1*/}
-            <div className="col-md-3 col-sm-3">
-              <h4>Lorem Ipsom</h4>
-              <ul className="list_unstyled">
-                <div class="text-muted">
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-                </div>
-              </ul>
-            </div>
-
-            {/*Colomns 2*/}
-            <div className="col-md-3 col-sm-3">
-              <h4>Lorem Ipsom</h4>
-              <ul className="list_unstyled">
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-              </ul>
-            </div>
-
-            {/*Colomns 3*/}
-            <div className="col-md-3 col-sm-3">
-              <h4>Lorem Ipsom</h4>
-              <ul className="list_unstyled">
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-              </ul>
-            </div>
-
-            {/*Colomns 4 */}
-            <div className="col-md-3 col-sm-3">
-              <h4>Lorem Ipsom</h4>
-              <ul className="list_unstyled">
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-                <li>Lorem Ipsom</li>
-              </ul>
-            </div>
-          </dev>  
-        </div>
-      </div>
+       <Container style={{
+        marginTop:"20px"
+       }}>
+         <Row>
+          <Col>
+          <img src={logo} alt="Logo" height={"60px"} width={"260px"} className="logo" />
+          </Col>
+          <Col>
+              <Link to="/" className="link-name">Home</Link><br />
+              <Link to="/TryItOut" className="link-name">TrySentiOut</Link><br />
+              <Link to="/Contact" className="link-name">Contact</Link>
+          </Col>
+          <Col>
+            <Link to="/About" className="link-name">About Us</Link><br />
+            <Link to="/MeetTheTeam" className="link-name">Meet the Team</Link><br/>
+            <Link to="/FAQs" className="link-name">FAQ</Link>
+          </Col>
+          <Col>
+            <h5>Contact</h5>
+             <Link to="/sentitubephonex@gmail.com" className="link-name">sentitubephonex@gmail.com</Link>
+          </Col>
+         </Row>
+       </Container>
     </div>
   )
 }
