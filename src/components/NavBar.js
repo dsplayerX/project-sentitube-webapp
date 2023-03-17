@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import {
   Navbar,
   Container,
@@ -18,10 +18,15 @@ function NavBar() {
 
   return (
     <>
-      <Navbar expand="lg" style={{paddingRight:"5%", paddingLeft:"1%"}}>
+      <Navbar expand="lg" style={{ paddingRight: "5%", paddingLeft: "1%" }}>
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt="Logo" className="logo" />
+            <img
+              src={logo}
+              alt="Logo"
+              className="logo"
+              style={{ height: "60px", width: "auto" }}
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
@@ -35,17 +40,45 @@ function NavBar() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3 navlink" style={{fontSize:"110%" }}>
-                <Nav.Link as={Link} to="/" style={{ color: location.pathname === '/' ? 'red' : '' }}>
+              <Nav
+                className="justify-content-end flex-grow-1 pe-3 navlink"
+                style={{ fontSize: "110%" }}
+              >
+                <Nav.Link
+                  as={Link}
+                  to="/"
+                  style={{ color: location.pathname === "/" ? "red" : "" }}
+                >
                   Home
                 </Nav.Link>
-                <Nav.Link as={Link} to="/TryItOut" style={{ color: location.pathname === '/TryItOut' ? 'red' : '' , paddingLeft:"3%"}}>
+                <Nav.Link
+                  as={Link}
+                  to="/TryItOut"
+                  style={{
+                    color: location.pathname === "/TryItOut" ? "red" : "",
+                    paddingLeft: "3%",
+                  }}
+                >
                   TryItOut
                 </Nav.Link>
-                <Nav.Link as={Link} to="/Contact" style={{ color: location.pathname === '/Contact' ? 'red' : '' , paddingLeft:"3%"}}>
+                <Nav.Link
+                  as={Link}
+                  to="/Contact"
+                  style={{
+                    color: location.pathname === "/Contact" ? "red" : "",
+                    paddingLeft: "3%",
+                  }}
+                >
                   Contact
                 </Nav.Link>
-                <Nav.Link as={Link} to="/About" style={{ color: location.pathname === '/About' ? 'red' : '' , paddingLeft:"3%"}}>
+                <Nav.Link
+                  as={Link}
+                  to="/About"
+                  style={{
+                    color: location.pathname === "/About" ? "red" : "",
+                    paddingLeft: "3%",
+                  }}
+                >
                   About
                 </Nav.Link>
               </Nav>
