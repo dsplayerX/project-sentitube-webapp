@@ -1,5 +1,6 @@
 import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useLocation } from 'react-router-dom';
 import {
   Navbar,
   Container,
@@ -14,6 +15,8 @@ import { Link } from "react-router-dom";
 import logo from "../images/senti_logo.png";
 
 function NavBar() {
+  const location = useLocation();
+
   return (
     <>
       <Navbar bg="light" expand="lg">
@@ -34,16 +37,16 @@ function NavBar() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link as={Link} to="/">
+                <Nav.Link as={Link} to="/" style={{ color: location.pathname === '/' ? 'red' : '' }}>
                   Home
                 </Nav.Link>
-                <Nav.Link as={Link} to="/TryItOut">
+                <Nav.Link as={Link} to="/TryItOut" style={{ color: location.pathname === '/TryItOut' ? 'red' : '' }}>
                   TryItOut
                 </Nav.Link>
-                <Nav.Link as={Link} to="/Contact">
+                <Nav.Link as={Link} to="/Contact" style={{ color: location.pathname === '/Contact' ? 'red' : '' }}>
                   Contact
                 </Nav.Link>
-                <Nav.Link as={Link} to="/About">
+                <Nav.Link as={Link} to="/About" style={{ color: location.pathname === '/About' ? 'red' : '' }}>
                   About
                 </Nav.Link>
               </Nav>
