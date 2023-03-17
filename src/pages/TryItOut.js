@@ -90,7 +90,7 @@ function TryItOut() {
 
   return (
     <>
-      <div className="page-title">
+      <div className="page-title" style={{paddingTop:"10%"}}>
         <center>
           <h2>Sentiment and Sarcasm analysis on YouTube videos.</h2>
         </center>
@@ -125,11 +125,12 @@ function TryItOut() {
                 gap: "12px",
               }}
             >
-              <Form.Label>Number of Comments to Analyse:</Form.Label>
+              <Form.Label style={{paddingTop:"3%"}}>Number of Comments to Analyse:</Form.Label>
               <DropdownButton
                 id="num-results-dropdown"
                 title={`${numResults}`}
                 variant="secondary"
+                style={{paddingTop:"2.5%"}}
               >
                 <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
                   100
