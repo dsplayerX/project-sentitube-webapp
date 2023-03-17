@@ -16,6 +16,7 @@ function Home() {
           <h1
             id="animate-h1"
             class="text-start animate__animated animate__fadeInLeft"
+            style={{ paddingLeft: "5%", paddingRight: "5%" }}
           >
             <b>
               Introducing{" "}
@@ -35,6 +36,8 @@ function Home() {
               fontSize: 32,
               border: "none",
               color: "grey",
+              paddingLeft: "5%",
+              paddingRight: "5%",
             }}
           >
             Sentiment and Sarcasm Analysis on the YouTube Comment Section
@@ -47,6 +50,8 @@ function Home() {
               border: "none",
               textAlign: "center",
               justifyContent: "center",
+              paddingLeft: "5%",
+              paddingRight: "5%",
             }}
           >
             Welcome to SentiTube! Our platform analyzes the sentiment of YouTube
@@ -61,36 +66,60 @@ function Home() {
             insights for your YouTube videos!
           </p>
           <div class="buttons d-flex justify-content-start">
-            <Link to="/TryItOut">
-              <Button
-                class="btn btn-primary rounded-4"
-                variant="primary"
-                style={{
-                  borderRadius: 20,
-                  backgroundColor: "red",
-                  border: "none",
-                  width: "10rem",
-                  padding: "1rem",
-                  marginRight: "1rem",
-                  textAlign: "center",
-                  justifyContent: "center",
-                }}
-              >
-                TrySentiTube
-                <Image
-                  src={arrow}
-                  alt="arrow"
-                  style={{
-                    width: "15%",
-                    marginBottom: 2,
-                    paddingLeft: 5,
-                  }}
-                />
-              </Button>
-            </Link>
-            <Link to="/ChromeExtension">
-              <Button variant="secondary">Download Chrome Extention</Button>
-            </Link>
+            <Row>
+              <Col>
+                <Link to="/TryItOut">
+                  <Button
+                    class="btn btn-primary rounded-4"
+                    variant="primary"
+                    style={{
+                      borderRadius: 20,
+                      backgroundColor: "red",
+                      border: "none",
+                      width: "170px",
+                      padding: "1rem",
+                      marginTop: "10px",
+                      marginBottom: "10px",
+                      marginLeft: "25px",
+                      textAlign: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    TrySentiTube
+                    <Image
+                      src={arrow}
+                      alt="arrow"
+                      style={{
+                        width: "15%",
+                        marginBottom: 2,
+                        paddingLeft: 5,
+                      }}
+                    />
+                  </Button>
+                </Link>
+              </Col>
+              <Col>
+                <Link to="/ChromeExtension">
+                  <Button
+                    variant="secondary"
+                    style={{
+                      borderRadius: 20,
+                      border: "none",
+                      width: "250px",
+                      padding: "1rem",
+                      marginTop: "10px",
+                      marginBottom: "10px",
+                      marginLeft: "25px",
+
+                      textAlign: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    Download Chrome Extention
+                  </Button>
+                </Link>
+              </Col>
+            </Row>
           </div>
         </div>
 
