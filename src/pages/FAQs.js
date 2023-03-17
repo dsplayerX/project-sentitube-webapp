@@ -30,11 +30,11 @@ function FAQs() {
       >
         <MDBAccordion>
           <MDBAccordionItem collapseId={1} headerTitle="What is SentiTube?">
-            SentiTube is a website and chrome extension that uses sentiment and
-            sarcasm analysis to accurately analyze YouTube comments and provide
-            SentiPositive and SentiNegative results along with all the analysis
-            results, custom feedback based on positive-negative ratio and
-            per-comment analysis results.
+            SentiTube consists of a website and chrome extension that uses
+            sentiment and sarcasm analysis to accurately analyze YouTube
+            comments and provide SentiPositive and SentiNegative results along
+            with all the analysis results, custom feedback based on
+            positive-negative ratio and per-comment analysis results.
           </MDBAccordionItem>
           <MDBAccordionItem
             collapseId={2}
