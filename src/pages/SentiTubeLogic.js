@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import SentiLogicImg from "../images/sentitubelogic.jpg";
+import SentiLogicImg from "../images/sentitubelogictrans.png";
 function SentiTubeLogic() {
   return (
     <div>
@@ -36,7 +36,7 @@ function SentiTubeLogic() {
               alt="home_img"
               fluid
               style={{
-                maxWidth: "600px",
+                maxWidth: "800px",
                 padding: "20px",
               }}
             />
