@@ -72,24 +72,26 @@ function Home() {
                       class="btn btn-primary rounded-4"
                       variant="primary"
                       style={{
+                        fontSize: 18,
                         borderRadius: 20,
                         backgroundColor: "red",
                         border: "none",
-                        width: "170px",
+                        width: "200px",
                         padding: "1rem",
                         marginTop: "10px",
                         marginBottom: "10px",
-                        // marginLeft: "25px",
+                        marginLeft: "-15px",
                         textAlign: "center",
                         justifyContent: "center",
                       }}
                     >
-                      TrySentiTube
+                      Try SentiTube
                       <Image
                         src={arrow}
                         alt="arrow"
                         style={{
-                          width: "15%",
+                          width: "18px",
+                          marginLeft: 4,
                           marginBottom: 2,
                           paddingLeft: 5,
                         }}
@@ -102,13 +104,16 @@ function Home() {
                     <Button
                       variant="secondary"
                       style={{
+                        fontSize: 18,
+
                         borderRadius: 20,
                         border: "none",
-                        width: "250px",
+                        width: "300px",
                         padding: "1rem",
                         marginTop: "10px",
                         marginBottom: "10px",
-                        // marginLeft: "25px",
+                        marginLeft: "-15px",
+
                         textAlign: "center",
                         justifyContent: "center",
                       }}

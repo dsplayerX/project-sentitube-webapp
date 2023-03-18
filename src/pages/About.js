@@ -21,7 +21,12 @@ function About() {
           results, SentiTube is an excellent resource for anyone looking to gain
           a deeper understanding of their YouTube audience. Whether using the
           website or chrome extension, SentiTube is completely free and
-          available for everyone to use without any charges or fees.{" "}
+          available for everyone to use without any charges or fees. <br />
+          <center>
+            <Link to="/SentiTubeLogic">
+              <button class="button">Read about logic of SentiTube</button>
+            </Link>
+          </center>
         </p>
       </div>
       <div class="about">

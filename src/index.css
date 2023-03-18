@@ -7,9 +7,10 @@
 }
 
 body {
-  min-height: 700px !important;
+  min-height: 720px !important;
   margin: 0;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
+  background-color: rgb(245, 245, 245) !important;
 }
 
 /* PerCommentResults */

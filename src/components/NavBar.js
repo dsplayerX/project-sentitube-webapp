@@ -67,7 +67,7 @@ function NavBar() {
                     paddingLeft: "3%",
                   }}
                 >
-                  TryItOut
+                  Try SentiTube
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
