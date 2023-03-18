@@ -287,10 +287,15 @@ h3 {
   color: white;
   padding: 5px;
   margin-top: 10px;
+  width: 100%;
+  clear: both;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
+
 .main_footer h4 {
   font-size: 20px;
-
   color: #ff0000;
   margin-top: 40px;
   margin-left: 30px;

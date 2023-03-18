@@ -84,13 +84,13 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/FAQs" className="link-name">
-                    FAQasdasd
+                  <Link to="/SentiTubeLogic" className="link-name">
+                    SentiTube Logic
                   </Link>
                 </li>
                 <li>
                   <Link to="/FAQs" className="link-name">
-                    FAQsadsad
+                    Link Terms of Service Here
                   </Link>
                 </li>
               </ul>

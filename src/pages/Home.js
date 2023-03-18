@@ -11,122 +11,124 @@ import { Container, Row, Col } from "react-bootstrap";
 function Home() {
   return (
     <div className="home">
-      <div class="row">
-        <div class="col-sm-12 col-md-6  welcome_note">
-          <h1
-            id="animate-h1"
-            class="text-start animate__animated animate__fadeInLeft"
-            style={{ paddingLeft: "5%", paddingRight: "5%" }}
-          >
-            <b>
-              Introducing{" "}
-              <span
-                style={{
-                  color: "red",
-                }}
-              >
-                SentiTube
-              </span>
-            </b>
-          </h1>
-          <h2
-            id="animate-h1"
-            class="text-start animate__animated animate__fadeInLeft"
-            style={{
-              fontSize: 32,
-              border: "none",
-              color: "grey",
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            Sentiment and Sarcasm Analysis on the YouTube Comment Section
-          </h2>
-          <p
-            className="text-start animate__animated animate__fadeInLeft animate__delay-3"
-            id="animate-p"
-            style={{
-              fontSize: 20,
-              border: "none",
-              textAlign: "center",
-              justifyContent: "center",
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            Welcome to SentiTube! Our platform analyzes the sentiment of YouTube
-            video comments to provide you with valuable insights into how
-            viewers feel about the content they are watching. With our
-            state-of-the-art sentiment analysis technology, you can quickly and
-            easily understand the sentiment of commenters, whether it's
-            positive, negative, or neutral. By analyzing the sentiment of
-            YouTube video comments, we provide you with a powerful tool for
-            understanding your audience's feedback and engagement. Try our
-            sentiment analysis tool today and unlock the power of audience
-            insights for your YouTube videos!
-          </p>
-          <div class="buttons d-flex justify-content-start">
-            <Row>
-              <Col>
-                <Link to="/TryItOut">
-                  <Button
-                    class="btn btn-primary rounded-4"
-                    variant="primary"
-                    style={{
-                      borderRadius: 20,
-                      backgroundColor: "red",
-                      border: "none",
-                      width: "170px",
-                      padding: "1rem",
-                      marginTop: "10px",
-                      marginBottom: "10px",
-                      marginLeft: "25px",
-                      textAlign: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    TrySentiTube
-                    <Image
-                      src={arrow}
-                      alt="arrow"
+      <Container>
+        <Row>
+          <Col sm={12} md={7} className="welcome_note">
+            <h1
+              id="animate-h1"
+              class="text-start animate__animated animate__fadeInLeft"
+            >
+              <b>
+                Introducing{" "}
+                <span
+                  style={{
+                    color: "red",
+                  }}
+                >
+                  SentiTube
+                </span>
+              </b>
+            </h1>
+            <h2
+              id="animate-h1"
+              class="text-start animate__animated animate__fadeInLeft"
+              style={{
+                fontSize: 32,
+                border: "none",
+                color: "grey",
+                // paddingLeft: "5%",
+                // paddingRight: "5%",
+              }}
+            >
+              Sentiment and Sarcasm Analysis on the YouTube Comment Section
+            </h2>
+            <p
+              className="text-start animate__animated animate__fadeInLeft animate__delay-3"
+              id="animate-p"
+              style={{
+                fontSize: 20,
+                border: "none",
+                textAlign: "center",
+                justifyContent: "center",
+                // paddingLeft: "5%",
+                // paddingRight: "5%",
+              }}
+            >
+              Welcome to SentiTube! Our platform analyzes the sentiments and
+              sarcasms of YouTube video comments to provide you with valuable
+              insights into how viewers feel about the content they are
+              watching. With our state-of-the-art sentiment analysis technology,
+              you can quickly and easily understand the feedback of commenters.
+              By analyzing the sentiment of YouTube video comments, we provide
+              you with a powerful tool for understanding the audience's feedback
+              and engagement. Try our sentiment analysis tool today and unlock
+              the power of audience insights for any YouTube video!
+            </p>
+            <div class="buttons d-flex justify-content-start">
+              <Row>
+                <Col>
+                  <Link to="/TryItOut">
+                    <Button
+                      class="btn btn-primary rounded-4"
+                      variant="primary"
                       style={{
-                        width: "15%",
-                        marginBottom: 2,
-                        paddingLeft: 5,
+                        borderRadius: 20,
+                        backgroundColor: "red",
+                        border: "none",
+                        width: "170px",
+                        padding: "1rem",
+                        marginTop: "10px",
+                        marginBottom: "10px",
+                        // marginLeft: "25px",
+                        textAlign: "center",
+                        justifyContent: "center",
                       }}
-                    />
-                  </Button>
-                </Link>
-              </Col>
-              <Col>
-                <Link to="/ChromeExtension">
-                  <Button
-                    variant="secondary"
-                    style={{
-                      borderRadius: 20,
-                      border: "none",
-                      width: "250px",
-                      padding: "1rem",
-                      marginTop: "10px",
-                      marginBottom: "10px",
-                      marginLeft: "25px",
-
-                      textAlign: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    Download Chrome Extention
-                  </Button>
-                </Link>
-              </Col>
-            </Row>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5 home_img_div ps-md-5">
-          <Image src={home_img} alt="home_img" fluid rounded />
-        </div>
-      </div>
+                    >
+                      TrySentiTube
+                      <Image
+                        src={arrow}
+                        alt="arrow"
+                        style={{
+                          width: "15%",
+                          marginBottom: 2,
+                          paddingLeft: 5,
+                        }}
+                      />
+                    </Button>
+                  </Link>
+                </Col>
+                <Col>
+                  <Link to="/ChromeExtension">
+                    <Button
+                      variant="secondary"
+                      style={{
+                        borderRadius: 20,
+                        border: "none",
+                        width: "250px",
+                        padding: "1rem",
+                        marginTop: "10px",
+                        marginBottom: "10px",
+                        // marginLeft: "25px",
+                        textAlign: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      Download Chrome Extention
+                    </Button>
+                  </Link>
+                </Col>
+              </Row>
+            </div>
+          </Col>
+          <Col
+            sm={12}
+            md={5}
+            className="home_img_div ps-md-5 d-flex justify-content-center"
+          >
+            <Image src={home_img} alt="home_img" fluid rounded />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
