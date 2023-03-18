@@ -12,7 +12,10 @@ function ChromeExtension() {
           for yourself.
         </center>
       </h5>
-      <h5>How to install the SentiTube Extension</h5>
+
+     <div className="chrome-list">
+
+     <h5>How to install the SentiTube Extension</h5>
 
       <li>
         Download the SentiTube Chrome Extension ZIP file from{" "}
@@ -43,6 +46,8 @@ function ChromeExtension() {
         </a>{" "}
         on how to install the extension in your own chrome browser.
       </li>
+
+     </div>
     </div>
   );
 }

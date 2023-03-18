@@ -226,6 +226,7 @@ function Results() {
             >
               <Button
                 varient="flat"
+                className="perbutton"
                 size="xl"
                 style={{
                   backgroundColor: "rgb(255,255,102)",

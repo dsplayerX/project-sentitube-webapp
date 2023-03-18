@@ -92,7 +92,7 @@ function TryItOut() {
     <>
       <div className="page-title" style={{ paddingTop: "10px" }}>
         <center>
-          <h2>Sentiment and Sarcasm analysis on YouTube videos</h2>
+          <h2><b>Sentiment and Sarcasm analysis on YouTube videos</b></h2>
         </center>
       </div>
       <div>
@@ -100,17 +100,12 @@ function TryItOut() {
           className="tryitoutmain"
           style={{
             color: "black",
-            marginBottom: "100px",
-            paddingTop: "8%",
+            marginTop: "60px",
           }}
         >
           <Form>
             <Form.Group
-              controlId="formYoutubeLink"
-              style={{
-                marginBottom: "10px",
-              }}
-            >
+              controlId="formYoutubeLink">
               <Form.Control
                 type="text"
                 placeholder="Enter YouTube link"
@@ -177,6 +172,7 @@ function TryItOut() {
                   display: "flex",
                   textAlign: "center",
                   justifyContent: "center",
+                  marginTop:"10px"
                 }}
               >
                 {isAnalysing ? <Spinner animation="border" /> : "Analyse"}

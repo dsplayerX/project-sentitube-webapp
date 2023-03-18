@@ -81,6 +81,22 @@ td {
   justify-content: center;
 }
 
+@media (max-width: 800px) {
+  /* targeted for mobile devices */
+  .Result_page .total{
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  /* targeted for mobile devices */
+  .Result_page .total{
+    font-size: 14px;
+  }
+  .Result_page .perbutton{
+    font-size: 10px;
+  }
+}
+
 /*  Per Comment Results */
 .Per_Comment_Results {
   border-radius: 10px;
@@ -153,31 +169,33 @@ tr:hover {
 
 /*   Contact  */
 
-.contact-container {
-  background-color: rgb(255, 240, 220);
-  border-radius: 6px;
-  padding: 4px;
-  margin-top: 20px;
-}
-.contact-container .logo {
+.contact-container{
+  background-color: #ff3232;
+  color: white;
   margin: auto;
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
-  align-items: left;
+  width: 50%;
+  
 }
-.contact-container h4 {
-  color: red;
+.contact-container .logo{
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.contact-container a{
+  text-decoration: none;
+  color: white;
   font-size: 20px;
 }
-.faq-page h2 {
-  margin: 16px;
-  color: #b43535;
-  text-align: center;
-}
-.contact-container a {
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
+@media (max-width: 800px) {
+  /* targeted for mobile devices */
+  .contact-container a {
+    font-size: 14px;
+  }
 }
 
 /*  FAQ page  */
@@ -269,6 +287,7 @@ tr:hover {
   height: 600px;
 } */
 
+
 /*  Chrome Page  */
 .chrome-page h2,
 h3 {
@@ -280,6 +299,19 @@ h3 {
   text-decoration: bold;
   color: red;
   margin-top: 20px;
+}
+.chrome-page .chrome-list{
+  background-color: #ffecec;
+  padding: 10px;
+  width: 80%;
+  margin: 80px;
+}
+@media (max-width: 400px) {
+  /* targeted for mobile devices */
+  .chrome-page .chrome-list{
+    font-size: 14px;
+    margin: 40px;
+  }
 }
 
 /*  Footer  */
@@ -313,4 +345,12 @@ h3 {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 14px;
+}
+
+
+@media (max-width: 400px) {
+  /* targeted for mobile devices */
+  .contsct-page {
+    color: red;
+  }
 }

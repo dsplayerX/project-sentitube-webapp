@@ -69,6 +69,7 @@ function Home() {
                 <Col>
                   <Link to="/TryItOut">
                     <Button
+                      className="try-button-hover" 
                       class="btn btn-primary rounded-4"
                       variant="primary"
                       style={{

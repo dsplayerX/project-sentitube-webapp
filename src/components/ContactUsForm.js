@@ -87,7 +87,7 @@ export const ContactUsForm = () => {
         }}
       >
         
-        <Form.Label>Message Us</Form.Label>
+        <Form.Label><b>Message Us</b></Form.Label>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           {/* <Form.Label>Name</Form.Label> */}
@@ -143,13 +143,14 @@ export const ContactUsForm = () => {
             </Form.Control.Feedback>
           )}
         </Form.Group>
-        <Button className="submit-button" value="Send" type="submit"
+        <Button className="try-button-hover" value="Send" type="submit"
           style={{
             backgroundColor:"red",
             padding:"5px",
             width:"120px",
             borderRadius:"10px",
-            margin:"10px"
+            margin:"10px",
+            border:"none"
           }}
         >
           Send
