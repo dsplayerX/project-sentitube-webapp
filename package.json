@@ -1,7 +1,7 @@
 {
   "homepage": "http://dsplayerX.github.io/project-sentitube-webapp",
   "name": "project-sentitube-webapp",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
