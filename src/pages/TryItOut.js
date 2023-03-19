@@ -138,27 +138,34 @@ function TryItOut() {
                 gap: "12px",
               }}
             >
-              <div style={{ margin: "20px auto" }}>
-                <Form.Label style={{ paddingTop: "3%" }}>
-                  Sort Comments By
-                </Form.Label>
-                <DropdownButton
-                  id="order-results-dropdown"
-                  title={`${orderResults}`}
-                  variant="secondary"
-                  style={{ margin: "0 90px 20px 90px", minWidth: "50px" }}
-                >
-                  <Dropdown.Item
-                    onClick={() => handleOrderResultsSelect("Top comments")}
+              <div
+                style={{
+                  margin: "10px auto",
+                }}
+              >
+                <center>
+                  <Form.Label style={{ paddingTop: "3%" }}>
+                    <i>Sort Comments By</i>
+                  </Form.Label>
+                  <br />
+                  <DropdownButton
+                    id="order-results-dropdown"
+                    title={`${orderResults}`}
+                    variant="secondary"
+                    style={{ marginBottom: "-20px", minWidth: "50px" }}
                   >
-                    Top comments
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    onClick={() => handleOrderResultsSelect("Newest first")}
-                  >
-                    Newest first
-                  </Dropdown.Item>
-                </DropdownButton>
+                    <Dropdown.Item
+                      onClick={() => handleOrderResultsSelect("Top comments")}
+                    >
+                      Top comments
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => handleOrderResultsSelect("Newest first")}
+                    >
+                      Newest first
+                    </Dropdown.Item>
+                  </DropdownButton>
+                </center>
               </div>
             </Form.Group>
             <Form.Group
@@ -170,34 +177,36 @@ function TryItOut() {
               }}
             >
               <div style={{ margin: "20px auto" }}>
-                <Form.Label style={{ paddingTop: "3%" }}>
-                  Number of Comments to Analyse
-                </Form.Label>
-                <DropdownButton
-                  id="num-results-dropdown"
-                  title={`${numResults}`}
-                  variant="secondary"
-                  style={{ margin: "0 90px 20px 90px", minWidth: "50px" }}
-                >
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
-                    100
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(300)}>
-                    300
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
-                    500
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
-                    1000
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(2500)}>
-                    2500
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
-                    5000
-                  </Dropdown.Item>
-                </DropdownButton>
+                <center>
+                  <Form.Label style={{ paddingTop: "3%" }}>
+                    <i>Number of Comments to Analyse</i>
+                  </Form.Label>
+                  <DropdownButton
+                    id="num-results-dropdown"
+                    title={`${numResults}`}
+                    variant="secondary"
+                    style={{ marginBottom: "20px", minWidth: "50px" }}
+                  >
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
+                      100
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(300)}>
+                      300
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
+                      500
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
+                      1000
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(2500)}>
+                      2500
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
+                      5000
+                    </Dropdown.Item>
+                  </DropdownButton>
+                </center>
               </div>
             </Form.Group>
             <Form.Group>
