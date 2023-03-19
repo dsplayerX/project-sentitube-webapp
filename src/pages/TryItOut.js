@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Form, Button, Container } from "react-bootstrap";
-import { Dropdown, DropdownButton } from "react-bootstrap";
-import { Row, Col, Modal, Spinner } from "react-bootstrap";
+import { Form, Button, Container, Dropdown, DropdownButton, Modal, Spinner} from "react-bootstrap";
 
 function TryItOut() {
   const [modalMessage, setModalMessage] = useState(null); // state variable for modal message
-
   const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [numResults, setNumResults] = useState(300); // default value is 300

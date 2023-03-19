@@ -13,43 +13,18 @@ body {
   background-color: rgb(245, 245, 245) !important;
 }
 
-/* PerCommentResults */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  /* background-color: #ff968a; */
-  overflow: scroll;
-}
-
-th,
-td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid red;
-}
-
 /*  Result Pagwe  */
 .Result_page h4 {
   color: rgb(255, 40, 40);
   margin: 16px;
   font-size: 24px;
 }
-.Result_page .total {
+.Result_page .total-comment-count {
   font-size: 20px;
-  text-align: center;
   color: black;
-  font-family: "Dosis", sans-serif;
   text-align: right;
 }
 .Result_page .chart-title {
-  color: white;
-  background-color: red;
-  text-align: center;
-  margin: 10px;
-  padding: 4px;
-  border-radius: 6px;
-}
-.Result_page .chart-title1 {
   color: white;
   background-color: red;
   text-align: center;
@@ -78,25 +53,8 @@ td {
   padding: 4px;
   border-radius: 6px;
 }
-.Result_page .text-center {
-  justify-content: center;
-}
 
-@media (max-width: 800px) {
-  /* targeted for mobile devices */
-  .Result_page .total {
-    font-size: 20px;
-  }
-}
-@media (max-width: 400px) {
-  /* targeted for mobile devices */
-  .Result_page .total {
-    font-size: 14px;
-  }
-  .Result_page .perbutton {
-    font-size: 10px;
-  }
-}
+
 
 /*  Per Comment Results */
 .Per_Comment_Results {
@@ -122,20 +80,12 @@ td {
   overflow-x: hidden;
 }
 
-@media (max-width: 800px) {
-  /* targeted for mobile devices */
-  .table-wrapper {
-    display: flex;
-    height: 600px;
-    overflow-y: scroll;
-    overflow-x: scroll;
-  }
-}
+
 
 .table-wrapper .title-column {
   background-color: #ff4a4a;
 }
-.commentCol {
+.comment-column{
   height: auto;
   width: 70%;
 }
@@ -171,9 +121,6 @@ tr:hover {
 /*   Contact  */
 
 .contact-container {
-  /* background-color: #ff3232;
-  border-radius: 28px; */
-  padding: 20px;
   color: white;
   margin: 0 auto;
   display: flex;
@@ -204,15 +151,7 @@ tr:hover {
   font-size: 20px;
 }
 
-@media (max-width: 800px) {
-  /* targeted for mobile devices */
-  .contact-container {
-    min-width: 200px;
-  }
-  .contact-container a {
-    font-size: 14px;
-  }
-}
+
 
 /*  FAQ page  */
 .faq-page .faq-box {
@@ -321,13 +260,7 @@ h3 {
   width: 80%;
   margin: 80px;
 }
-@media (max-width: 400px) {
-  /* targeted for mobile devices */
-  .chrome-page .chrome-list {
-    font-size: 14px;
-    margin: 40px;
-  }
-}
+
 
 /*  Footer  */
 .main_footer {
@@ -362,9 +295,54 @@ h3 {
   font-size: 14px;
 }
 
+
+/* targeted for mobile devices - 800px */
+
+@media (max-width: 800px) {
+  
+  /*  CONTACT page*/
+
+  .contact-container {
+    min-width: 200px;
+  }
+  .contact-container a {
+    font-size: 14px;
+  }
+
+  /*  RESULTS page */
+
+  .Result_page .tototal-comment-counttal {
+    font-size: 20px;
+  }
+
+  .table-wrapper {
+    display: flex;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+}
+
+
+/* targeted for mobile devices - 400px */
+
 @media (max-width: 400px) {
-  /* targeted for mobile devices */
-  .contsct-page {
+  /* RESULT page */
+  .Result_page .total-comment-count {
+    font-size: 14px;
+  }
+  .Result_page .perbutton {
+    font-size: 10px;
+  }
+
+  /*  Chrome Page  */
+
+  .chrome-page .chrome-list {
+    font-size: 14px;
+    margin: 40px;
+  }
+
+  .contact-page {
     color: red;
   }
 }

@@ -17,7 +17,7 @@ function Results() {
   console.log("Video Title: ", data["Video Title"]);
   console.log("Video Id: ", data["Video Id"]);
 
-  // pie chart data for sentitube results
+  // Doughnut chart data for sentitube results
   const finalsentiChartData = {
     labels: ["Positive", "Negative"],
     datasets: [
@@ -29,7 +29,7 @@ function Results() {
     ],
   };
 
-  // pie chart data for sentiment results
+  // Doughnut chart data for sentiment results
   const sentimentChartData = {
     labels: ["Positive", "Neutral", "Negative"],
     datasets: [
@@ -45,7 +45,7 @@ function Results() {
     ],
   };
 
-  // pie chart data for sarcasm results
+  // Doughnut chart data for sarcasm results
   const sarcasmChartData = {
     labels: ["Sarcastic", "Non-Sarcastic"],
     datasets: [
@@ -119,7 +119,7 @@ function Results() {
           </Col>
 
           <Col>
-            <h5 className="chart-title1">SentiTube Result</h5>
+            <h5 className="chart-title">SentiTube Result</h5>
             <div
               style={{
                 width: 300,
@@ -128,7 +128,6 @@ function Results() {
                 justifyContent: "center",
                 alignItems: "center",
               }}
-              className="text-center"
             >
               <Doughnut chartData={finalsentiChartData} />
             </div>
@@ -259,7 +258,7 @@ function Results() {
               </Button>
             </Col>
             <Col>
-              <p className="total">
+              <p className="total-comment-count">
                 Total Analysed Comments : {data["Total Comments"]}
               </p>
             </Col>

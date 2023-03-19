@@ -1,15 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ContactUsForm } from "../components/ContactUsForm";
-import {
-  Form,
-  Button,
-  Image,
-  Container,
-  Row,
-  Col,
-  Card,
-} from "react-bootstrap";
+import {Container, Row, Col} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
