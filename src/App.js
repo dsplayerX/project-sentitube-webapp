@@ -13,6 +13,7 @@ import Results from "./pages/Results";
 import MeetTheTeam from "./pages/MeetTheTeam";
 import PerCommentResults from "./pages/PerCommentResults";
 import ChromeExtension from "./pages/ChromeExtension";
+import SentiTubeLogic from "./pages/SentiTubeLogic";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/FAQs" element={<FAQs />} />
           <Route path="/ChromeExtension" element={<ChromeExtension />} />
+          <Route path="/SentiTubeLogic" element={<SentiTubeLogic />} />
 
           <Route
             exact
