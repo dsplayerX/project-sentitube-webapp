@@ -10,7 +10,9 @@ function TryItOut() {
 
   const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [numResults, setNumResults] = useState(250); // default value is 100
+  const [numResults, setNumResults] = useState(300); // default value is 300
+  const [orderResults, setOrderResults] = useState("Top comments"); // default value is to order comments by relavance
+
   const navigate = useNavigate();
 
   const [isAnalysing, setIsAnalysing] = useState(false);
@@ -45,6 +47,7 @@ function TryItOut() {
         .post("http://localhost:5000/analysisresults", {
           userinput: inputValue,
           numresults: numResults,
+          orderresults: orderResults,
         })
         .then((response) => {
           // Handle the response from the server
@@ -82,6 +85,11 @@ function TryItOut() {
     setNumResults(num);
   };
 
+  const handleOrderResultsSelect = (order) => {
+    // Update the order to get results when the user selects a value from the dropdown
+    setOrderResults(order);
+  };
+
   // Function to handle the closing of 'invalid youutbe link' popup
   const handleCloseModal = () => {
     setShowModal(false);
@@ -90,9 +98,14 @@ function TryItOut() {
 
   return (
     <>
-      <div className="page-title">
+      <div
+        className="page-title"
+        style={{ paddingTop: "10px", marginTop: "25px" }}
+      >
         <center>
-          <h2>Sentiment and Sarcasm analysis on YouTube videos.</h2>
+          <h2>
+            <b>Sentiment and Sarcasm Analysis on YouTube Video Comments</b>
+          </h2>
         </center>
       </div>
       <div>
@@ -100,22 +113,60 @@ function TryItOut() {
           className="tryitoutmain"
           style={{
             color: "black",
-            marginBottom: "100px",
+            marginTop: "120px",
           }}
         >
           <Form>
-            <Form.Group
-              controlId="formYoutubeLink"
-              style={{
-                marginBottom: "10px",
-              }}
-            >
+            <Form.Group controlId="formYoutubeLink">
               <Form.Control
                 type="text"
-                placeholder="Enter YouTube link"
+                placeholder="Enter a YouTube video link"
                 value={inputValue}
                 onChange={handleInputChange}
+                style={{
+                  backgroundColor: "rgb(255,240,220)",
+                  maxWidth: 750,
+                  margin: "10px auto",
+                }}
               />
+            </Form.Group>
+            <Form.Group
+              controlId="formOrderResults"
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "12px",
+              }}
+            >
+              <div
+                style={{
+                  margin: "10px auto",
+                }}
+              >
+                <center>
+                  <Form.Label style={{ paddingTop: "3%" }}>
+                    <i>Sort Comments By</i>
+                  </Form.Label>
+                  <br />
+                  <DropdownButton
+                    id="order-results-dropdown"
+                    title={`${orderResults}`}
+                    variant="secondary"
+                    style={{ marginBottom: "-20px", minWidth: "50px" }}
+                  >
+                    <Dropdown.Item
+                      onClick={() => handleOrderResultsSelect("Top comments")}
+                    >
+                      Top comments
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => handleOrderResultsSelect("Newest first")}
+                    >
+                      Newest first
+                    </Dropdown.Item>
+                  </DropdownButton>
+                </center>
+              </div>
             </Form.Group>
             <Form.Group
               controlId="formNumResults"
@@ -125,33 +176,39 @@ function TryItOut() {
                 gap: "12px",
               }}
             >
-              <Form.Label>Number of Comments to Analyse:</Form.Label>
-              <DropdownButton
-                id="num-results-dropdown"
-                title={`${numResults}`}
-                variant="secondary"
-              >
-                <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
-                  100
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(300)}>
-                  300
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
-                  500
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
-                  1000
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(2500)}>
-                  2500
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
-                  5000
-                </Dropdown.Item>
-              </DropdownButton>
+              <div style={{ margin: "20px auto" }}>
+                <center>
+                  <Form.Label style={{ paddingTop: "3%" }}>
+                    <i>Number of Comments to Analyse</i>
+                  </Form.Label>
+                  <DropdownButton
+                    id="num-results-dropdown"
+                    title={`${numResults}`}
+                    variant="secondary"
+                    style={{ marginBottom: "20px", minWidth: "50px" }}
+                  >
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
+                      100
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(300)}>
+                      300
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
+                      500
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
+                      1000
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(2500)}>
+                      2500
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
+                      5000
+                    </Dropdown.Item>
+                  </DropdownButton>
+                </center>
+              </div>
             </Form.Group>
-
             <Form.Group>
               <Button
                 variant="primary"
@@ -173,6 +230,7 @@ function TryItOut() {
                   display: "flex",
                   textAlign: "center",
                   justifyContent: "center",
+                  marginTop: "10px",
                 }}
               >
                 {isAnalysing ? <Spinner animation="border" /> : "Analyse"}

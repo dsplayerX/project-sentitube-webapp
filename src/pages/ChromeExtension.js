@@ -3,38 +3,51 @@ import React from "react";
 function ChromeExtension() {
   return (
     <div className="chrome-page">
-      <h2>Chrome Extention is not yet published to Chrome Web Store.</h2>
-      <h3>
-        but... you can download the Unpacked SentiTube Extension and install it
-        your self.
+      <h3 style={{ color: "red" }}>
+        Chrome Extention is not yet published to Chrome Web Store. <br />
       </h3>
+      <h5>
+        <center>
+          You can still download the unpacked SentiTube Extension and install it
+          for yourself.
+        </center>
+      </h5>
 
-      <h5>How to install the SentiTube Extension</h5>
+     <div className="chrome-list">
 
-      <li>Download the "sentitubev1.zip" file from and extact it.</li>
+     <h5>How to install the SentiTube Extension</h5>
+
       <li>
-        To download unpacked chrome extension of SentiTube{" "}
+        Download the SentiTube Chrome Extension ZIP file from{" "}
         <a
           target="_blank"
           href="https://drive.google.com/file/d/1fSAQV0LuZo4JDrUrVtMVrCeAR4sVsdWy/view?usp=sharing"
         >
-          click here
+          here
         </a>
         .
       </li>
       <li>
-        Then follow the below guide to install the extension in your own chrome
-        browser.
+        After downloading the ZIP file, go to Chrome browser's Settings {">"}{" "}
+        Extensions and turn on "Developer mode".
       </li>
       <li>
-        Read about{" "}
+        Then Drag and Drop the ZIP file into the Extension page to install the
+        extension.
+      </li>
+      <li>You can pin the extension to the title bar for easy access!</li>
+      <li>
+        Read the{" "}
         <a
           target="_blank"
-          href="https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/"
+          href="https://howover.com/install-chrome-extension-files-chrome-browser"
         >
-          how to install unpacked extensions.
-        </a>
+          full guide here
+        </a>{" "}
+        on how to install the extension in your own chrome browser.
       </li>
+
+     </div>
     </div>
   );
 }

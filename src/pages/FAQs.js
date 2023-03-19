@@ -22,7 +22,6 @@ function FAQs() {
         className="mt-5"
         style={{
           maxWidth: "1000px",
-          backgroundColor: "#f6bdbd",
           padding: "20px",
           borderRadius: "10px",
           margin: "20px auto 20px",
@@ -30,11 +29,11 @@ function FAQs() {
       >
         <MDBAccordion>
           <MDBAccordionItem collapseId={1} headerTitle="What is SentiTube?">
-            SentiTube is a website and chrome extension that uses sentiment and
-            sarcasm analysis to accurately analyze YouTube comments and provide
-            SentiPositive and SentiNegative results along with all the analysis
-            results, custom feedback based on positive-negative ratio and
-            per-comment analysis results.
+            SentiTube consists of a website and chrome extension that uses
+            sentiment and sarcasm analysis to accurately analyze YouTube
+            comments and provide SentiPositive and SentiNegative results along
+            with all the analysis results, custom feedback based on
+            positive-negative ratio and per-comment analysis results.
           </MDBAccordionItem>
           <MDBAccordionItem
             collapseId={2}
