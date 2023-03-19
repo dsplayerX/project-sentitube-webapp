@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useLocation} from "react-router-dom";
-import { useNavigate} from "react-router-dom"
+import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   Navbar,
   Container,
@@ -41,7 +41,7 @@ function NavBar() {
               style={{ height: "60px", width: "auto" }}
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow}/>
+          <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -53,19 +53,20 @@ function NavBar() {
               <Offcanvas.Title
                 id="offcanvasNavbarLabel"
                 style={{
+                  color: "red",
+                  fontWeight: "bold",
                   paddingLeft: "3%",
                 }}
               >
                 Sentitube
               </Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body >
+            <Offcanvas.Body>
               <Nav
                 className="justify-content-end flex-grow-1 pe-3 navlink"
                 style={{ fontSize: "110%" }}
               >
                 <Nav.Link
-                  
                   as={Link}
                   to="/"
                   style={{

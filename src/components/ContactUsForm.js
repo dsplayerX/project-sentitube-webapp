@@ -1,7 +1,15 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Form, Button, Modal, Container, Row, Col, Card } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import {
+  Form,
+  Button,
+  Modal,
+  Container,
+  Row,
+  Col,
+  Card,
+} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const ContactUsForm = () => {
   const [showModal, setShowModal] = useState(false);
@@ -75,20 +83,35 @@ export const ContactUsForm = () => {
 
   return (
     <>
-      <Form ref={form} onSubmit={sendEmail}
+      <Form
+        ref={form}
+        onSubmit={sendEmail}
         style={{
-          color:"black",
-          padding:"16px",
-          marginTop:"10px",
-          marginBottom:"20px",
-          borderRadius:"10px",
-          textAlign:"left",
-          width:"80%"
+          color: "black",
+          padding: "16px",
+          marginTop: "10px",
+          marginBottom: "20px",
+          borderRadius: "10px",
+          textAlign: "left",
+          width: "80%",
         }}
       >
-        
-        <Form.Label><b>Message Us</b></Form.Label>
-
+        <center>
+          <Form.Label
+            style={{
+              marginBottom: "25px",
+            }}
+          >
+            <b
+              style={{
+                fontSize: "24px",
+                color: "black",
+              }}
+            >
+              Message Us
+            </b>
+          </Form.Label>
+        </center>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           {/* <Form.Label>Name</Form.Label> */}
           <Form.Control
@@ -97,8 +120,8 @@ export const ContactUsForm = () => {
             name="from_name"
             isInvalid={!!formErrors.name}
             style={{
-              backgroundColor:"rgb(255,240,220)",
-              border:"none"
+              backgroundColor: "rgb(255,240,220)",
+              border: "none",
             }}
           />
           {/* showing errors below the form input field */}
@@ -110,31 +133,32 @@ export const ContactUsForm = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           {/* <Form.Label>Email address</Form.Label> */}
-            <Form.Control
-              type="email"
-              placeholder="Email"
-              name="from_email"
-              isInvalid={!!formErrors.email}
-              style={{
-                backgroundColor:"rgb(255,240,220)",
-                border:"none"
-              }}
-            />
-            {formErrors.email && (
-              <Form.Control.Feedback type="invalid">
-                {formErrors.email}
-              </Form.Control.Feedback>
-            )}
+          <Form.Control
+            type="email"
+            placeholder="Your Email"
+            name="from_email"
+            isInvalid={!!formErrors.email}
+            style={{
+              backgroundColor: "rgb(255,240,220)",
+              border: "none",
+            }}
+          />
+          {formErrors.email && (
+            <Form.Control.Feedback type="invalid">
+              {formErrors.email}
+            </Form.Control.Feedback>
+          )}
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Control
             as="textarea"
+            placeholder="Your Message"
             name="message"
             rows={6}
             isInvalid={!!formErrors.message}
             style={{
-              backgroundColor:"rgb(255,240,220)",
-              border:"none"
+              backgroundColor: "rgb(255,240,220)",
+              border: "none",
             }}
           />
           {formErrors.message && (
@@ -143,32 +167,34 @@ export const ContactUsForm = () => {
             </Form.Control.Feedback>
           )}
         </Form.Group>
-        <Button className="try-button-hover" value="Send" type="submit"
+        <Button
+          className="try-button-hover"
+          value="Send"
+          type="submit"
           style={{
-            backgroundColor:"red",
-            padding:"5px",
-            width:"120px",
-            borderRadius:"10px",
-            margin:"10px",
-            border:"none"
+            backgroundColor: "red",
+            padding: "5px",
+            width: "120px",
+            borderRadius: "10px",
+            margin: "10px",
+            border: "none",
           }}
         >
           Send
         </Button>
-        </Form>
+      </Form>
 
-        <Modal show={showModal} onHide={handleCloseModal}>
-          <Modal.Header closeButton>
-            <Modal.Title>Message Sent</Modal.Title>
-           </Modal.Header>
-          <Modal.Body>Your message has been sent successfully.</Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleCloseModal}>
-                Close
-              </Button>
-           </Modal.Footer>
-        </Modal>
-
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Message Sent</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Your message has been sent successfully.</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };

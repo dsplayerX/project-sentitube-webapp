@@ -16,38 +16,81 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 function Contact() {
   return (
     <Container>
-      <Row style={{
-        marginTop:"40px"
-      }}>
-         <h3 style={{color:"black", textAlign:"center"}}><b>We'd love to hear from you</b></h3>
-        <Col style={{
-          margin:"none",
-          marginRight:"45px"
-          
-        }}>
-         
-          <Row
+      <Row
+        style={{
+          minHeight: "650px",
+          marginTop: "30px",
+        }}
+      >
+        <Col
+          style={{
+            margin: "none",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            className="contact-container"
             style={{
-              marginTop:"30px",
-              width:"80%",
-
+              padding: "20px",
+              textAlign: "center",
             }}
           >
-              <div className="contact-container">
-                <div className="logo">
-                  <i class="bi bi-envelope-dash" style={{ fontSize: 40 }}></i>
-                </div>
-                <h4>Mail Us</h4>
-                <h5>
-                  <a href="mailto:sentitubebyphoenix@gmail.com">
-                    sentitubebyphoenix@gmail.com
-                  </a>{" "}
-                </h5>
+            <h3
+              style={{
+                fontSize: "40px",
+                color: "red",
+                textAlign: "center",
+                marginBottom: "50px",
+                marginTop: "-40px",
+              }}
+            >
+              <b>
+                We'd love <br />
+                to hear
+                <br /> from you
+              </b>
+            </h3>
+            <div
+              className="mail-us-container"
+              style={{
+                backgroundColor: "#ff3232",
+                padding: "25px 50px 25px 50px",
+                borderRadius: "10px",
+              }}
+            >
+              <div className="logo">
+                <i class="bi bi-envelope" style={{ fontSize: 40 }}></i>
               </div>
-          </Row>
+              <h4>Email Us</h4>
+              <h5>
+                <a href="mailto:sentitubebyphoenix@gmail.com">
+                  sentitubebyphoenix@gmail.com
+                </a>{" "}
+              </h5>
+            </div>
+          </div>
         </Col>
-        <Col>
-        <ContactUsForm />
+        <Col
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            className="contact-container"
+            style={{
+              backgroundColor: "#e6e6e6",
+              borderRadius: "10px",
+              padding: "20px",
+              textAlign: "center",
+              marginBottom: "50px",
+            }}
+          >
+            <ContactUsForm />
+          </div>
         </Col>
       </Row>
     </Container>
