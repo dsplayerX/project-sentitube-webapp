@@ -89,8 +89,8 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/FAQs" className="link-name">
-                    Link Terms of Service Here
+                  <Link to="/TermsOfService" className="link-name">
+                    Terms of Service
                   </Link>
                 </li>
               </ul>

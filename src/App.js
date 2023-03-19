@@ -5,6 +5,7 @@ import About from "./pages/About";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import FAQs from "./pages/FAQs";
+import TermsOfService from "./pages/TermsOfService"
 
 import { Route, Router, Routes } from "react-router-dom";
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/FAQs" element={<FAQs />} />
           <Route path="/ChromeExtension" element={<ChromeExtension />} />
           <Route path="/SentiTubeLogic" element={<SentiTubeLogic />} />
+          <Route path="/TermsOfService" element={<TermsOfService />} />
 
           <Route
             exact
