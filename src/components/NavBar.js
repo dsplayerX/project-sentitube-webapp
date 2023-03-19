@@ -85,11 +85,7 @@ function NavBar() {
                   }}
                   onClick={handleLinkClick}
                 >
-<<<<<<< Updated upstream
                   Try SentiTube
-=======
-                  Try Sentitube
->>>>>>> Stashed changes
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
