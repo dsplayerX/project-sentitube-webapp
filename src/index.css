@@ -30,12 +30,12 @@ td {
 
 /*  Result Pagwe  */
 .Result_page h4 {
-  color: rgb(117, 137, 218);
+  color: rgb(255, 40, 40);
   margin: 16px;
   font-size: 24px;
 }
 .Result_page .total {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   color: black;
   font-family: "Dosis", sans-serif;
@@ -58,7 +58,8 @@ td {
   border-radius: 6px;
 }
 .Result_page .feedback-box {
-  background: #ffd8d8;
+  color: rgb(0, 0, 0);
+  background: #ffc800;
   padding: 20px;
   border-radius: 10px;
 }
@@ -83,16 +84,16 @@ td {
 
 @media (max-width: 800px) {
   /* targeted for mobile devices */
-  .Result_page .total{
+  .Result_page .total {
     font-size: 20px;
   }
 }
 @media (max-width: 400px) {
   /* targeted for mobile devices */
-  .Result_page .total{
+  .Result_page .total {
     font-size: 14px;
   }
-  .Result_page .perbutton{
+  .Result_page .perbutton {
     font-size: 10px;
   }
 }
@@ -169,30 +170,45 @@ tr:hover {
 
 /*   Contact  */
 
-.contact-container{
-  background-color: #ff3232;
+.contact-container {
+  /* background-color: #ff3232;
+  border-radius: 28px; */
+  padding: 20px;
   color: white;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   justify-content: center;
-  width: 50%;
-  
+  min-width: 500px;
 }
-.contact-container .logo{
-  margin: auto;
+
+.contact-container .logo {
+  margin: 0 auto;
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
-.contact-container a{
+
+.contact-container a {
   text-decoration: none;
   color: white;
   font-size: 20px;
 }
+
+.contact-container a:hover {
+  text-decoration: none;
+  color: #fff0dc;
+  font-size: 20px;
+}
+
 @media (max-width: 800px) {
   /* targeted for mobile devices */
+  .contact-container {
+    min-width: 200px;
+  }
   .contact-container a {
     font-size: 14px;
   }
@@ -287,7 +303,6 @@ tr:hover {
   height: 600px;
 } */
 
-
 /*  Chrome Page  */
 .chrome-page h2,
 h3 {
@@ -300,7 +315,7 @@ h3 {
   color: red;
   margin-top: 20px;
 }
-.chrome-page .chrome-list{
+.chrome-page .chrome-list {
   background-color: #ffecec;
   padding: 10px;
   width: 80%;
@@ -308,7 +323,7 @@ h3 {
 }
 @media (max-width: 400px) {
   /* targeted for mobile devices */
-  .chrome-page .chrome-list{
+  .chrome-page .chrome-list {
     font-size: 14px;
     margin: 40px;
   }
@@ -346,7 +361,6 @@ h3 {
   color: rgb(255, 255, 255);
   font-size: 14px;
 }
-
 
 @media (max-width: 400px) {
   /* targeted for mobile devices */

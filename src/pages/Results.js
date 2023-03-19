@@ -79,6 +79,9 @@ function Results() {
         style={{
           color: "rgb(51,51,255)",
           marginBottom: "20px",
+          backgroundColor: "lightgrey",
+          padding: "25px",
+          borderRadius: "10px",
         }}
       >
         <Row
@@ -89,8 +92,21 @@ function Results() {
           }}
         >
           <Col>
-            <div>
-              <h5>Video Title: {data["Video Title"]}</h5>
+            <div
+              style={{
+                backgroundColor: "black",
+                padding: "15px",
+                borderRadius: "10px",
+              }}
+            >
+              <h5
+                style={{
+                  backgroundColor: "#262626",
+                  padding: "10px",
+                }}
+              >
+                {data["Video Title"]}
+              </h5>
               {/* <img
                 src={`https://img.youtube.com/vi/${data["Video Id"]}/maxresdefault.jpg`}
                 height={"auto"}
@@ -173,6 +189,7 @@ function Results() {
             color: "white",
             padding: "10px",
             margin: "6px",
+            borderRadius: "10px",
           }}
         >
           <Row>
@@ -243,7 +260,7 @@ function Results() {
             </Col>
             <Col>
               <p className="total">
-                Total Comments -- {data["Total Comments"]}
+                Total Analysed Comments : {data["Total Comments"]}
               </p>
             </Col>
           </Row>

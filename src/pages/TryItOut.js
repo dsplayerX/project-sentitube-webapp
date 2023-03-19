@@ -10,7 +10,7 @@ function TryItOut() {
 
   const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [numResults, setNumResults] = useState(250); // default value is 100
+  const [numResults, setNumResults] = useState(300); // default value is 100
   const navigate = useNavigate();
 
   const [isAnalysing, setIsAnalysing] = useState(false);
@@ -90,9 +90,14 @@ function TryItOut() {
 
   return (
     <>
-      <div className="page-title" style={{ paddingTop: "10px" }}>
+      <div
+        className="page-title"
+        style={{ paddingTop: "10px", marginTop: "25px" }}
+      >
         <center>
-          <h2><b>Sentiment and Sarcasm analysis on YouTube videos</b></h2>
+          <h2>
+            <b>Sentiment and Sarcasm Analysis on YouTube Video Comments</b>
+          </h2>
         </center>
       </div>
       <div>
@@ -100,17 +105,21 @@ function TryItOut() {
           className="tryitoutmain"
           style={{
             color: "black",
-            marginTop: "60px",
+            marginTop: "120px",
           }}
         >
           <Form>
-            <Form.Group
-              controlId="formYoutubeLink">
+            <Form.Group controlId="formYoutubeLink">
               <Form.Control
                 type="text"
-                placeholder="Enter YouTube link"
+                placeholder="Enter a YouTube video link"
                 value={inputValue}
                 onChange={handleInputChange}
+                style={{
+                  backgroundColor: "rgb(255,240,220)",
+                  maxWidth: 750,
+                  margin: "10px auto",
+                }}
               />
             </Form.Group>
             <Form.Group
@@ -121,36 +130,37 @@ function TryItOut() {
                 gap: "12px",
               }}
             >
-              <Form.Label style={{ paddingTop: "3%" }}>
-                Number of Comments to Analyse:
-              </Form.Label>
-              <DropdownButton
-                id="num-results-dropdown"
-                title={`${numResults}`}
-                variant="secondary"
-                style={{ paddingTop: "2.5%" }}
-              >
-                <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
-                  100
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(300)}>
-                  300
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
-                  500
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
-                  1000
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(2500)}>
-                  2500
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
-                  5000
-                </Dropdown.Item>
-              </DropdownButton>
+              <div style={{ margin: "20px auto" }}>
+                <Form.Label style={{ paddingTop: "3%" }}>
+                  Number of Comments to Analyse
+                </Form.Label>
+                <DropdownButton
+                  id="num-results-dropdown"
+                  title={`${numResults}`}
+                  variant="secondary"
+                  style={{ margin: "0 90px 20px 90px", minWidth: "50px" }}
+                >
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
+                    100
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(300)}>
+                    300
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
+                    500
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
+                    1000
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(2500)}>
+                    2500
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
+                    5000
+                  </Dropdown.Item>
+                </DropdownButton>
+              </div>
             </Form.Group>
-
             <Form.Group>
               <Button
                 variant="primary"
@@ -172,7 +182,7 @@ function TryItOut() {
                   display: "flex",
                   textAlign: "center",
                   justifyContent: "center",
-                  marginTop:"10px"
+                  marginTop: "10px",
                 }}
               >
                 {isAnalysing ? <Spinner animation="border" /> : "Analyse"}
