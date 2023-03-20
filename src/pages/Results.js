@@ -78,8 +78,11 @@ function Results() {
       <Container
         style={{
           color: "rgb(51,51,255)",
-          marginBottom: "20px",
+          marginBottom: "40px",
           padding: "25px",
+          backgroundColor:"rgb(185, 185, 185)",
+          marginTop:"20px",
+          borderRadius:"10px"
         }}
       >
         <Row
@@ -178,6 +181,10 @@ function Results() {
         style={{
           color: "black",
           margin: "10px auto",
+          backgroundColor:"rgb(185, 185, 185)",
+          marginTop:"20px",
+          borderRadius:"10px",
+          padding:"25px"
         }}
       >
         <h4>Custom Feedback</h4>
@@ -203,7 +210,7 @@ function Results() {
                 textAlign: "left",
               }}
             >
-              <h6>Final Senti Result</h6>
+              <h6>SentiTube Result</h6>
               <p>Senti Positve Comments : {data["Sentitube Positve"]}</p>
               <p>Senti Negative Comments : {data["Sentitube Negative"]}</p>
             </Col>

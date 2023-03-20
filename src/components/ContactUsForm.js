@@ -1,14 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import {
-  Form,
-  Button,
-  Modal,
-  Container,
-  Row,
-  Col,
-  Card,
-} from "react-bootstrap";
+import {Form, Button, Modal} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const ContactUsForm = () => {
