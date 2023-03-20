@@ -79,30 +79,30 @@ function Results() {
         style={{
           color: "rgb(51,51,255)",
           marginBottom: "20px",
-          backgroundColor: "lightgrey",
           padding: "25px",
-          borderRadius: "10px",
         }}
       >
         <Row
           style={{
             textAlign: "center",
             justifyContent: "center",
-            marginBottom: "10px",
+            marginBottom: "25px",
           }}
         >
           <Col>
             <div
               style={{
                 backgroundColor: "black",
-                padding: "15px",
+                padding: "25px",
                 borderRadius: "10px",
+                marginTop: "10px",
+                height: "100%",
               }}
             >
               <h5
                 style={{
                   backgroundColor: "#262626",
-                  padding: "10px",
+                  padding: "25px",
                 }}
               >
                 {data["Video Title"]}
@@ -119,25 +119,29 @@ function Results() {
           </Col>
 
           <Col>
-            <h5 className="chart-title">SentiTube Result</h5>
             <div
               style={{
-                width: 300,
-                margin: "auto",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
+                height: "100%",
+                padding: "25px",
+                marginTop: "20px",
               }}
             >
-              <Doughnut chartData={finalsentiChartData} />
+              <h5 className="chart-title">SentiTube Result</h5>
+              <div
+                style={{
+                  width: 300,
+                  margin: "40px auto",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Doughnut chartData={finalsentiChartData} />
+              </div>
             </div>
           </Col>
         </Row>
-        <Row
-          style={{
-            marginBottom: "20px",
-          }}
-        >
+        <Row>
           <Col>
             <h5 className="chart-title">Sentiment Result</h5>
             <div

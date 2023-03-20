@@ -33,7 +33,7 @@ function Footer() {
                 className="footerlogo"
                 style={{
                   height: "120px",
-                  width: "auto",
+                  width: "152px",
                   marginTop: "15%",
 
                   marginLeft: "20px",
