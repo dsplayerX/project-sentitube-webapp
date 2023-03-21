@@ -360,3 +360,18 @@ h3 {
     color: red;
   }
 }
+
+/*  Terms Of Service  */
+.term-page h2{
+  margin-bottom: 14px;
+  color: #b43535;
+  text-align: center;
+}
+.term-page h3{
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+.term-page p{
+  margin-bottom: 10px;
+}
