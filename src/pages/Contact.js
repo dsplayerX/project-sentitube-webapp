@@ -1,15 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ContactUsForm } from "../components/ContactUsForm";
-import {
-  Form,
-  Button,
-  Image,
-  Container,
-  Row,
-  Col,
-  Card,
-} from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -42,7 +34,7 @@ function Contact() {
                 fontSize: "40px",
                 color: "red",
                 textAlign: "center",
-                marginBottom: "50px",
+                marginBottom: "40px",
                 marginTop: "-40px",
               }}
             >
@@ -70,6 +62,22 @@ function Contact() {
                 </a>{" "}
               </h5>
             </div>
+            <Link to="/FAQs">
+              <Button
+                type="button"
+                class="btn btn-secondary"
+                style={{
+                  backgroundColor: "grey",
+                  padding: "5px",
+                  width: "120px",
+                  borderRadius: "10px",
+                  margin: "10px",
+                  border: "none",
+                }}
+              >
+                Read FAQ's
+              </Button>
+            </Link>
           </div>
         </Col>
         <Col

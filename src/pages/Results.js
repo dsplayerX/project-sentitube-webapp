@@ -17,7 +17,7 @@ function Results() {
   console.log("Video Title: ", data["Video Title"]);
   console.log("Video Id: ", data["Video Id"]);
 
-  // pie chart data for sentitube results
+  // Doughnut chart data for sentitube results
   const finalsentiChartData = {
     labels: ["Positive", "Negative"],
     datasets: [
@@ -29,7 +29,7 @@ function Results() {
     ],
   };
 
-  // pie chart data for sentiment results
+  // Doughnut chart data for sentiment results
   const sentimentChartData = {
     labels: ["Positive", "Neutral", "Negative"],
     datasets: [
@@ -45,7 +45,7 @@ function Results() {
     ],
   };
 
-  // pie chart data for sarcasm results
+  // Doughnut chart data for sarcasm results
   const sarcasmChartData = {
     labels: ["Sarcastic", "Non-Sarcastic"],
     datasets: [
@@ -78,31 +78,34 @@ function Results() {
       <Container
         style={{
           color: "rgb(51,51,255)",
-          marginBottom: "20px",
-          backgroundColor: "lightgrey",
+          marginBottom: "40px",
           padding: "25px",
-          borderRadius: "10px",
+          backgroundColor:"rgb(185, 185, 185)",
+          marginTop:"20px",
+          borderRadius:"10px"
         }}
       >
         <Row
           style={{
             textAlign: "center",
             justifyContent: "center",
-            marginBottom: "10px",
+            marginBottom: "25px",
           }}
         >
           <Col>
             <div
               style={{
                 backgroundColor: "black",
-                padding: "15px",
+                padding: "25px",
                 borderRadius: "10px",
+                marginTop: "10px",
+                height: "100%",
               }}
             >
               <h5
                 style={{
                   backgroundColor: "#262626",
-                  padding: "10px",
+                  padding: "25px",
                 }}
               >
                 {data["Video Title"]}
@@ -119,26 +122,29 @@ function Results() {
           </Col>
 
           <Col>
-            <h5 className="chart-title1">SentiTube Result</h5>
             <div
               style={{
-                width: 300,
-                margin: "auto",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
+                height: "100%",
+                padding: "25px",
+                marginTop: "20px",
               }}
-              className="text-center"
             >
-              <Doughnut chartData={finalsentiChartData} />
+              <h5 className="chart-title">SentiTube Result</h5>
+              <div
+                style={{
+                  width: 300,
+                  margin: "40px auto",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Doughnut chartData={finalsentiChartData} />
+              </div>
             </div>
           </Col>
         </Row>
-        <Row
-          style={{
-            marginBottom: "20px",
-          }}
-        >
+        <Row>
           <Col>
             <h5 className="chart-title">Sentiment Result</h5>
             <div
@@ -175,6 +181,10 @@ function Results() {
         style={{
           color: "black",
           margin: "10px auto",
+          backgroundColor:"rgb(185, 185, 185)",
+          marginTop:"20px",
+          borderRadius:"10px",
+          padding:"25px"
         }}
       >
         <h4>Custom Feedback</h4>
@@ -200,7 +210,7 @@ function Results() {
                 textAlign: "left",
               }}
             >
-              <h6>Final Senti Result</h6>
+              <h6>SentiTube Result</h6>
               <p>Senti Positve Comments : {data["Sentitube Positve"]}</p>
               <p>Senti Negative Comments : {data["Sentitube Negative"]}</p>
             </Col>
@@ -259,7 +269,7 @@ function Results() {
               </Button>
             </Col>
             <Col>
-              <p className="total">
+              <p className="total-comment-count">
                 Total Analysed Comments : {data["Total Comments"]}
               </p>
             </Col>
