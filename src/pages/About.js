@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import "../CSS/about.css";
 
 function About() {
+  function handleClick() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
   return (
     <div>
       <div class="about">
@@ -23,7 +29,7 @@ function About() {
           website or chrome extension, SentiTube is completely free and
           available for everyone to use without any charges or fees. <br />
           <center>
-            <Link to="/SentiTubeLogic">
+            <Link to="/SentiTubeLogic" onClick={handleClick}>
               <button class="button">Read about logic of SentiTube</button>
             </Link>
           </center>
@@ -45,7 +51,7 @@ function About() {
           of charge. <br />
           <br />
           <center>
-            <Link to="/MeetTheTeam">
+            <Link to="/MeetTheTeam" onClick={handleClick}>
               <button class="button">MeetTheTeam</button>
             </Link>
           </center>
