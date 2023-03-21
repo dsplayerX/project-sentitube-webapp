@@ -66,6 +66,7 @@ function Contact() {
               <Button
                 type="button"
                 class="btn btn-secondary"
+                className="faq-button-hover" 
                 style={{
                   backgroundColor: "grey",
                   padding: "5px",

@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import home_img from "../images/denys-nevozhai-w7YCquMkv2c-unsplash.jpg";
+import icon from "../images/chrome_icon.png";
 import arrow from "../images/arrow-upper-right.png";
 import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../CSS/home.css";
-import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 function Home() {
@@ -119,7 +119,18 @@ function Home() {
                         justifyContent: "center",
                       }}
                     >
+                      <Image
+                        src={icon}
+                        alt="icon"
+                        style={{
+                          width: "30px",
+                          marginLeft: 0,
+                          marginBottom: 2,
+                          marginRight: 5,
+                        }}
+                      />
                       Download Chrome Extention
+                      
                     </Button>
                   </Link>
                 </Col>

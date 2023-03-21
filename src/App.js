@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import FAQs from "./pages/FAQs";
 import TermsOfService from "./pages/TermsOfService"
 
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 // used for easy dev access (will delete from navbar later)
 import Results from "./pages/Results";

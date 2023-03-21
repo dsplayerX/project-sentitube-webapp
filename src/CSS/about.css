@@ -55,8 +55,7 @@ h1.thick {
 }
 
 .button:hover {
-  background-color: #000000;
-  color: rgb(255, 0, 0);
+  background-color: rgb(185, 0, 0);
   transition: all 0.5s;
 }
 

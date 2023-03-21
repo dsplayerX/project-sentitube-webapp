@@ -58,7 +58,7 @@ body {
   border-radius: 6px;
 }
 .perbutton:hover{
-  background-color: rgb(235, 209, 36) !important;
+  background-color: rgb(253, 245, 194) !important;
   transition: "background-color 0.1s ease-in-out" !important;
 }
 
@@ -157,7 +157,10 @@ tr:hover {
   color: #fff0dc;
   font-size: 20px;
 }
-
+.faq-button-hover:hover {
+  background-color: rgb(60, 55, 55) !important;
+  transition: "background-color 0.1s ease-in-out" !important;
+}
 
 
 /*  FAQ page  */
