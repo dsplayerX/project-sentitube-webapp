@@ -105,7 +105,7 @@ function Home() {
                     <Button
                       variant="secondary"
                       style={{
-                        fontSize: 18,
+                        fontSize: 15,
 
                         borderRadius: 20,
                         border: "none",
