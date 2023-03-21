@@ -33,12 +33,7 @@ function PerCommentResults() {
   function renderTable() {
     return (
       <div className="table-wrapper">
-        <Table
-          class="table table-striped"
-          style={{
-            margin: "20px",
-          }}
-        >
+        <Table>
           <thead>
             <tr className="title-column">
               <th scope="col" style={{ width: "70%" }}>
@@ -58,7 +53,7 @@ function PerCommentResults() {
           <tbody>
             {tableData.map((data, index) => (
               <tr key={index}>
-                <td className="commentCol">{data.comments}</td>
+                <td className="comment-column">{data.comments}</td>
                 <td>{data.sentiment}</td>
                 <td>{data.sarcasm}</td>
                 <td>{data.sentiresult}</td>

@@ -38,7 +38,7 @@ function NavBar() {
               src={logo}
               alt="Logo"
               className="logo"
-              style={{ height: "60px", width: "auto" }}
+              style={{ height: "60px", width: "88px" }}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />

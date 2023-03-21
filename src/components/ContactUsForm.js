@@ -1,20 +1,31 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import {
-  Form,
-  Button,
-  Modal,
-  Container,
-  Row,
-  Col,
-  Card,
-} from "react-bootstrap";
+import { Form, Button, Modal } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const ContactUsForm = () => {
+  const [modalTitle, setModalTitle] = useState(null); // state variable for modal message
+  const [modalMessage, setModalMessage] = useState(null); // state variable for modal message
+
   const [showModal, setShowModal] = useState(false);
   const [formErrors, setFormErrors] = useState({});
   const form = useRef();
+  let serviceKey = "";
+  let templateKey = "";
+  let secretKey = "";
+
+  // load secret keys from the Flask API
+  fetch("http://localhost:5000/getemailsecrets")
+    .then((response) => response.json())
+    .then((data) => {
+      serviceKey = data.serviceKey;
+      templateKey = data.templateKey;
+      secretKey = data.secretKey;
+      console.log("Loaded emailing client.");
+    })
+    .catch((error) => {
+      console.error("Error fetching email secrets:", error);
+    });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,28 +33,31 @@ export const ContactUsForm = () => {
     // Validating form and stores any error
     const errors = validateForm();
 
-    // If there are no errors proceed with message submission
-    if (Object.keys(errors).length === 0) {
-      // EmailJS form submission
-      emailjs
-        .sendForm(
-          "service_xjwjwwr",
-          "template_445fzij",
-          form.current,
-          "eKt19qsgC23PDUezT"
-        )
-        .then(
+    if (serviceKey != "") {
+      if (Object.keys(errors).length === 0) {
+        // If there are no errors proceed with message submission
+        // EmailJS form submission
+        emailjs.sendForm(serviceKey, templateKey, form.current, secretKey).then(
           (result) => {
             console.log(result.text);
             console.log("Contact us message sent.");
+            setModalTitle("Message Sent");
+            setModalMessage("Your message has been sent successfully.");
             setShowModal(true);
           },
           (error) => {
             console.log(error.text);
           }
         );
+      } else {
+        setFormErrors(errors);
+      }
     } else {
-      setFormErrors(errors);
+      setModalTitle("Server Down");
+      setModalMessage(
+        "The SentiTube API is temporarily down. Please try again in a while. We are sorry for the inconvenience caused."
+      );
+      setShowModal(true);
     }
   };
 
@@ -186,9 +200,9 @@ export const ContactUsForm = () => {
 
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Message Sent</Modal.Title>
+          <Modal.Title>{modalTitle}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Your message has been sent successfully.</Modal.Body>
+        <Modal.Body>{modalMessage}</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>
             Close
