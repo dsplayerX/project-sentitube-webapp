@@ -80,7 +80,7 @@ function Results() {
           color: "rgb(51,51,255)",
           marginBottom: "40px",
           padding: "25px",
-          backgroundColor:"rgb(185, 185, 185)",
+          backgroundColor:"#CBD3D8",
           marginTop:"20px",
           borderRadius:"10px"
         }}
@@ -181,7 +181,7 @@ function Results() {
         style={{
           color: "black",
           margin: "10px auto",
-          backgroundColor:"rgb(185, 185, 185)",
+          backgroundColor:"#CBD3D8",
           marginTop:"20px",
           borderRadius:"10px",
           padding:"25px"
@@ -262,6 +262,7 @@ function Results() {
                   borderRadius: "20px",
                   borderColor: "red",
                   textAlign: "left",
+                  padding:"10px"
                 }}
                 onClick={handleButton}
               >

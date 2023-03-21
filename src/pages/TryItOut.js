@@ -121,7 +121,6 @@ function TryItOut() {
                 value={inputValue}
                 onChange={handleInputChange}
                 style={{
-                  backgroundColor: "rgb(255,240,220)",
                   maxWidth: 750,
                   margin: "10px auto",
                 }}
