@@ -15,7 +15,7 @@ export const ContactUsForm = () => {
   let secretKey = "";
 
   // load secret keys from the Flask API
-  fetch("http://localhost:5000/getemailsecrets")
+  fetch("https://flask-production-06d2.up.railway.app/getemailsecrets")
     .then((response) => response.json())
     .then((data) => {
       serviceKey = data.serviceKey;
