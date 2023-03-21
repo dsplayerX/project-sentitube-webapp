@@ -9,12 +9,6 @@ import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 function Home() {
-    function handleClick() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
   return (
     <div className="home">
       <Container>
@@ -74,7 +68,7 @@ function Home() {
               <Row>
                 <Col>
                   <Link to="/TryItOut">
-                    <Button onClick={handleClick}
+                    <Button 
                       className="try-button-hover" 
                       class="btn btn-primary rounded-4"
                       variant="primary"
@@ -109,7 +103,6 @@ function Home() {
                 <Col>
                   <Link to="/ChromeExtension">
                     <Button
-                      onClick={handleClick}
                       variant="secondary"
                       style={{
                         fontSize: 18,

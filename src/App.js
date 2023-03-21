@@ -22,7 +22,7 @@ function App() {
       <NavBar />
       <body>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />}  />
           <Route path="/TryItOut" element={<TryItOut />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
