@@ -8,8 +8,14 @@
 
 }
 
-.welcome_note{
+.home{
     padding-top: 6%;
+}
+
+.welcome_note{
+    backdrop-filter: blur(20px); 
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     
     
 }
@@ -29,9 +35,14 @@
 
 .home{
     background-color: rgba(0, 255, 255, 0);
+    
 }
 
 .Container{
     background-color: rgba(225, 0, 255, 0);
 }
 
+.h1{
+    -webkit-text-stroke: 0.1px black;
+    text-stroke: 0.1px black;
+}

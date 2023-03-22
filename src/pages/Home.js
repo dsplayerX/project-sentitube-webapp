@@ -16,7 +16,7 @@ function Home() {
           <Col sm={12} md={7} className="welcome_note">
             <h1
               id="animate-h1"
-              class="text-start animate__animated animate__fadeInLeft"
+              class="text-start h1 animate__animated animate__fadeInLeft"
             >
               <b>
                 Introducing{" "}
@@ -35,7 +35,7 @@ function Home() {
               style={{
                 fontSize: 32,
                 border: "none",
-                color: "grey",   
+                color: "rgba(0, 0, 0, 0.637)",   
               }}
             >
               Sentiment and Sarcasm Analysis on the YouTube Comment Section
@@ -69,6 +69,7 @@ function Home() {
                       class="btn btn-primary rounded-4"
                       variant="primary"
                       style={{
+                        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
                         fontSize: 18,
                         borderRadius: 20,
                         backgroundColor: "red",
@@ -102,7 +103,7 @@ function Home() {
                       variant="secondary"
                       style={{
                         fontSize: 15,
-
+                        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)", 
                         borderRadius: 20,
                         border: "none",
                         width: "300px",
@@ -138,7 +139,7 @@ function Home() {
             md={5}
             className="home_img_div ps-md-5 d-flex justify-content-center"
           >
-            <Image src={home_img} alt="home_img" fluid rounded/>
+            <Image src={home_img} alt="home_img" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)"}} fluid rounded/>
           </Col>
         </Row>
       </Container>
