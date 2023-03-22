@@ -130,7 +130,7 @@ function Home() {
                           marginRight: 5,
                         }}
                       />
-                      Download Chrome Extention
+                      Get Chrome Extention
                       
                     </Button>
                   </Link>
