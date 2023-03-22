@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../CSS/about.css";
 
+
 function About() {
   function handleClick() {
     window.scrollTo({
@@ -11,6 +12,7 @@ function About() {
   }
   return (
     <div>
+      
       <div class="about">
         <h1 class="thick">
           <center>What is SentiTube ?</center>

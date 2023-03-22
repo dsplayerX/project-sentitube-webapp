@@ -7,9 +7,6 @@ import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../CSS/home.css";
 import { Container, Row, Col } from "react-bootstrap";
-import background_shape from "../images/graph.png"
-import background_shape1 from "../images/graph1.png"
-
 
 function Home() {
   return (
@@ -38,9 +35,7 @@ function Home() {
               style={{
                 fontSize: 32,
                 border: "none",
-                color: "grey",
-                // paddingLeft: "5%",
-                // paddingRight: "5%",
+                color: "grey",   
               }}
             >
               Sentiment and Sarcasm Analysis on the YouTube Comment Section
@@ -53,8 +48,6 @@ function Home() {
                 border: "none",
                 textAlign: "center",
                 justifyContent: "center",
-                // paddingLeft: "5%",
-                // paddingRight: "5%",
               }}
             >
               Welcome to SentiTube! Our platform analyzes the sentiments and
@@ -149,28 +142,6 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <div
-        className="top_image"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          zIndex: -1,
-        }}
-      >
-        <Image src={background_shape1} alt="top_image" style={{width:"850px"}} />
-      </div>
-      <div
-        className="bottom_image"
-        style={{
-          position: "absolute",
-          bottom: 0,
-          right: 0,
-          zIndex: -1,
-        }}
-      >
-        <Image src={background_shape} alt="bottom_image" style={{width:"850px"}} />
-      </div> 
     </div>
   );
 }
