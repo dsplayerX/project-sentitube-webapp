@@ -10,7 +10,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Home() {
   return (
-    <div className="home" >
+    <div className="home">
       <Container className="Container">
         <Row>
           <Col sm={12} md={7} className="welcome_note">
@@ -35,7 +35,7 @@ function Home() {
               style={{
                 fontSize: 32,
                 border: "none",
-                color: "rgba(0, 0, 0, 0.637)",   
+                color: "rgba(0, 0, 0, 0.637)",
               }}
             >
               Sentiment and Sarcasm Analysis on the YouTube Comment Section
@@ -64,8 +64,8 @@ function Home() {
               <Row>
                 <Col>
                   <Link to="/TryItOut">
-                    <Button 
-                      className="try-button-hover" 
+                    <Button
+                      className="try-button-hover"
                       class="btn btn-primary rounded-4"
                       variant="primary"
                       style={{
@@ -103,7 +103,7 @@ function Home() {
                       variant="secondary"
                       style={{
                         fontSize: 15,
-                        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)", 
+                        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
                         borderRadius: 20,
                         border: "none",
                         width: "300px",
@@ -127,7 +127,6 @@ function Home() {
                         }}
                       />
                       Get Chrome Extention
-                      
                     </Button>
                   </Link>
                 </Col>
@@ -139,7 +138,13 @@ function Home() {
             md={5}
             className="home_img_div ps-md-5 d-flex justify-content-center"
           >
-            <Image src={home_img} alt="home_img" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)"}} fluid rounded/>
+            <Image
+              src={home_img}
+              alt="home_img"
+              style={{ boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)" }}
+              fluid
+              rounded
+            />
           </Col>
         </Row>
       </Container>
