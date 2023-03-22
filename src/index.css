@@ -116,6 +116,10 @@ tr:hover {
 
 /* Try It Out*/
 
+.drp_menus{
+  white-space: nowrap;
+}
+
 .try-button-hover:hover {
   background-color: rgb(185, 0, 0) !important;
   transition: "background-color 0.1s ease-in-out" !important;

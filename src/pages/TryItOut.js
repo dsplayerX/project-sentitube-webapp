@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Form, Button, Container, Dropdown, DropdownButton, Modal, Spinner} from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 function TryItOut() {
   const [modalMessage, setModalMessage] = useState(null); // state variable for modal message
@@ -113,8 +114,8 @@ function TryItOut() {
             marginTop: "120px",
           }}
         >
-          <Form>
-            <Form.Group controlId="formYoutubeLink">
+          <Form >
+            <Form.Group controlId="formYoutubeLink" style={{paddingBottom:"1%"}}>
               <Form.Control
                 type="text"
                 placeholder="Enter a YouTube video link"
@@ -123,33 +124,35 @@ function TryItOut() {
                 style={{
                   maxWidth: 750,
                   margin: "10px auto",
+                  
                 }}
               />
             </Form.Group>
-            <Form.Group
-              controlId="formOrderResults"
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                gap: "12px",
-              }}
-            >
-              <div
-                style={{
-                  margin: "10px auto",
-                }}
-              >
-                <center>
-                  <Form.Label style={{ paddingTop: "3%" }}>
-                    <i>Sort Comments By</i>
-                  </Form.Label>
-                  <br />
-                  <DropdownButton
-                    id="order-results-dropdown"
-                    title={`${orderResults}`}
-                    variant="secondary"
-                    style={{ marginBottom: "-20px", minWidth: "50px" }}
+
+          <Container style={{paddingLeft:"25%",paddingRight:"25%"}}>
+            <Row>
+              <Col>
+                <Row>
+                    <Form.Group
+                    controlId="formOrderResults"
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      gap: "12px",
+                    }}
                   >
+                        <Form.Label>
+                          <i>Sort Comments By :</i>
+                        </Form.Label>
+                    {/* </div> */}
+                  </Form.Group></Row>
+                <Row>
+                  <DropdownButton
+                          id="order-results-dropdown"
+                          title={`${orderResults}`}
+                          variant="secondary"
+                          // style={{ marginBottom: "-20px", minWidth: "50px" }}
+                        >
                     <Dropdown.Item
                       onClick={() => handleOrderResultsSelect("Top comments")}
                     >
@@ -160,51 +163,57 @@ function TryItOut() {
                     >
                       Newest first
                     </Dropdown.Item>
-                  </DropdownButton>
-                </center>
-              </div>
-            </Form.Group>
-            <Form.Group
-              controlId="formNumResults"
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                gap: "12px",
-              }}
-            >
-              <div style={{ margin: "20px auto" }}>
-                <center>
-                  <Form.Label style={{ paddingTop: "3%" }}>
-                    <i>Number of Comments to Analyse</i>
-                  </Form.Label>
-                  <DropdownButton
-                    id="num-results-dropdown"
-                    title={`${numResults}`}
-                    variant="secondary"
-                    style={{ marginBottom: "20px", minWidth: "50px" }}
+                    </DropdownButton></Row>
+              </Col>
+              <Col>
+                <Row>
+                  <Form.Group
+                    controlId="formNumResults"
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      gap: "12px",
+                    }}
                   >
-                    <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
-                      100
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleNumResultsSelect(300)}>
-                      300
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
-                      500
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
-                      1000
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleNumResultsSelect(2500)}>
-                      2500
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
-                      5000
-                    </Dropdown.Item>
-                  </DropdownButton>
-                </center>
-              </div>
-            </Form.Group>
+                        <Form.Label style={{ paddingTop: "6px" }}>
+                          <i>Number of Comments to Analyse :</i>
+                        </Form.Label>
+                  </Form.Group>
+                </Row>
+                <Row>
+                  <center>
+                  <DropdownButton
+                          id="num-results-dropdown"
+                          title={`${numResults}`}
+                          variant="secondary"
+                          style={{ marginBottom: "20px", minWidth: "50px"}}
+                        >
+                      <Dropdown.Item onClick={() => handleNumResultsSelect(100)}>
+                        100
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => handleNumResultsSelect(300)}>
+                        300
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => handleNumResultsSelect(500)}>
+                        500
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => handleNumResultsSelect(1000)}>
+                        1000
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => handleNumResultsSelect(2500)}>
+                        2500
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => handleNumResultsSelect(5000)}>
+                        5000
+                      </Dropdown.Item>
+                    </DropdownButton>
+                    </center>
+                </Row>
+              </Col>
+            </Row>
+          </Container>     
+            
+
             <Form.Group>
               <Button
                 variant="primary"
