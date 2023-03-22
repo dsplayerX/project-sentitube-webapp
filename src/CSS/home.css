@@ -27,7 +27,7 @@
 }
 
 .home_img_div{
-    padding-top: 6%;
+    padding-top: 0%;
     padding-bottom: 6%;
 }
 
@@ -44,5 +44,4 @@
 
 .h1{
     -webkit-text-stroke: 0.1px black;
-    text-stroke: 0.1px black;
 }
