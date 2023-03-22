@@ -8,11 +8,13 @@ import { Link } from "react-router-dom";
 import "../CSS/home.css";
 import { Container, Row, Col } from "react-bootstrap";
 import background_shape from "../images/graph.png"
+import background_shape1 from "../images/graph1.png"
+
 
 function Home() {
   return (
-    <div className="home">
-      <Container >
+    <div className="home" >
+      <Container className="Container">
         <Row>
           <Col sm={12} md={7} className="welcome_note">
             <h1
@@ -143,10 +145,21 @@ function Home() {
             md={5}
             className="home_img_div ps-md-5 d-flex justify-content-center"
           >
-            <Image src={home_img} alt="home_img" fluid rounded />
+            <Image src={home_img} alt="home_img" fluid rounded/>
           </Col>
         </Row>
       </Container>
+      <div
+        className="top_image"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          zIndex: -1,
+        }}
+      >
+        <Image src={background_shape1} alt="top_image" style={{width:"850px"}} />
+      </div>
       <div
         className="bottom_image"
         style={{
@@ -156,7 +169,7 @@ function Home() {
           zIndex: -1,
         }}
       >
-        <Image src={background_shape} alt="bottom_image" fluid />
+        <Image src={background_shape} alt="bottom_image" style={{width:"850px"}} />
       </div> 
     </div>
   );
