@@ -98,12 +98,12 @@ function TryItOut() {
     <>
       <div
         className="page-title"
-        style={{ paddingTop: "10px", marginTop: "25px" }}
+        style={{ paddingTop: "10px", marginTop: "170px" }}
       >
         <center>
-          <h2>
+          <h1 style={{WebkitTextStroke:" 0.1px black" ,color:"black"}}>
             <b>Sentiment and Sarcasm Analysis on YouTube Video Comments</b>
-          </h2>
+          </h1>
         </center>
       </div>
       <div>
@@ -111,7 +111,7 @@ function TryItOut() {
           className="tryitoutmain"
           style={{
             color: "black",
-            marginTop: "120px",
+            marginTop: "70px",
           }}
         >
           <Form >
