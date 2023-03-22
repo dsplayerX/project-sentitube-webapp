@@ -7,11 +7,12 @@ import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../CSS/home.css";
 import { Container, Row, Col } from "react-bootstrap";
+import background_shape from "../images/graph.png"
 
 function Home() {
   return (
     <div className="home">
-      <Container>
+      <Container >
         <Row>
           <Col sm={12} md={7} className="welcome_note">
             <h1
@@ -146,6 +147,17 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      <div
+        className="bottom_image"
+        style={{
+          position: "absolute",
+          bottom: 0,
+          right: 0,
+          zIndex: -1,
+        }}
+      >
+        <Image src={background_shape} alt="bottom_image" fluid />
+      </div> 
     </div>
   );
 }
