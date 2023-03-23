@@ -6,7 +6,7 @@ import imgDumidu from "../images/TeamMembersPhotos/dumindu.jpg"
 import imgTharusha from "../images/TeamMembersPhotos/tharusha.jpg"
 import imgPasindu from "../images/TeamMembersPhotos/pasindu.jpg"
 import imgEshan from "../images/TeamMembersPhotos/eshan.jpg"
-import imgSanuri from "../images/TeamMembersPhotos/dumindu.jpg"
+import imgSanuri from "../images/TeamMembersPhotos/sanuri.jpg"
 
 function MeetTheTeam() {
   return (
@@ -29,7 +29,7 @@ function MeetTheTeam() {
           <Card>
             <Card.Img
               variant="top"
-              src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              src={imgTharusha}
             />
             <Card.Body>
               <Card.Title>Tharusha Dilshan</Card.Title>
@@ -42,7 +42,7 @@ function MeetTheTeam() {
           <Card>
             <Card.Img
               variant="top"
-              src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              src={imgPasindu}
             />
             <Card.Body>
               <Card.Title>Pasindu Theekshana</Card.Title>
@@ -56,7 +56,7 @@ function MeetTheTeam() {
           <Card>
             <Card.Img
               variant="top"
-              src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              src={imgEshan}
             />
             <Card.Body>
               <Card.Title>Eshan Hasitha</Card.Title>
@@ -70,7 +70,7 @@ function MeetTheTeam() {
           <Card>
             <Card.Img
               variant="top"
-              src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              src={imgSanuri}
             />
             <Card.Body>
               <Card.Title>Sanuri Perera</Card.Title>
