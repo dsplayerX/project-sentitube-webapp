@@ -3,6 +3,10 @@ import { Container } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import imgDumidu from "../images/TeamMembersPhotos/dumindu.jpg"
+import imgTharusha from "../images/TeamMembersPhotos/tharusha.jpg"
+import imgPasindu from "../images/TeamMembersPhotos/pasindu.jpg"
+import imgEshan from "../images/TeamMembersPhotos/eshan.jpg"
+import imgSanuri from "../images/TeamMembersPhotos/dumindu.jpg"
 
 function MeetTheTeam() {
   return (
