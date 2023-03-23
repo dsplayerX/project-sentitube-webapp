@@ -15,7 +15,7 @@ function MeetTheTeam() {
         <h1>
           <center>Meet The Team</center>
         </h1>
-        <CardGroup>
+        <CardGroup className="fade-in">
           <Card>
             <Card.Img
               variant="top"
