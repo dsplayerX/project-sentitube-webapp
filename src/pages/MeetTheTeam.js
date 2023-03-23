@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
+import imgDumidu from "../images/TeamMembersPhotos/dumindu.jpg"
 
 function MeetTheTeam() {
   return (
@@ -14,7 +15,7 @@ function MeetTheTeam() {
           <Card>
             <Card.Img
               variant="top"
-              src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              src={imgDumidu}
             />
             <Card.Body>
               <Card.Title>Dumindu Sameendra</Card.Title>
