@@ -230,7 +230,7 @@ tr:hover {
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 
 @keyframes fadeIn {
