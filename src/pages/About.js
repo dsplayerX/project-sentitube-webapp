@@ -17,7 +17,11 @@ function About() {
         <h1 class="thick" style={{color:"black",WebkitTextStroke: "0.5px black"}}>
           <center><b>What is SentiTube ?</b></center>
         </h1>
-        <p>
+        <p style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.5)", 
+            paddingTop:"1%",
+            paddingLeft:"2%" ,
+            paddingRight:"2%",
+            borderRadius:"20px"}}>
           SentiTube is a powerful tool that provides sentiment analysis of
           YouTube video comments, offering users insightful information on
           viewer engagement. Developed by "phoeniX", a group of 2nd year
@@ -29,19 +33,24 @@ function About() {
           results, SentiTube is an excellent resource for anyone looking to gain
           a deeper understanding of their YouTube audience. Whether using the
           website or chrome extension, SentiTube is completely free and
-          available for everyone to use without any charges or fees. <br />
+          available for everyone to use without any charges or fees. 
+          </p>
           <center>
             <Link to="/SentiTubeLogic" onClick={handleClick}>
               <button class="button">Read about logic of SentiTube</button>
             </Link>
           </center>
-        </p>
+        
       </div>
       <div class="about">
         <h1 class="thick" style={{color:"black",WebkitTextStroke: "0.5px black"}}>
           <center>Who are we ?</center>
         </h1>
-        <p style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.5)", paddingLeft:"2%" , paddingRight:"2%"}}>
+        <p style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.5)", 
+            paddingTop:"1%",
+            paddingLeft:"2%" ,
+            paddingRight:"2%",
+            borderRadius:"20px"}}>
           We are "phoeniX", a team of 2nd year undergraduate students following
           Software Engineering at University of Westminster. We developed
           SentiTube as our SDGP (Software Development Group Project) with the
