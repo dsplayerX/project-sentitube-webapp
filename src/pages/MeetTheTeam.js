@@ -132,7 +132,7 @@ function MeetTheTeam() {
                 
                 <p>
                   To contact me, please send an email to{" "}
-                  <a href="eshan.20210150@iit.ac.lk">eshan.20210150@iit.ac.lk</a>.
+                  <a href="mailto:eshan.20210150@iit.ac.lk">eshan.20210150@iit.ac.lk</a>.
                 </p>
               </div>
             </Card.Body>
@@ -166,7 +166,7 @@ function MeetTheTeam() {
                 
                 <p>
                   To contact me, please send an email to{" "}
-                  <a href="sanuri.20211272@iit.ac.lk">sanuri.20211272@iit.ac.lk</a>.
+                  <a href="mailto:sanuri.20211272@iit.ac.lk">sanuri.20211272@iit.ac.lk</a>.
                 </p>
               </div>
             </Card.Body>
