@@ -246,6 +246,11 @@ tr:hover {
   color: black;
 }
 
+.linkedin-button svg {
+  fill: blue !important;
+}
+
+
 
 
 /* 
