@@ -12,8 +12,8 @@ function MeetTheTeam() {
   return (
     <>
       <div className="meettheteammain">
-        <h1>
-          <center>Meet The Team</center>
+        <h1 className="page-name" style={{color: "black", fontWeight: "bold"}} >
+          <center >Meet The Team</center>
         </h1>
         <CardGroup className="fade-in">
           <Card>
@@ -34,8 +34,7 @@ function MeetTheTeam() {
             <Card.Body>
               <Card.Title>Tharusha Dilshan</Card.Title>
               <Card.Text>
-                This card has supporting text below as a natural lead-in to
-                additional content.{" "}
+                Developer
               </Card.Text>
             </Card.Body>
           </Card>
@@ -47,9 +46,7 @@ function MeetTheTeam() {
             <Card.Body>
               <Card.Title>Pasindu Theekshana</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+              Developer
               </Card.Text>
             </Card.Body>
           </Card>
@@ -61,9 +58,7 @@ function MeetTheTeam() {
             <Card.Body>
               <Card.Title>Eshan Hasitha</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+              Developer
               </Card.Text>
             </Card.Body>
           </Card>
@@ -75,9 +70,7 @@ function MeetTheTeam() {
             <Card.Body>
               <Card.Title>Sanuri Perera</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+              Developer
               </Card.Text>
             </Card.Body>
           </Card>
