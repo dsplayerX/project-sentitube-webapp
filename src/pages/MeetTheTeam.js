@@ -9,6 +9,7 @@ import imgEshan from "../images/TeamMembersPhotos/eshan.jpg";
 import imgSanuri from "../images/TeamMembersPhotos/sanuri.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
+import { FaGithub } from "react-icons/fa";
 
 function MeetTheTeam() {
   return (
@@ -36,7 +37,16 @@ function MeetTheTeam() {
               >
                 <FaLinkedin size={24} />
               </Button>
-              
+              <Button
+                href="https://github.com/dumindu96"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
+              </Button>
             </Card.Body>
           </Card>
           <Card>
@@ -53,6 +63,16 @@ function MeetTheTeam() {
                 style={{ marginTop: "10px" }}
               >
                 <FaLinkedin size={24} />
+              </Button>
+              <Button
+                href="https://github.com/dumindu96"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
               </Button>
             </Card.Body>
           </Card>
@@ -71,6 +91,16 @@ function MeetTheTeam() {
               >
                 <FaLinkedin size={24} />
               </Button>
+              <Button
+                href="https://github.com/dumindu96"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
+              </Button>
             </Card.Body>
           </Card>
           <Card>
@@ -79,7 +109,7 @@ function MeetTheTeam() {
               <Card.Title>Eshan Hasitha</Card.Title>
               <Card.Text>Developer</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://github.com/Hasithjay98"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
@@ -87,6 +117,16 @@ function MeetTheTeam() {
                 style={{ marginTop: "10px" }}
               >
                 <FaLinkedin size={24} />
+              </Button>
+              <Button
+                href="https://github.com/dumindu96"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
               </Button>
             </Card.Body>
           </Card>
@@ -104,6 +144,16 @@ function MeetTheTeam() {
                 style={{ marginTop: "10px" }}
               >
                 <FaLinkedin size={24} />
+              </Button>
+              <Button
+                href="https://github.com/dumindu96"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
               </Button>
             </Card.Body>
           </Card>
