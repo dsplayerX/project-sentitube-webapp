@@ -28,7 +28,7 @@ function MeetTheTeam() {
               <Card.Title>Dumindu Sameendra</Card.Title>
               <Card.Text>Team Leader</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://www.linkedin.com/in/dumindu-s-886189223/"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
