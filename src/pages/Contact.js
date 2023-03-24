@@ -19,7 +19,7 @@ function Contact() {
             margin: "none",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
           <div
@@ -31,9 +31,8 @@ function Contact() {
           >
             <h3
               style={{
-                WebkitTextStroke: "0.1px black",
                 fontSize: "40px",
-                color: "black",
+                color: "white",
                 textAlign: "center",
                 marginBottom: "40px",
                 marginTop: "-40px",
@@ -54,8 +53,13 @@ function Contact() {
                 borderRadius: "10px",
               }}
             >
-              <div className="logo" style={{ boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)" }}>
-                <i  class="bi bi-envelope" style={{ fontSize: 40 }} fluid rounded></i>
+              <div className="logo">
+                <i
+                  class="bi bi-envelope"
+                  style={{ fontSize: 40 }}
+                  fluid
+                  rounded
+                ></i>
               </div>
               <h4>Email Us</h4>
               <h5>
@@ -68,7 +72,7 @@ function Contact() {
               <Button
                 type="button"
                 class="btn btn-secondary"
-                className="faq-button-hover" 
+                className="faq-button-hover"
                 style={{
                   backgroundColor: "grey",
                   padding: "5px",

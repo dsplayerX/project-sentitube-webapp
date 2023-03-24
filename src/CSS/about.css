@@ -67,7 +67,7 @@ h1.thick {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(20px); 
+  /* backdrop-filter: blur(20px);  */
   background: rgba(210, 210, 210, 0.58);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   /* box-shadow: 4px 17px 51px rgba(0, 0, 0, 0.22); */
@@ -80,13 +80,4 @@ h1.thick {
   align-items: center;
   justify-content: center;
   user-select: none;
-}
-
-.cardab:hover {
-  border: 1px solid black;
-  transform: scale(1);
-}
-
-.cardab:active {
-  transform: scale(0.95) rotateZ(1.7deg);
 }

@@ -74,209 +74,222 @@ function Results() {
   ); ////
 
   return (
-    <div className="Result_page">
-      <Container
-        style={{
-          color: "rgb(51,51,255)",
-          marginBottom: "40px",
-          padding: "25px",
-          backgroundColor:"#CBD3D8",
-          marginTop:"20px",
-          borderRadius:"10px"
-        }}
-      >
-        <Row
+    <div style={{ marginLeft: "10px", marginRight: "10px" }}>
+      <div className="Result_page">
+        <Container
           style={{
-            textAlign: "center",
-            justifyContent: "center",
-            marginBottom: "25px",
+            color: "rgb(51,51,255)",
+            marginBottom: "40px",
+            padding: "25px",
+            backdropFilter: "blur(20px)",
+            background: "rgba(255, 255, 255, 0.75)",
+            boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+            marginTop: "20px",
+            borderRadius: "10px",
           }}
         >
-          <Col>
-            <div
-              style={{
-                backgroundColor: "black",
-                padding: "25px",
-                borderRadius: "10px",
-                marginTop: "10px",
-                height: "100%",
-              }}
-            >
-              <h5
+          <Row
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              marginBottom: "25px",
+            }}
+          >
+            <Col>
+              <div
                 style={{
-                  backgroundColor: "#262626",
+                  backgroundColor: "black",
                   padding: "25px",
+                  borderRadius: "10px",
+                  marginTop: "10px",
+                  height: "100%",
                 }}
               >
-                {data["Video Title"]}
-              </h5>
-              {/* <img
+                <h5
+                  style={{
+                    backgroundColor: "#262626",
+                    padding: "25px",
+                  }}
+                >
+                  {data["Video Title"]}
+                </h5>
+                {/* <img
                 src={`https://img.youtube.com/vi/${data["Video Id"]}/maxresdefault.jpg`}
                 height={"auto"}
                 width={"80%"}
                 alt={"Thumbnail of " + data["Video Title"]}
               /> */}
-              <YoutubeEmbed embedId={data["Video Id"]} />
-              {/* https://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api */}
-            </div>
-          </Col>
+                <YoutubeEmbed embedId={data["Video Id"]} />
+                {/* https://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api */}
+              </div>
+            </Col>
 
-          <Col>
-            <div
-              style={{
-                height: "100%",
-                padding: "25px",
-                marginTop: "20px",
-              }}
-            >
-              <h5 className="chart-title">SentiTube Result</h5>
+            <Col>
               <div
                 style={{
-                  width: 300,
-                  margin: "40px auto",
+                  height: "100%",
+                  padding: "25px",
+                  marginTop: "20px",
+                }}
+              >
+                <h5 className="chart-title">SentiTube Result</h5>
+                <div
+                  style={{
+                    width: 300,
+                    margin: "40px auto",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <Doughnut chartData={finalsentiChartData} />
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <h5 className="chart-title">Sentiment Result</h5>
+              <div
+                style={{
+                  width: 260,
+                  margin: "auto",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                 }}
               >
-                <Doughnut chartData={finalsentiChartData} />
+                <Doughnut chartData={sentimentChartData} />
               </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h5 className="chart-title">Sentiment Result</h5>
-            <div
-              style={{
-                width: 260,
-                margin: "auto",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Doughnut chartData={sentimentChartData} />
-            </div>
-          </Col>
+            </Col>
 
-          <Col>
-            <h5 className="chart-title">Sarcasam Result</h5>
-            <div
-              style={{
-                width: 260,
-                margin: "auto",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Doughnut chartData={sarcasmChartData} />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+            <Col>
+              <h5 className="chart-title">Sarcasam Result</h5>
+              <div
+                style={{
+                  width: 260,
+                  margin: "auto",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Doughnut chartData={sarcasmChartData} />
+              </div>
+            </Col>
+          </Row>
+        </Container>
 
-      <Container
-        style={{
-          color: "black",
-          margin: "10px auto",
-          backgroundColor:"#CBD3D8",
-          marginTop:"20px",
-          borderRadius:"10px",
-          padding:"25px"
-        }}
-      >
-        <h4>Custom Feedback</h4>
-
-        <p className="feedback-box">{feedbackItem.text}</p>
-
-        <h4>Final Result</h4>
-        <Row
+        <Container
           style={{
-            background:
-              "linear-gradient(45deg, rgb(254, 0, 0), rgb(255, 201, 100))",
-            color: "white",
-            padding: "10px",
-            margin: "6px",
+            color: "black",
+            margin: "10px auto",
+            backgroundColor: "whitesmoke",
+            marginTop: "20px",
+
             borderRadius: "10px",
+            padding: "25px",
+            backdropFilter: "blur(20px)",
+            background: "rgba(255, 255, 255, 0.75)",
+            boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
           }}
         >
-          <Row>
-            <Col
-              style={{
-                fontFamily: "'Dosis', sans-serif",
-                fontSize: "20px",
-                textAlign: "left",
-              }}
-            >
-              <h6>SentiTube Result</h6>
-              <p>Senti Positve Comments : {data["Sentitube Positve"]}</p>
-              <p>Senti Negative Comments : {data["Sentitube Negative"]}</p>
-            </Col>
-            <Col
-              style={{
-                fontFamily: "'Dosis', sans-serif",
-                fontSize: "20px",
-                textAlign: "left",
-              }}
-            >
-              <h6>Sentiment Result</h6>
-              <p>Positve Comments : {data["Positive Comments"]}</p>
-              <p>Neutral Comments : {data["Neutral Comments"]}</p>
-              <p>Negative Comments : {data["Negative Comments"]}</p>
-            </Col>
-            <Col
-              style={{
-                fontFamily: "'Dosis', sans-serif",
-                fontSize: "20px",
-                textAlign: "left",
-              }}
-            >
-              <h6>Sarcasam Result</h6>
-              <p>Sarcastic Comments : {data["Sarcastic Comments"]}</p>
-              <p>Non-Sarcastic Comments : {data["Nonsarcastic Comments"]}</p>
-            </Col>
-          </Row>
-          <Row
+          <h4>Our Feedback</h4>
+
+          <p
+            className="feedback-box"
             style={{
-              marginTop: "20px",
+              fontSize: "20px",
+              textAlign: "left",
+              margin: "10px",
             }}
           >
-            <Col
+            {feedbackItem.text}
+          </p>
+
+          <h4>Final Results</h4>
+          <Row
+            style={{
+              background: "red",
+              color: "white",
+              padding: "10px",
+              margin: "10px",
+              borderRadius: "10px",
+            }}
+          >
+            <Row>
+              <Col
+                style={{
+                  fontSize: "20px",
+                  textAlign: "left",
+                }}
+              >
+                <h6>SentiTube Result</h6>
+                <p>Senti Positve Comments : {data["Sentitube Positve"]}</p>
+                <p>Senti Negative Comments : {data["Sentitube Negative"]}</p>
+              </Col>
+              <Col
+                style={{
+                  fontSize: "20px",
+                  textAlign: "left",
+                }}
+              >
+                <h6>Sentiment Result</h6>
+                <p>Positve Comments : {data["Positive Comments"]}</p>
+                <p>Neutral Comments : {data["Neutral Comments"]}</p>
+                <p>Negative Comments : {data["Negative Comments"]}</p>
+              </Col>
+              <Col
+                style={{
+                  fontSize: "20px",
+                  textAlign: "left",
+                }}
+              >
+                <h6>Sarcasam Result</h6>
+                <p>Sarcastic Comments : {data["Sarcastic Comments"]}</p>
+                <p>Non-Sarcastic Comments : {data["Nonsarcastic Comments"]}</p>
+              </Col>
+            </Row>
+            <Row
               style={{
-                margin: "auto",
-                display: "flex",
-                justifyContent: "left",
-                alignItems: "left",
+                marginTop: "20px",
               }}
             >
-              <Button
-                varient="flat"
-                className="perbutton"
-                size="xl"
+              <Col
                 style={{
-                  backgroundColor: "rgb(255,255,102)",
-                  border: "4px",
-                  color: "red",
-                  borderRadius: "20px",
-                  borderColor: "red",
-                  textAlign: "left",
-                  padding:"10px"
+                  margin: "auto",
+                  display: "flex",
+                  justifyContent: "left",
+                  alignItems: "left",
                 }}
-                onClick={handleButton}
               >
-                Per Comment Results
-              </Button>
-            </Col>
-            <Col>
-              <p className="total-comment-count">
-                Total Analysed Comments : {data["Total Comments"]}
-              </p>
-            </Col>
+                <Button
+                  varient="flat"
+                  className="perbutton"
+                  size="xl"
+                  style={{
+                    backgroundColor: "rgb(255,255,102)",
+                    border: "4px",
+                    color: "red",
+                    borderRadius: "20px",
+                    borderColor: "red",
+                    textAlign: "left",
+                    padding: "10px",
+                  }}
+                  onClick={handleButton}
+                >
+                  Per Comment Results
+                </Button>
+              </Col>
+              <Col>
+                <p className="total-comment-count">
+                  Total Analysed Comments : {data["Total Comments"]}
+                </p>
+              </Col>
+            </Row>
           </Row>
-        </Row>
-      </Container>
+        </Container>
+      </div>
     </div>
   );
 }

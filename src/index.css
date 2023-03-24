@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box;
   /* font-family: "Inter", sans-serif; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -23,12 +23,12 @@ body {
 }
 .Result_page .total-comment-count {
   font-size: 20px;
-  color: rgb(105, 103, 103);
+  color: rgb(255, 248, 113);
   text-align: right;
 }
 .Result_page .chart-title {
   color: white;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   text-align: center;
   margin: 10px;
   padding: 4px;
@@ -57,11 +57,10 @@ body {
   padding: 4px;
   border-radius: 6px;
 }
-.perbutton:hover{
+.perbutton:hover {
   background-color: rgb(253, 245, 194) !important;
   transition: "background-color 0.1s ease-in-out" !important;
 }
-
 
 /*  Per Comment Results */
 .Per_Comment_Results {
@@ -87,12 +86,10 @@ body {
   overflow-x: hidden;
 }
 
-
-
 .table-wrapper .title-column {
   background-color: #ff4a4a;
 }
-.comment-column{
+.comment-column {
   height: auto;
   width: 70%;
 }
@@ -116,7 +113,7 @@ tr:hover {
 
 /* Try It Out*/
 
-.drp_menus{
+.drp_menus {
   white-space: nowrap;
 }
 
@@ -166,7 +163,6 @@ tr:hover {
   transition: "background-color 0.1s ease-in-out" !important;
 }
 
-
 /*  FAQ page  */
 .faq-page .faq-box {
   /* background-color: #f6bdbd; */
@@ -185,7 +181,7 @@ tr:hover {
   display: none;
 }
 .faq-page .faq-box .two {
-  color: blue;
+  color: rgb(255, 0, 0);
   display: ruby;
 }
 
@@ -242,16 +238,13 @@ tr:hover {
   }
 }
 
-.page-name{
+.page-name {
   color: black;
 }
 
 .linkedin-button svg {
   fill: blue !important;
 }
-
-
-
 
 /* 
 .overflow {
@@ -301,7 +294,6 @@ h3 {
   margin: 80px;
 }
 
-
 /*  Footer  */
 .main_footer {
   background-color: black;
@@ -335,11 +327,9 @@ h3 {
   font-size: 14px;
 }
 
-
 /* targeted for mobile devices - 800px */
 
 @media (max-width: 800px) {
-  
   /*  CONTACT page*/
 
   .contact-container {
@@ -363,7 +353,6 @@ h3 {
   }
 }
 
-
 /* targeted for mobile devices - 400px */
 
 @media (max-width: 500px) {
@@ -375,7 +364,7 @@ h3 {
     font-size: 10px;
   }
 
-  .perbutton{
+  .perbutton {
     font-size: 16px;
   }
 
@@ -392,16 +381,32 @@ h3 {
 }
 
 /*  Terms Of Service  */
-.term-page h2{
+.term-page h2 {
   margin-bottom: 14px;
   color: #b43535;
   text-align: center;
 }
-.term-page h3{
+.term-page h3 {
   text-align: left;
   color: black;
   font-size: 20px;
 }
-.term-page p{
+.term-page p {
   margin-bottom: 10px;
+}
+
+/* YouTube iFrame */
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }

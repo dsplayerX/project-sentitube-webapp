@@ -1,47 +1,55 @@
-.welcome_note h1{
-    font-size: 400%;   
+.welcome_note h1 {
+  font-size: 350%;
+}
+/* 
+.row {
+  padding-left: 2%;
 }
 
-.row{
-    padding-left:2%;
-    
+.home {
+  padding-top: 6%;
+} */
 
+.home .Container {
+  background-color: rgba(245, 245, 245, 0.808);
+  border-radius: 25px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  padding: 2.5%;
 }
 
-.home{
-    padding-top: 6%;
+.welcome_note {
+  /* backdrop-filter: blur(20px);  */
+  border-radius: 20px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  /* background-color: whitesmoke; */
+  padding: 0% 5%;
 }
 
-.welcome_note{
-    backdrop-filter: blur(20px); 
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
-    
+.welcome_note p {
+  font-size: 100%;
 }
 
-.welcome_note p{
-    padding-top: 3%;
-    padding-right:3%;
-    font-size: 150%;
+.hime animate-h1 {
+  font-size: 100%;
 }
 
-.home_img_div{
-    padding-top: 0%;
-    padding-bottom: 0%;
+.home_img_div {
+  padding-top: 0%;
+  padding-bottom: 0%;
 }
 
-
-
-.home{
-    background-color: rgba(0, 255, 255, 0);
-    
+.home {
+  background-color: rgba(245, 245, 245, 0);
 }
 
-.Container{
-    background-color: rgba(225, 0, 255, 0);
+.Container {
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.h1{
-    -webkit-text-stroke: 0.1px black;
+.home .h1 {
+  /* -webkit-text-stroke: 0.1px black; */
 }
