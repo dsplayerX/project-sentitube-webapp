@@ -55,7 +55,7 @@ function MeetTheTeam() {
               <Card.Title>Tharusha Dilshan</Card.Title>
               <Card.Text>Developer</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://www.linkedin.com/in/tharusha-dilshan0418/"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
@@ -136,7 +136,7 @@ function MeetTheTeam() {
               <Card.Title>Sanuri Perera</Card.Title>
               <Card.Text>Developer</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://www.linkedin.com/in/sanuri-perera/"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
