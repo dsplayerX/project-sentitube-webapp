@@ -5,7 +5,7 @@ import CardGroup from "react-bootstrap/CardGroup";
 import imgDumidu from "../images/TeamMembersPhotos/dumindu.jpg";
 import imgTharusha from "../images/TeamMembersPhotos/tharusha.jpg";
 import imgPasindu from "../images/TeamMembersPhotos/pasindu.jpg";
-import imgEshan from "../images/TeamMembersPhotos/eshan.jpg";
+import imgEshan from "../images/TeamMembersPhotos/eshannew.jpg";
 import imgSanuri from "../images/TeamMembersPhotos/sanuri.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
