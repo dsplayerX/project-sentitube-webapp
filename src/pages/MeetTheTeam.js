@@ -47,6 +47,13 @@ function MeetTheTeam() {
               >
                 <FaGithub size={24} />
               </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="mailto:dumindu.20210592@iit.ac.lk">dumindu.20210592@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
           <Card>
@@ -74,6 +81,13 @@ function MeetTheTeam() {
               >
                 <FaGithub size={24} />
               </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="mailto:tharusha.20210593@iit.ac.lk">tharusha.20210593@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
           <Card>
@@ -101,6 +115,13 @@ function MeetTheTeam() {
               >
                 <FaGithub size={24} />
               </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="mailto:pasindu.20210169@iit.ac.lk">pasindu.20210169@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
           <Card>
