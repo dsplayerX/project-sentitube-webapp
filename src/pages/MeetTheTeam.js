@@ -128,6 +128,13 @@ function MeetTheTeam() {
               >
                 <FaGithub size={24} />
               </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="eshan.20210150@iit.ac.lk">eshan.20210150@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
           <Card>
@@ -155,6 +162,13 @@ function MeetTheTeam() {
               >
                 <FaGithub size={24} />
               </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="sanuri.20211272@iit.ac.lk">sanuri.20211272@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
         </CardGroup>
