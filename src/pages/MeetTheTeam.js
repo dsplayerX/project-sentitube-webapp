@@ -109,7 +109,7 @@ function MeetTheTeam() {
               <Card.Title>Eshan Hasitha</Card.Title>
               <Card.Text>Developer</Card.Text>
               <Button
-                href="https://github.com/Hasithjay98"
+                href="https://www.linkedin.com/in/eshan-hasitha/"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
@@ -119,7 +119,7 @@ function MeetTheTeam() {
                 <FaLinkedin size={24} />
               </Button>
               <Button
-                href="https://github.com/dumindu96"
+                href="https://github.com/Hasithjay98"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
