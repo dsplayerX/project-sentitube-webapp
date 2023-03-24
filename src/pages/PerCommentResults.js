@@ -66,8 +66,17 @@ function PerCommentResults() {
   }
 
   return (
-    <div className="Per_Comment_Results">
-      <h2>Per Comment Analysis Results</h2>
+    <div
+      className="Per_Comment_Results"
+      style={{
+        backdropFilter: "blur(20px)",
+        background: "rgba(255, 255, 255, 0.75)",
+        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+      }}
+    >
+      <h2>
+        <b>Per Comment Analysis Results</b>
+      </h2>
       <div>{renderTable()}</div>
     </div>
   );

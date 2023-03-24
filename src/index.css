@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 * {
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   min-height: 720px !important;
   margin: 0;
   /* background-color: #f8f9fa; */
-  background-color: rgb(245, 245, 245) !important;
+  background-color: rgba(245, 245, 245, 0.014) !important;
 }
 
 /*  Result Page  */
@@ -21,12 +23,12 @@ body {
 }
 .Result_page .total-comment-count {
   font-size: 20px;
-  color: rgb(105, 103, 103);
+  color: rgb(255, 248, 113);
   text-align: right;
 }
 .Result_page .chart-title {
   color: white;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   text-align: center;
   margin: 10px;
   padding: 4px;
@@ -55,8 +57,10 @@ body {
   padding: 4px;
   border-radius: 6px;
 }
-
-
+.perbutton:hover {
+  background-color: rgb(253, 245, 194) !important;
+  transition: "background-color 0.1s ease-in-out" !important;
+}
 
 /*  Per Comment Results */
 .Per_Comment_Results {
@@ -82,12 +86,10 @@ body {
   overflow-x: hidden;
 }
 
-
-
 .table-wrapper .title-column {
   background-color: #ff4a4a;
 }
-.comment-column{
+.comment-column {
   height: auto;
   width: 70%;
 }
@@ -110,6 +112,10 @@ tr:hover {
 }
 
 /* Try It Out*/
+
+.drp_menus {
+  white-space: nowrap;
+}
 
 .try-button-hover:hover {
   background-color: rgb(185, 0, 0) !important;
@@ -152,8 +158,10 @@ tr:hover {
   color: #fff0dc;
   font-size: 20px;
 }
-
-
+.faq-button-hover:hover {
+  background-color: rgb(60, 55, 55) !important;
+  transition: "background-color 0.1s ease-in-out" !important;
+}
 
 /*  FAQ page  */
 .faq-page .faq-box {
@@ -173,7 +181,7 @@ tr:hover {
   display: none;
 }
 .faq-page .faq-box .two {
-  color: blue;
+  color: rgb(255, 0, 0);
   display: ruby;
 }
 
@@ -208,11 +216,34 @@ tr:hover {
 
 .card:hover {
   transform: scale(1.1);
-  transition: all 0.3s;
+  transition: all 0.6s;
 }
 
 .card-group {
   flex-wrap: wrap;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-name {
+  color: black;
+}
+
+.linkedin-button svg {
+  fill: blue !important;
 }
 
 /* 
@@ -263,7 +294,6 @@ h3 {
   margin: 80px;
 }
 
-
 /*  Footer  */
 .main_footer {
   background-color: black;
@@ -297,11 +327,9 @@ h3 {
   font-size: 14px;
 }
 
-
 /* targeted for mobile devices - 800px */
 
 @media (max-width: 800px) {
-  
   /*  CONTACT page*/
 
   .contact-container {
@@ -325,16 +353,19 @@ h3 {
   }
 }
 
-
 /* targeted for mobile devices - 400px */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   /* RESULT page */
   .Result_page .total-comment-count {
     font-size: 14px;
   }
   .Result_page .perbutton {
     font-size: 10px;
+  }
+
+  .perbutton {
+    font-size: 16px;
   }
 
   /*  Chrome Page  */
@@ -347,4 +378,35 @@ h3 {
   .contact-page {
     color: red;
   }
+}
+
+/*  Terms Of Service  */
+.term-page h2 {
+  margin-bottom: 14px;
+  color: #b43535;
+  text-align: center;
+}
+.term-page h3 {
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+.term-page p {
+  margin-bottom: 10px;
+}
+
+/* YouTube iFrame */
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }

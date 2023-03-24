@@ -33,7 +33,7 @@ export const ContactUsForm = () => {
     // Validating form and stores any error
     const errors = validateForm();
 
-    if (serviceKey != "") {
+    if (serviceKey !== "") {
       if (Object.keys(errors).length === 0) {
         // If there are no errors proceed with message submission
         // EmailJS form submission
@@ -134,7 +134,6 @@ export const ContactUsForm = () => {
             name="from_name"
             isInvalid={!!formErrors.name}
             style={{
-              backgroundColor: "rgb(255,240,220)",
               border: "none",
             }}
           />
@@ -153,7 +152,6 @@ export const ContactUsForm = () => {
             name="from_email"
             isInvalid={!!formErrors.email}
             style={{
-              backgroundColor: "rgb(255,240,220)",
               border: "none",
             }}
           />
@@ -171,7 +169,6 @@ export const ContactUsForm = () => {
             rows={6}
             isInvalid={!!formErrors.message}
             style={{
-              backgroundColor: "rgb(255,240,220)",
               border: "none",
             }}
           />
