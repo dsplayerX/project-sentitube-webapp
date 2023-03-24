@@ -32,7 +32,7 @@ function Contact() {
             <h3
               style={{
                 fontSize: "40px",
-                color: "red",
+                color: "white",
                 textAlign: "center",
                 marginBottom: "40px",
                 marginTop: "-40px",
@@ -47,13 +47,19 @@ function Contact() {
             <div
               className="mail-us-container"
               style={{
+                boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
                 backgroundColor: "#ff3232",
                 padding: "25px 50px 25px 50px",
                 borderRadius: "10px",
               }}
             >
               <div className="logo">
-                <i class="bi bi-envelope" style={{ fontSize: 40 }}></i>
+                <i
+                  class="bi bi-envelope"
+                  style={{ fontSize: 40 }}
+                  fluid
+                  rounded
+                ></i>
               </div>
               <h4>Email Us</h4>
               <h5>
@@ -66,6 +72,7 @@ function Contact() {
               <Button
                 type="button"
                 class="btn btn-secondary"
+                className="faq-button-hover"
                 style={{
                   backgroundColor: "grey",
                   padding: "5px",
@@ -90,6 +97,7 @@ function Contact() {
           <div
             className="contact-container"
             style={{
+              boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
               backgroundColor: "#e6e6e6",
               borderRadius: "10px",
               padding: "20px",

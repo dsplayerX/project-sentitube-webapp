@@ -6,8 +6,9 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import FAQs from "./pages/FAQs";
 import TermsOfService from "./pages/TermsOfService"
+import BackgroundImage from "./BackgroundImage";
 
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 // used for easy dev access (will delete from navbar later)
 import Results from "./pages/Results";
@@ -19,10 +20,11 @@ import SentiTubeLogic from "./pages/SentiTubeLogic";
 function App() {
   return (
     <div className="App">
+      <BackgroundImage />
       <NavBar />
       <body>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />}  />
           <Route path="/TryItOut" element={<TryItOut />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
