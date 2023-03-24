@@ -14,8 +14,8 @@ function About() {
     <div>
       
       <div class="about">
-        <h1 class="thick">
-          <center>What is SentiTube ?</center>
+        <h1 class="thick" style={{color:"black",WebkitTextStroke: "0.5px black"}}>
+          <center><b>What is SentiTube ?</b></center>
         </h1>
         <p>
           SentiTube is a powerful tool that provides sentiment analysis of
@@ -38,10 +38,10 @@ function About() {
         </p>
       </div>
       <div class="about">
-        <h1 class="thick">
+        <h1 class="thick" style={{color:"black",WebkitTextStroke: "0.5px black"}}>
           <center>Who are we ?</center>
         </h1>
-        <p>
+        <p style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.5)", paddingLeft:"2%" , paddingRight:"2%"}}>
           We are "phoeniX", a team of 2nd year undergraduate students following
           Software Engineering at University of Westminster. We developed
           SentiTube as our SDGP (Software Development Group Project) with the
@@ -50,14 +50,14 @@ function About() {
           on viewer engagement. With SentiTube, we aimed to create a valuable
           resource for anyone looking to gain a deeper understanding of their
           YouTube audience, and we are proud to offer this tool completely free
-          of charge. <br />
-          <br />
+          of charge.
+          </p>
           <center>
             <Link to="/MeetTheTeam" onClick={handleClick}>
               <button class="button">MeetTheTeam</button>
             </Link>
           </center>
-        </p>
+        
       </div>
       <br />
 
