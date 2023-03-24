@@ -17,7 +17,10 @@ function About() {
         <h1 class="thick" style={{color:"black",WebkitTextStroke: "0.5px black"}}>
           <center><b>What is SentiTube ?</b></center>
         </h1>
-        <p style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.5)", 
+        <p style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.5)",
+            backdropFilter:"blur(20px)",
+            background: "rgba(210, 210, 210, 0.226)",
+            fontSize:20, 
             paddingTop:"1%",
             paddingLeft:"2%" ,
             paddingRight:"2%",
@@ -46,7 +49,10 @@ function About() {
         <h1 class="thick" style={{color:"black",WebkitTextStroke: "0.5px black"}}>
           <center>Who are we ?</center>
         </h1>
-        <p style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.5)", 
+        <p style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.5)",
+            backdropFilter:"blur(20px)",
+            fontSize:20,
+            background: "rgba(210, 210, 210, 0.226)", 
             paddingTop:"1%",
             paddingLeft:"2%" ,
             paddingRight:"2%",
