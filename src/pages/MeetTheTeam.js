@@ -65,7 +65,7 @@ function MeetTheTeam() {
                 <FaLinkedin size={24} />
               </Button>
               <Button
-                href="https://github.com/dumindu96"
+                href="https://github.com/TharU0418"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
