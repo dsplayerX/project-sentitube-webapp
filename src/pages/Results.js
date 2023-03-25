@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { CustomFeedback } from "./CustomFeedbacks";
+import { CustomFeedback } from "../components/CustomFeedbacks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Doughnut from "../components/DoughnutChart";
@@ -210,7 +210,7 @@ function Results() {
           <h4>Final Results</h4>
           <Row
             style={{
-              background: "red",
+              background: "rgba(255, 0, 0, 0.459)",
               color: "white",
               padding: "10px",
               margin: "10px",
@@ -256,6 +256,7 @@ function Results() {
               }}
             >
               <Col
+                md={8}
                 style={{
                   margin: "auto",
                   display: "flex",
@@ -268,13 +269,14 @@ function Results() {
                   className="perbutton"
                   size="xl"
                   style={{
-                    backgroundColor: "rgb(255,255,102)",
+                    backgroundColor: "rgb(255, 0, 0)",
                     border: "4px",
-                    color: "red",
+                    color: "white",
                     borderRadius: "20px",
                     borderColor: "red",
                     textAlign: "left",
                     padding: "10px",
+                    boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
                   }}
                   onClick={handleButton}
                 >
