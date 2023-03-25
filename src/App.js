@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <BackgroundImage />
       <NavBar />
-      <body>
+      <body style={{paddingTop:"20px"}}>
         <Routes>
           <Route exact path="/" element={<Home />}  />
           <Route path="/TryItOut" element={<TryItOut />} />
