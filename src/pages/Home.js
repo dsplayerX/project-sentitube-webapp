@@ -51,16 +51,15 @@ function Home() {
                   justifyContent: "center",
                 }}
               >
-                Welcome to SentiTube! Our platform analyzes the sentiments and
-                sarcasms of YouTube video comments to provide you with valuable
-                insights into how viewers feel about the content they are
-                watching. With our state-of-the-art sentiment analysis
-                technology, you can quickly and easily understand the feedback
-                of commenters. By analyzing the sentiment of YouTube video
-                comments, we provide you with a powerful tool for understanding
-                the audience's feedback and engagement. Try our sentiment
-                analysis tool today and unlock the power of audience insights
-                for any YouTube video!
+                SentiTube analyzes the sentiment and sarcasm of YouTube video
+                comments to provide you with valuable insights about the
+                audience's feedback and engagement. By analyzing sarcasm as well
+                as sentiment of YouTube video comments, we provide you with more
+                accurate sentiment results. SentiTube alsp provides custom
+                feedback and per comment analysis results. Whether you're a
+                content creator looking to improve your videos or a YouTube user
+                seeking to understand community's feedback towards a video,
+                SentiTube is the tool you need.
               </p>
               <div
                 class="buttons d-flex justify-content-start"
