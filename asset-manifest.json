@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/project-sentitube-webapp/static/css/main.c83ae04f.css",
-    "main.js": "/project-sentitube-webapp/static/js/main.cea5df2d.js",
+    "main.css": "/project-sentitube-webapp/static/css/main.dae49afa.css",
+    "main.js": "/project-sentitube-webapp/static/js/main.f67f908f.js",
     "static/media/denys-nevozhai-w7YCquMkv2c-unsplash.jpg": "/project-sentitube-webapp/static/media/denys-nevozhai-w7YCquMkv2c-unsplash.26196b89762e23f6bef8.jpg",
     "static/media/sanuri.jpg": "/project-sentitube-webapp/static/media/sanuri.78ed5ed8fe1338a4ccb6.jpg",
     "static/media/pasindu.jpg": "/project-sentitube-webapp/static/media/pasindu.c726bfa387901cd239ea.jpg",
-    "static/media/eshan.jpg": "/project-sentitube-webapp/static/media/eshan.e6120cd6f4a6b0219c85.jpg",
+    "static/media/eshannew.jpg": "/project-sentitube-webapp/static/media/eshannew.0ad7e20bf22304192390.jpg",
     "static/media/dumindu.jpg": "/project-sentitube-webapp/static/media/dumindu.cf2c88ace7ec0cb8cc2f.jpg",
     "static/media/tharusha.jpg": "/project-sentitube-webapp/static/media/tharusha.a60ae1fc8749ec0d5071.jpg",
-    "static/media/graph1.png": "/project-sentitube-webapp/static/media/graph1.288fdfabe6a5fbc12509.png",
-    "static/media/graph.png": "/project-sentitube-webapp/static/media/graph.5209f39a0a0eda204fc4.png",
     "static/media/chrome_icon.png": "/project-sentitube-webapp/static/media/chrome_icon.b237a5466c3f54f4937c.png",
     "static/media/bootstrap-icons.woff?": "/project-sentitube-webapp/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
     "static/media/bootstrap-icons.woff2?": "/project-sentitube-webapp/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "static/media/sentitubelogictrans.png": "/project-sentitube-webapp/static/media/sentitubelogictrans.53b1c3d6e574c90ba7dc.png",
-    "static/media/background_anim2.svg": "/project-sentitube-webapp/static/media/background_anim2.59a1c5dbff7b4f37fdee80ec5dc7a064.svg",
-    "static/media/background_anim1.svg": "/project-sentitube-webapp/static/media/background_anim1.59ae964053c20b5a08605dd797177e72.svg",
+    "static/media/background_anim2.svg": "/project-sentitube-webapp/static/media/background_anim2.326e372383a9bd425a5332b841357778.svg",
+    "static/media/background_anim1.svg": "/project-sentitube-webapp/static/media/background_anim1.de474ba30abd09f34faef6fc03d713fa.svg",
     "index.html": "/project-sentitube-webapp/index.html",
-    "main.c83ae04f.css.map": "/project-sentitube-webapp/static/css/main.c83ae04f.css.map",
-    "main.cea5df2d.js.map": "/project-sentitube-webapp/static/js/main.cea5df2d.js.map"
+    "main.dae49afa.css.map": "/project-sentitube-webapp/static/css/main.dae49afa.css.map",
+    "main.f67f908f.js.map": "/project-sentitube-webapp/static/js/main.f67f908f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c83ae04f.css",
-    "static/js/main.cea5df2d.js"
+    "static/css/main.dae49afa.css",
+    "static/js/main.f67f908f.js"
   ]
 }
