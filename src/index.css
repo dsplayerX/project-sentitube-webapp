@@ -385,18 +385,29 @@ h3 {
 }
 
 /*  Terms Of Service  */
-.term-page h2 {
+.term-page h1 {
   margin-bottom: 14px;
-  color: #b43535;
+  color: #ff0000;
   text-align: center;
 }
 .term-page h3 {
   text-align: left;
-  color: black;
+  color: rgb(59, 4, 4);
   font-size: 20px;
 }
 .term-page p {
   margin-bottom: 10px;
+}
+
+.TOS{
+  padding-bottom: 10px;
+}
+
+.TOS_div{
+  background-color: rgba(245, 245, 245, 0.808);
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2.5%;
 }
 
 /* YouTube iFrame */

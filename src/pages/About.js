@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row,Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../CSS/about.css";
 
@@ -11,21 +11,24 @@ function About() {
     });
   }
   return (
+    <div>
     <Container
       style={{
         color: "black",
         backdropFilter: "blur(20px)",
         background: "rgba(255, 255, 255, 0.75)",
         boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
-        marginLeft: "5%",
-        marginTop: "2.5%",
-        marginBottom: "2.5%",
-        marginRight: "5%",
+        // marginLeft: "5%",
+        // marginTop: "2.5%",
+        // marginBottom: "2.5%",
+        // marginRight: "5%",
         borderRadius: "20px",
         padding: "2.5%",
       }}
     >
-      <div class="about">
+      <Row>
+        <Col>
+        <div class="about" >
         <h1 class="thick" style={{ color: "black" }}>
           <center>
             <b>What is SentiTube ?</b>
@@ -137,9 +140,14 @@ function About() {
           </div>
         </div>
       </div>
+        
+        </Col>
+      </Row>
+      
 
       <br />
     </Container>
+    </div>
   );
 }
 
