@@ -5,10 +5,11 @@ import CardGroup from "react-bootstrap/CardGroup";
 import imgDumidu from "../images/TeamMembersPhotos/dumindu.jpg";
 import imgTharusha from "../images/TeamMembersPhotos/tharusha.jpg";
 import imgPasindu from "../images/TeamMembersPhotos/pasindu.jpg";
-import imgEshan from "../images/TeamMembersPhotos/eshan.jpg";
+import imgEshan from "../images/TeamMembersPhotos/eshannew.jpg";
 import imgSanuri from "../images/TeamMembersPhotos/sanuri.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
+import { FaGithub } from "react-icons/fa";
 
 function MeetTheTeam() {
   return (
@@ -27,7 +28,7 @@ function MeetTheTeam() {
               <Card.Title>Dumindu Sameendra</Card.Title>
               <Card.Text>Team Leader</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://www.linkedin.com/in/dumindu-s-886189223/"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
@@ -36,7 +37,23 @@ function MeetTheTeam() {
               >
                 <FaLinkedin size={24} />
               </Button>
-              
+              <Button
+                href="https://github.com/dsplayerX"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
+              </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="mailto:dumindu.20210592@iit.ac.lk">dumindu.20210592@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
           <Card>
@@ -45,7 +62,7 @@ function MeetTheTeam() {
               <Card.Title>Tharusha Dilshan</Card.Title>
               <Card.Text>Developer</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://www.linkedin.com/in/tharusha-dilshan0418/"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
@@ -54,6 +71,23 @@ function MeetTheTeam() {
               >
                 <FaLinkedin size={24} />
               </Button>
+              <Button
+                href="https://github.com/TharU0418"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
+              </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="mailto:tharusha.20210593@iit.ac.lk">tharusha.20210593@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
           <Card>
@@ -71,6 +105,23 @@ function MeetTheTeam() {
               >
                 <FaLinkedin size={24} />
               </Button>
+              <Button
+                href="https://github.com/MrDarkDrago"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
+              </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="mailto:pasindu.20210169@iit.ac.lk">pasindu.20210169@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
           <Card>
@@ -79,7 +130,7 @@ function MeetTheTeam() {
               <Card.Title>Eshan Hasitha</Card.Title>
               <Card.Text>Developer</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://www.linkedin.com/in/eshan-hasitha/"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
@@ -88,6 +139,23 @@ function MeetTheTeam() {
               >
                 <FaLinkedin size={24} />
               </Button>
+              <Button
+                href="https://github.com/Hasithjay98"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
+              </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="mailto:eshan.20210150@iit.ac.lk">eshan.20210150@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
           <Card>
@@ -96,7 +164,7 @@ function MeetTheTeam() {
               <Card.Title>Sanuri Perera</Card.Title>
               <Card.Text>Developer</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://www.linkedin.com/in/sanuri-perera/"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
@@ -105,6 +173,23 @@ function MeetTheTeam() {
               >
                 <FaLinkedin size={24} />
               </Button>
+              <Button
+                href="https://github.com/Sanuri20"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                style={{ marginTop: "10px" }}
+                className="github-button"
+              >
+                <FaGithub size={24} />
+              </Button>
+              <div class="card-body">
+                
+                <p>
+                  To contact me, please send an email to{" "}
+                  <a href="mailto:sanuri.20211272@iit.ac.lk">sanuri.20211272@iit.ac.lk</a>.
+                </p>
+              </div>
             </Card.Body>
           </Card>
         </CardGroup>

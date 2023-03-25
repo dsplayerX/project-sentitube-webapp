@@ -15,6 +15,22 @@ body {
   background-color: rgba(245, 245, 245, 0.014) !important;
 }
 
+/* Nav Bar styling */
+
+.logo {
+  width: 90px;
+  height: auto;
+  margin-left: auto;
+}
+
+.container {
+  justify-content: space-between;
+}
+
+.navlink {
+  font-size: 10%;
+}
+
 /*  Result Page  */
 .Result_page h4 {
   color: rgb(0, 0, 0);
@@ -23,12 +39,15 @@ body {
 }
 .Result_page .total-comment-count {
   font-size: 20px;
-  color: rgb(255, 248, 113);
-  text-align: right;
+  color: rgb(158, 0, 0);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background-color: #ffffff8f;
 }
 .Result_page .chart-title {
-  color: white;
-  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0.459);
   text-align: center;
   margin: 10px;
   padding: 4px;
@@ -36,7 +55,7 @@ body {
 }
 .Result_page .feedback-box {
   color: rgb(255, 255, 255);
-  background: #ff0000;
+  background: #ff000071;
   padding: 20px;
   border-radius: 10px;
 }
@@ -51,14 +70,14 @@ body {
 }
 .Result_page h5 {
   color: white;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   text-align: center;
   margin-bottom: 18px;
   padding: 4px;
   border-radius: 6px;
 }
 .perbutton:hover {
-  background-color: rgb(253, 245, 194) !important;
+  background-color: rgb(160, 0, 0) !important;
   transition: "background-color 0.1s ease-in-out" !important;
 }
 
@@ -118,7 +137,7 @@ tr:hover {
 }
 
 .try-button-hover:hover {
-  background-color: rgb(185, 0, 0) !important;
+  background-color: rgba(255, 41, 41, 0.776) !important;
   transition: "background-color 0.1s ease-in-out" !important;
 }
 
@@ -175,7 +194,9 @@ tr:hover {
 .faq-page .faq-box h6 {
   font-size: 20px;
 }
-
+.faq-page .page-title h2 {
+  color: black;
+}
 .faq-page .faq-box .two:disabled {
   color: red;
   display: none;
@@ -226,7 +247,7 @@ tr:hover {
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 @keyframes fadeIn {
@@ -246,34 +267,7 @@ tr:hover {
   fill: blue !important;
 }
 
-/* 
-.overflow {
-  overflow: hidden;
-}
-
-.card {
-  transition: all 0.3s;
-  height: 500px;
-}
-
-.card:hover {
-  transform: scale(1.1);
-  overflow: hidden;
-}
-
-.card-img-top:hover {
-  transform: scale(1.03);
-  overflow: hidden;
-}
-
-.card-group {
-  margin-top: 80px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 10px;
-  height: 600px;
-} */
+/* End of the meettheteam css */
 
 /*  Chrome Page  */
 .chrome-page h2,
@@ -381,18 +375,29 @@ h3 {
 }
 
 /*  Terms Of Service  */
-.term-page h2 {
+.term-page h1 {
   margin-bottom: 14px;
-  color: #b43535;
+  color: #ff0000;
   text-align: center;
 }
 .term-page h3 {
   text-align: left;
-  color: black;
+  color: rgb(59, 4, 4);
   font-size: 20px;
 }
 .term-page p {
   margin-bottom: 10px;
+}
+
+.TOS {
+  padding-bottom: 10px;
+}
+
+.TOS_div {
+  background-color: rgba(245, 245, 245, 0.808);
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2.5%;
 }
 
 /* YouTube iFrame */

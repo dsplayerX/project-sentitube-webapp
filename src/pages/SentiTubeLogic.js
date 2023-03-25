@@ -4,7 +4,20 @@ import SentiLogicImg from "../images/sentitubelogictrans.png";
 function SentiTubeLogic() {
   return (
     <div>
-      <Container>
+      <Container 
+      style={{
+        color: "black",
+        backdropFilter: "blur(20px)",
+        background: "rgba(255, 255, 255, 0.75)",
+        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+        // marginLeft: "5%",
+        // marginTop: "2.5%",
+        // marginBottom: "2.5%",
+        // marginRight: "5%",
+        borderRadius: "20px",
+        padding: "2.5%",
+        marginBottom:"10px"
+        }}>
         <Col>
           <Row>
             <center>

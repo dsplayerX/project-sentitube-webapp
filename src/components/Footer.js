@@ -101,10 +101,10 @@ function Footer() {
               <ul className="list_unstyled">
                 <li>
                   <Link
-                    to="mailto:sentitubephonex@gmail.com"
+                    to="mailto:sentitubephoenix@gmail.com"
                     className="link-name"
                   >
-                    sentitubephonex@gmail.com
+                    sentitubephoenix@gmail.com
                   </Link>
                 </li>
               </ul>

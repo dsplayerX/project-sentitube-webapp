@@ -31,7 +31,7 @@ function NavBar() {
 
   return (
     <>
-      <Navbar expand="lg" style={{ paddingRight: "5%", paddingLeft: "1%" }}>
+      <Navbar expand="lg" style={{ paddingRight: "5%", paddingLeft: "1%"}}>
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
             <img
