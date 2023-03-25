@@ -96,7 +96,7 @@ function MeetTheTeam() {
               <Card.Title>Pasindu Theekshana</Card.Title>
               <Card.Text>Developer</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://www.linkedin.com/in/pasindu-de-silva-411369223"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
