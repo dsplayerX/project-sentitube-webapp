@@ -2,6 +2,8 @@
 
 This is the frontend of SentiTube. This repository contains a react webapp created with bootstrap. The webapp access Flask API for processing requests and has a fully functional contact us page. The website is responsive and has modern minimal UI design.
 
+You can access the SentiTube webapp by clicking on [this link](https://dsplayerx.github.io/project-sentitube-webapp). In addition to the frontend, there are other repositories available for the SentiTube project.
+
 # Other "Project SentiTube" Repositories
 
 Access other "Project SentiTube" repositories from below links.
