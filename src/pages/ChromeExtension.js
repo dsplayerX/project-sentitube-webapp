@@ -3,17 +3,29 @@ import React from "react";
 function ChromeExtension() {
   return (
     <div className="chrome-page">
-      <h3 style={{ color: "red" }}>
+      <h3 style={{ color: "black" }}>
         Chrome Extention is not yet published to Chrome Web Store. <br />
       </h3>
-      <h5>
+      <h5 style={{ color: "black" }}>
         <center>
           You can still download the unpacked SentiTube Extension and install it
           for yourself.
         </center>
       </h5>
 
-     <div className="chrome-list">
+     <div className="chrome-list"
+      style={{
+        margin: "0 auto",
+          width: "80%",
+          backgroundColor: "white",
+          marginTop: "70px",
+          padding: "20px 10px",
+          borderRadius: "20px",
+          backdropFilter: "blur(10px)",
+          backgroundColor: "rgba(245,245,245,0.5)",
+          boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+      }}
+     >
 
      <h5>How to install the SentiTube Extension</h5>
 

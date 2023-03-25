@@ -15,7 +15,9 @@ function SentiTubeLogic() {
         // marginBottom: "2.5%",
         // marginRight: "5%",
         borderRadius: "20px",
-        padding: "2.5%"}}>
+        padding: "2.5%",
+        marginBottom:"10px"
+        }}>
         <Col>
           <Row>
             <center>

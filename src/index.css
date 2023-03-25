@@ -179,7 +179,9 @@ tr:hover {
 .faq-page .faq-box h6 {
   font-size: 20px;
 }
-
+.faq-page .page-title h2{
+  color: black;
+}
 .faq-page .faq-box .two:disabled {
   color: red;
   display: none;
@@ -256,6 +258,9 @@ tr:hover {
 
 
 /*  Chrome Page  */
+.chart-page{
+  margin-bottom: 10px;
+}
 .chrome-page h2,
 h3 {
   margin: 16px;
@@ -363,7 +368,7 @@ h3 {
 /*  Terms Of Service  */
 .term-page h1 {
   margin-bottom: 14px;
-  color: #ff0000;
+  color: #000000;
   text-align: center;
 }
 .term-page h3 {
