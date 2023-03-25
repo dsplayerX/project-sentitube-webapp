@@ -8,9 +8,9 @@ You can access the SentiTube webapp by clicking on [this link](https://dsplayerx
 
 Access other "Project SentiTube" repositories from below links.
 
-- [Flask API (Backend)](https://github.com/dsplayerX/project-sentitube-flask-api) - The Flask API backend of SentiTube where the comments fetching, preprocessing and predicting takes place.
-- [The Chrome Extension](https://github.com/dsplayerX/project-sentitube-chrome-extension) - A Chrome Extension that a user can easily access when watching a YouTube video that shows basic results to the user at a glance.
-- [Project SentiTube Tests](https://github.com/dsplayerX/project-sentitube-tests) - This repository contains all the past machine learning modelling and mockup apis and webapps.
+[Flask API (Backend)](https://github.com/dsplayerX/project-sentitube-flask-api) - The Flask API backend of SentiTube where the comments fetching, preprocessing and predicting takes place.
+[The Chrome Extension](https://github.com/dsplayerX/project-sentitube-chrome-extension) - A Chrome Extension that a user can easily access when watching a YouTube video that shows basic results to the user at a glance.
+[Project SentiTube Tests](https://github.com/dsplayerX/project-sentitube-tests) - This repository contains all the past machine learning modelling and mockup apis and webapps.
 
 # Getting Started with Create React App
 
