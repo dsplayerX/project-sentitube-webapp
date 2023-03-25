@@ -250,34 +250,10 @@ tr:hover {
   fill: blue !important;
 }
 
-/* 
-.overflow {
-  overflow: hidden;
-}
+/* End of the meettheteam css */
 
-.card {
-  transition: all 0.3s;
-  height: 500px;
-}
 
-.card:hover {
-  transform: scale(1.1);
-  overflow: hidden;
-}
 
-.card-img-top:hover {
-  transform: scale(1.03);
-  overflow: hidden;
-}
-
-.card-group {
-  margin-top: 80px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 10px;
-  height: 600px;
-} */
 
 /*  Chrome Page  */
 .chrome-page h2,
