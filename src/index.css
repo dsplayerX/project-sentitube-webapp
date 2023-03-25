@@ -23,12 +23,16 @@ body {
 }
 .Result_page .total-comment-count {
   font-size: 20px;
-  color: rgb(255, 248, 113);
-  text-align: right;
+  color: rgb(158, 0, 0);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background-color: #ffffff8f;
+
 }
 .Result_page .chart-title {
-  color: white;
-  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0.459);
   text-align: center;
   margin: 10px;
   padding: 4px;
@@ -36,7 +40,7 @@ body {
 }
 .Result_page .feedback-box {
   color: rgb(255, 255, 255);
-  background: #ff0000;
+  background: #ff000071;
   padding: 20px;
   border-radius: 10px;
 }
@@ -51,14 +55,14 @@ body {
 }
 .Result_page h5 {
   color: white;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   text-align: center;
   margin-bottom: 18px;
   padding: 4px;
   border-radius: 6px;
 }
 .perbutton:hover {
-  background-color: rgb(253, 245, 194) !important;
+  background-color: rgb(160, 0, 0) !important;
   transition: "background-color 0.1s ease-in-out" !important;
 }
 
