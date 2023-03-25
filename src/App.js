@@ -5,12 +5,11 @@ import About from "./pages/About";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import FAQs from "./pages/FAQs";
-import TermsOfService from "./pages/TermsOfService"
-import BackgroundImage from "./BackgroundImage";
+import TermsOfService from "./pages/TermsOfService";
+import BackgroundImage from "./components/BackgroundImage";
 
 import { Route, Routes } from "react-router-dom";
 
-// used for easy dev access (will delete from navbar later)
 import Results from "./pages/Results";
 import MeetTheTeam from "./pages/MeetTheTeam";
 import PerCommentResults from "./pages/PerCommentResults";
@@ -22,9 +21,9 @@ function App() {
     <div className="App">
       <BackgroundImage />
       <NavBar />
-      <body style={{paddingTop:"20px"}}>
+      <body style={{ paddingTop: "20px" }}>
         <Routes>
-          <Route exact path="/" element={<Home />}  />
+          <Route exact path="/" element={<Home />} />
           <Route path="/TryItOut" element={<TryItOut />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
@@ -35,7 +34,6 @@ function App() {
           <Route path="/ChromeExtension" element={<ChromeExtension />} />
           <Route path="/SentiTubeLogic" element={<SentiTubeLogic />} />
           <Route path="/TermsOfService" element={<TermsOfService />} />
-
           <Route
             exact
             path="/PerCommentResults"

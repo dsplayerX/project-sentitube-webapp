@@ -104,200 +104,208 @@ function TryItOut() {
 
   return (
     <>
-    <div style={{paddingLeft:"10%",paddingRight:"10%"}}> 
-      <div
-        className="page-title"
-        style={{ paddingTop: "35px", marginTop: "5%",backdropFilter: "blur(10px)",
-        backgroundColor: "rgba(245,245,245,0.5)",
-        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)" ,
-        borderRadius:"20px"
-      }}
-      >
-        <center>
-          <h1 style={{ color: "red" }}>
-            <b>Sentiment and Sarcasm Analysis on YouTube Video Comments</b>
-          </h1>
-        </center>
-      
-      <div
-        style={{
-          margin: "0 auto",
-          width: "80%",
-          backgroundColor: "white",
-          marginTop: "50px",
-          padding: "20px 10px",
-          borderRadius: "20px",
-          backdropFilter: "blur(10px)",
-          backgroundColor: "rgba(245,245,245,0.5)",
-          boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
-        }}
-      >
-        <Container
-          className="tryitoutmain"
+      <div style={{ paddingLeft: "10%", paddingRight: "10%" }}>
+        <div
+          className="page-title"
           style={{
-            color: "black",
-            marginTop: "70px",
+            paddingTop: "35px",
+            marginTop: "5%",
+            backdropFilter: "blur(10px)",
+            backgroundColor: "rgba(245,245,245,0.5)",
+            boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+            borderRadius: "20px",
           }}
         >
-          <Form>
-            <Form.Group
-              controlId="formYoutubeLink"
-              style={{ paddingBottom: "1%" }}
+          <center>
+            <h1 style={{ color: "red" }}>
+              <b>Sentiment and Sarcasm Analysis on YouTube Video Comments</b>
+            </h1>
+          </center>
+
+          <div
+            style={{
+              margin: "0 auto",
+              width: "80%",
+              backgroundColor: "white",
+              marginTop: "50px",
+              padding: "20px 10px",
+              borderRadius: "20px",
+              backdropFilter: "blur(10px)",
+              backgroundColor: "rgba(245,245,245,0.5)",
+              boxShadow: "0 0 10px rgba(255, 0, 0, 0.2)",
+            }}
+          >
+            <Container
+              className="tryitoutmain"
+              style={{
+                color: "black",
+                marginTop: "70px",
+              }}
             >
-              <Form.Control
-                type="text"
-                placeholder="Enter a YouTube video link"
-                value={inputValue}
-                onChange={handleInputChange}
-                style={{
-                  maxWidth: 750,
-                  margin: "10px auto",
-                }}
-              />
-            </Form.Group>
+              <Form>
+                <Form.Group
+                  controlId="formYoutubeLink"
+                  style={{ paddingBottom: "1%" }}
+                >
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter a YouTube video link"
+                    value={inputValue}
+                    onChange={handleInputChange}
+                    style={{
+                      maxWidth: 750,
+                      margin: "10px auto",
+                      boxShadow: "0 0 10px rgba(245, 0, 0, 0.25)",
+                    }}
+                  />
+                </Form.Group>
 
-            <Container style={{ paddingLeft: "25%", paddingRight: "25%" }}>
-              <Row>
-                <Col>
+                <Container style={{ paddingLeft: "25%", paddingRight: "25%" }}>
                   <Row>
-                    <Form.Group
-                      controlId="formOrderResults"
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        gap: "12px",
-                      }}
-                    >
-                      <Form.Label>
-                        <i>Sort Comments By :</i>
-                      </Form.Label>
-                      {/* </div> */}
-                    </Form.Group>
+                    <Col>
+                      <Row>
+                        <Form.Group
+                          controlId="formOrderResults"
+                          style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            gap: "12px",
+                          }}
+                        >
+                          <Form.Label>
+                            <i>Sort Comments By :</i>
+                          </Form.Label>
+                          {/* </div> */}
+                        </Form.Group>
+                      </Row>
+                      <Row>
+                        <DropdownButton
+                          id="order-results-dropdown"
+                          title={`${orderResults}`}
+                          variant="secondary"
+                          // style={{ marginBottom: "-20px", minWidth: "50px" }}
+                        >
+                          <Dropdown.Item
+                            onClick={() =>
+                              handleOrderResultsSelect("Top comments")
+                            }
+                          >
+                            Top comments
+                          </Dropdown.Item>
+                          <Dropdown.Item
+                            onClick={() =>
+                              handleOrderResultsSelect("Newest first")
+                            }
+                          >
+                            Newest first
+                          </Dropdown.Item>
+                        </DropdownButton>
+                      </Row>
+                    </Col>
+                    <Col>
+                      <Row>
+                        <Form.Group
+                          controlId="formNumResults"
+                          style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            gap: "12px",
+                          }}
+                        >
+                          <Form.Label style={{ paddingTop: "6px" }}>
+                            <i>Number of Comments to Analyse :</i>
+                          </Form.Label>
+                        </Form.Group>
+                      </Row>
+                      <Row>
+                        <center>
+                          <DropdownButton
+                            id="num-results-dropdown"
+                            title={`${numResults}`}
+                            variant="secondary"
+                            style={{ marginBottom: "20px", minWidth: "50px" }}
+                          >
+                            <Dropdown.Item
+                              onClick={() => handleNumResultsSelect(100)}
+                            >
+                              100
+                            </Dropdown.Item>
+                            <Dropdown.Item
+                              onClick={() => handleNumResultsSelect(300)}
+                            >
+                              300
+                            </Dropdown.Item>
+                            <Dropdown.Item
+                              onClick={() => handleNumResultsSelect(500)}
+                            >
+                              500
+                            </Dropdown.Item>
+                            <Dropdown.Item
+                              onClick={() => handleNumResultsSelect(1000)}
+                            >
+                              1000
+                            </Dropdown.Item>
+                            <Dropdown.Item
+                              onClick={() => handleNumResultsSelect(2500)}
+                            >
+                              2500
+                            </Dropdown.Item>
+                            <Dropdown.Item
+                              onClick={() => handleNumResultsSelect(5000)}
+                            >
+                              5000
+                            </Dropdown.Item>
+                          </DropdownButton>
+                        </center>
+                      </Row>
+                    </Col>
                   </Row>
-                  <Row>
-                    <DropdownButton
-                      id="order-results-dropdown"
-                      title={`${orderResults}`}
-                      variant="secondary"
-                      // style={{ marginBottom: "-20px", minWidth: "50px" }}
-                    >
-                      <Dropdown.Item
-                        onClick={() => handleOrderResultsSelect("Top comments")}
-                      >
-                        Top comments
-                      </Dropdown.Item>
-                      <Dropdown.Item
-                        onClick={() => handleOrderResultsSelect("Newest first")}
-                      >
-                        Newest first
-                      </Dropdown.Item>
-                    </DropdownButton>
-                  </Row>
-                </Col>
-                <Col>
-                  <Row>
-                    <Form.Group
-                      controlId="formNumResults"
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        gap: "12px",
-                      }}
-                    >
-                      <Form.Label style={{ paddingTop: "6px" }}>
-                        <i>Number of Comments to Analyse :</i>
-                      </Form.Label>
-                    </Form.Group>
-                  </Row>
-                  <Row>
-                    <center>
-                      <DropdownButton
-                        id="num-results-dropdown"
-                        title={`${numResults}`}
-                        variant="secondary"
-                        style={{ marginBottom: "20px", minWidth: "50px" }}
-                      >
-                        <Dropdown.Item
-                          onClick={() => handleNumResultsSelect(100)}
-                        >
-                          100
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          onClick={() => handleNumResultsSelect(300)}
-                        >
-                          300
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          onClick={() => handleNumResultsSelect(500)}
-                        >
-                          500
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          onClick={() => handleNumResultsSelect(1000)}
-                        >
-                          1000
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          onClick={() => handleNumResultsSelect(2500)}
-                        >
-                          2500
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          onClick={() => handleNumResultsSelect(5000)}
-                        >
-                          5000
-                        </Dropdown.Item>
-                      </DropdownButton>
-                    </center>
-                  </Row>
-                </Col>
-              </Row>
+                </Container>
+
+                <Form.Group>
+                  <Button
+                    variant="primary"
+                    type="submit"
+                    onClick={handleButtonClick}
+                    disabled={isAnalysing}
+                    className="try-button-hover"
+                    style={{
+                      color: "white",
+                      backgroundColor: "red",
+                      fontSize: "28px",
+                      padding: "10px",
+                      border: "none",
+                      borderRadius: "20px",
+                      width: "150px",
+                      height: "60px",
+                      transition: "background-color 0.3s ease-in-out",
+                      margin: "auto",
+                      display: "flex",
+                      textAlign: "center",
+                      justifyContent: "center",
+                      marginTop: "10px",
+                    }}
+                  >
+                    {isAnalysing ? <Spinner animation="border" /> : "Analyse"}
+                  </Button>
+                </Form.Group>
+              </Form>
+              <Modal show={showModal} onHide={handleCloseModal}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Error</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{modalMessage}</Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleCloseModal}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
             </Container>
-
-            <Form.Group>
-              <Button
-                variant="primary"
-                type="submit"
-                onClick={handleButtonClick}
-                disabled={isAnalysing}
-                className="try-button-hover"
-                style={{
-                  color: "white",
-                  backgroundColor: "red",
-                  fontSize: "28px",
-                  padding: "10px",
-                  border: "none",
-                  borderRadius: "20px",
-                  width: "150px",
-                  height: "60px",
-                  transition: "background-color 0.3s ease-in-out",
-                  margin: "auto",
-                  display: "flex",
-                  textAlign: "center",
-                  justifyContent: "center",
-                  marginTop: "10px",
-                }}
-              >
-                {isAnalysing ? <Spinner animation="border" /> : "Analyse"}
-              </Button>
-            </Form.Group>
-          </Form>
-          <Modal show={showModal} onHide={handleCloseModal}>
-            <Modal.Header closeButton>
-              <Modal.Title>Error</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>{modalMessage}</Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleCloseModal}>
-                Close
-              </Button>
-            </Modal.Footer>
-          </Modal>
-        </Container>
-      </div>
-      <br/>
-      <br/>
-      </div >
+          </div>
+          <br />
+          <br />
+        </div>
       </div>
     </>
   );
