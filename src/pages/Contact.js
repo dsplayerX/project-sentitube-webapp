@@ -98,7 +98,7 @@ function Contact() {
             className="contact-container"
             style={{
               boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
-              backgroundColor: "#e6e6e6",
+              backgroundColor: "rgba(255, 0, 0, 0.588)",
               borderRadius: "10px",
               padding: "20px",
               textAlign: "center",

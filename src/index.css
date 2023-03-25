@@ -122,7 +122,7 @@ tr:hover {
 }
 
 .try-button-hover:hover {
-  background-color: rgb(185, 0, 0) !important;
+  background-color: rgba(255, 255, 255, 0.349) !important;
   transition: "background-color 0.1s ease-in-out" !important;
 }
 
@@ -166,6 +166,7 @@ tr:hover {
   background-color: rgb(60, 55, 55) !important;
   transition: "background-color 0.1s ease-in-out" !important;
 }
+
 
 /*  FAQ page  */
 .faq-page .faq-box {
@@ -258,9 +259,6 @@ tr:hover {
 
 
 /*  Chrome Page  */
-.chart-page{
-  margin-bottom: 10px;
-}
 .chrome-page h2,
 h3 {
   margin: 16px;
@@ -368,7 +366,7 @@ h3 {
 /*  Terms Of Service  */
 .term-page h1 {
   margin-bottom: 14px;
-  color: #000000;
+  color: #ff0000;
   text-align: center;
 }
 .term-page h3 {

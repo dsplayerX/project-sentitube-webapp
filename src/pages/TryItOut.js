@@ -104,22 +104,27 @@ function TryItOut() {
 
   return (
     <>
+    <div style={{paddingLeft:"10%",paddingRight:"10%"}}> 
       <div
         className="page-title"
-        style={{ paddingTop: "10px", marginTop: "170px" }}
+        style={{ paddingTop: "35px", marginTop: "5%",backdropFilter: "blur(10px)",
+        backgroundColor: "rgba(245,245,245,0.5)",
+        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)" ,
+        borderRadius:"20px"
+      }}
       >
         <center>
-          <h1 style={{ WebkitTextStroke: " 0.1px black", color: "black" }}>
+          <h1 style={{ color: "red" }}>
             <b>Sentiment and Sarcasm Analysis on YouTube Video Comments</b>
           </h1>
         </center>
-      </div>
+      
       <div
         style={{
           margin: "0 auto",
           width: "80%",
           backgroundColor: "white",
-          marginTop: "70px",
+          marginTop: "50px",
           padding: "20px 10px",
           borderRadius: "20px",
           backdropFilter: "blur(10px)",
@@ -289,6 +294,10 @@ function TryItOut() {
             </Modal.Footer>
           </Modal>
         </Container>
+      </div>
+      <br/>
+      <br/>
+      </div >
       </div>
     </>
   );
