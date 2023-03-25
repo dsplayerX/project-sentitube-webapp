@@ -69,3 +69,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - [MrDarkDrago](https://github.com/MrDarkDrago)
 - [Hasithjay98](https://github.com/Hasithjay98)
 - [Sanuri20](https://github.com/Sanuri20)
+
+## Acknowledgement:
+
+We would like to acknowledge the developers and contributors of Chart.js (https://www.chartjs.org/) for creating and maintaining an open-source library for creating beautiful and responsive charts in web applications. We used Chart.js to draw charts in our webapp, and it has been an essential component of this project. We appreciate the efforts put in by the developers and contributors to make Chart.js a robust and reliable library.
