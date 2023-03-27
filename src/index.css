@@ -209,12 +209,18 @@ tr:hover {
 /*new css meet the team*/
 
 .meettheteammain {
+  margin-top: 40px;
   margin-left: 5%;
   margin-right: 5%;
+  padding-left: 10px;
   align-content: center;
+  background-color: #ffffff9c;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
 }
 
 .meettheteammain h1 {
+  padding-top: 20px;
   color: red;
 }
 
