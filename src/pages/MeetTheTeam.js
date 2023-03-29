@@ -17,13 +17,15 @@ function MeetTheTeam() {
       <div className="meettheteammain">
         <h1
           className="page-name"
-          style={{ color: "black", fontWeight: "bold" }}
+          style={{fontWeight: "bold" }}
         >
           <center>Meet The Team</center>
         </h1>
-        <CardGroup className="fade-in">
-          <Card>
-            <Card.Img variant="top" src={imgDumidu} />
+        <CardGroup className="fade-in" style={{paddingBottom:"40px"}}>
+          <Card style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
+              backgroundColor: "rgba(255, 255, 255,0.888 )",
+              borderRadius: "20px"}}>
+            <Card.Img variant="top" src={imgDumidu} style={{borderTopLeftRadius: "20px",borderTopRightRadius:"20px"}}/>
             <Card.Body>
               <Card.Title>Dumindu Sameendra</Card.Title>
               <Card.Text>Team Leader</Card.Text>
@@ -56,8 +58,10 @@ function MeetTheTeam() {
               </div>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Img variant="top" src={imgTharusha} />
+          <Card style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              borderRadius: "20px"}}>
+            <Card.Img variant="top" src={imgTharusha} style={{borderTopLeftRadius: "20px",borderTopRightRadius:"20px"}}/>
             <Card.Body>
               <Card.Title>Tharusha Dilshan</Card.Title>
               <Card.Text>Developer</Card.Text>
@@ -90,13 +94,15 @@ function MeetTheTeam() {
               </div>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Img variant="top" src={imgPasindu} />
+          <Card style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              borderRadius: "20px"}}>
+            <Card.Img variant="top" src={imgPasindu} style={{borderTopLeftRadius: "20px",borderTopRightRadius:"20px"}} />
             <Card.Body>
               <Card.Title>Pasindu Theekshana</Card.Title>
               <Card.Text>Developer</Card.Text>
               <Button
-                href="https://www.linkedin.com/in/dumindu-sameendra/"
+                href="https://www.linkedin.com/in/pasindu-de-silva-411369223"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="light"
@@ -124,8 +130,10 @@ function MeetTheTeam() {
               </div>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Img variant="top" src={imgEshan} />
+          <Card style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              borderRadius: "20px"}}>
+            <Card.Img variant="top" src={imgEshan} style={{borderTopLeftRadius: "20px",borderTopRightRadius:"20px"}} />
             <Card.Body>
               <Card.Title>Eshan Hasitha</Card.Title>
               <Card.Text>Developer</Card.Text>
@@ -158,8 +166,10 @@ function MeetTheTeam() {
               </div>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Img variant="top" src={imgSanuri} />
+          <Card style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              borderRadius: "20px"}}>
+            <Card.Img variant="top" src={imgSanuri} style={{borderTopLeftRadius: "20px",borderTopRightRadius:"20px"}} />
             <Card.Body>
               <Card.Title>Sanuri Perera</Card.Title>
               <Card.Text>Developer</Card.Text>
