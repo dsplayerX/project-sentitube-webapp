@@ -64,7 +64,7 @@ function TryItOut() {
           // Handle errors that occur during the request
           console.error(error);
           console.log(error.message);
-          setModalMessage(error.message + "!");
+          setModalMessage(" Could not fetch comments! " + error.message + "!");
           setShowModal(true);
         });
 
@@ -76,7 +76,7 @@ function TryItOut() {
       console.error(error);
       console.log(error.message);
 
-      setModalMessage(error.message);
+      setModalMessage(" Request failed! " + error.message);
       setShowModal(true);
     }
   };
