@@ -137,7 +137,7 @@ tr:hover {
 }
 
 .try-button-hover:hover {
-  background-color: rgba(255, 41, 41, 0.776) !important;
+  background-color: rgba(201, 3, 3, 0.776) !important;
   transition: "background-color 0.1s ease-in-out" !important;
 }
 
