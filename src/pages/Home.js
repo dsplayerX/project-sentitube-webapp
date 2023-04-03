@@ -106,7 +106,10 @@ function Home() {
                     </Link>
                   </Col>
                   <Col>
-                    <Link to="/ChromeExtension">
+                    <Link
+                      to="https://chrome.google.com/webstore/detail/jcmmdakdjipnccbfjdklabnomnjkilec?authuser=0&hl=en"
+                      target="_blank"
+                    >
                       <Button
                         variant="secondary"
                         style={{
