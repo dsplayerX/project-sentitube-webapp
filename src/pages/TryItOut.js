@@ -126,13 +126,12 @@ function TryItOut() {
             style={{
               margin: "0 auto",
               width: "80%",
-              backgroundColor: "white",
               marginTop: "50px",
               padding: "20px 10px",
               borderRadius: "20px",
               backdropFilter: "blur(10px)",
               backgroundColor: "rgba(245,245,245,0.5)",
-              boxShadow: "0 0 10px rgba(255, 0, 0, 0.2)",
+              boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
             }}
           >
             <Container
@@ -213,7 +212,7 @@ function TryItOut() {
                           }}
                         >
                           <Form.Label style={{ paddingTop: "6px" }}>
-                            <i>Number of Comments to Analyse :</i>
+                            <i>Comments to Analyse :</i>
                           </Form.Label>
                         </Form.Group>
                       </Row>

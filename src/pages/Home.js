@@ -55,7 +55,7 @@ function Home() {
                 comments to provide you with valuable insights about the
                 audience's feedback and engagement. By analyzing sarcasm as well
                 as sentiment of YouTube video comments, we provide you with more
-                accurate sentiment results. SentiTube alsp provides custom
+                accurate sentiment results. SentiTube also provides custom
                 feedback and per comment analysis results. Whether you're a
                 content creator looking to improve your videos or a YouTube user
                 seeking to understand community's feedback towards a video,

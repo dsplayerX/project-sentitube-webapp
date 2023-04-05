@@ -269,6 +269,7 @@ function Results() {
                   className="perbutton"
                   size="xl"
                   style={{
+                    marginBottom: "10px",
                     backgroundColor: "rgb(255, 0, 0)",
                     border: "4px",
                     color: "white",
