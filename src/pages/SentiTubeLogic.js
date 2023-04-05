@@ -105,6 +105,7 @@ function SentiTubeLogic() {
               <a
                 href="https://www.kaggle.com/datasets/cosmos98/twitter-and-reddit-sentimental-analysis-dataset"
                 target="_blank"
+                rel="noreferrer"
               >
                 Twitter and Reddit Sentimental analysis Dataset by Chaithanya
                 Kumar
@@ -115,6 +116,7 @@ function SentiTubeLogic() {
               <a
                 href="https://www.kaggle.com/gcdatkin/news-headline-sarcasm-detection"
                 target="_blank"
+                rel="noreferrer"
               >
                 News Headline Sarcasm Detection by Gabriel Atkin
               </a>{" "}
