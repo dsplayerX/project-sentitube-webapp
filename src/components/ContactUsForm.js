@@ -126,7 +126,7 @@ export const ContactUsForm = () => {
             </b>
           </Form.Label>
         </center>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.2)"}}>
           {/* <Form.Label>Name</Form.Label> */}
           <Form.Control
             type="text"
@@ -144,7 +144,7 @@ export const ContactUsForm = () => {
             </Form.Control.Feedback>
           )}
         </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.2)"}}>
           {/* <Form.Label>Email address</Form.Label> */}
           <Form.Control
             type="email"
@@ -161,7 +161,7 @@ export const ContactUsForm = () => {
             </Form.Control.Feedback>
           )}
         </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" style={{boxShadow:"0 0 10px rgba(0, 0, 0, 0.2)"}}>
           <Form.Control
             as="textarea"
             placeholder="Your Message"
