@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import { CustomFeedback } from "../components/CustomFeedbacks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
