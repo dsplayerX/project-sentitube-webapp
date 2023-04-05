@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project-sentitube-webapp/static/css/main.8df11811.css",
-    "main.js": "/project-sentitube-webapp/static/js/main.7ce47c5a.js",
+    "main.js": "/project-sentitube-webapp/static/js/main.dc947005.js",
     "static/media/denys-nevozhai-w7YCquMkv2c-unsplash.jpg": "/project-sentitube-webapp/static/media/denys-nevozhai-w7YCquMkv2c-unsplash.26196b89762e23f6bef8.jpg",
     "static/media/sanuri.jpg": "/project-sentitube-webapp/static/media/sanuri.78ed5ed8fe1338a4ccb6.jpg",
     "static/media/pasindu.jpg": "/project-sentitube-webapp/static/media/pasindu.c726bfa387901cd239ea.jpg",
@@ -16,10 +16,10 @@
     "static/media/background_anim1.svg": "/project-sentitube-webapp/static/media/background_anim1.de474ba30abd09f34faef6fc03d713fa.svg",
     "index.html": "/project-sentitube-webapp/index.html",
     "main.8df11811.css.map": "/project-sentitube-webapp/static/css/main.8df11811.css.map",
-    "main.7ce47c5a.js.map": "/project-sentitube-webapp/static/js/main.7ce47c5a.js.map"
+    "main.dc947005.js.map": "/project-sentitube-webapp/static/js/main.dc947005.js.map"
   },
   "entrypoints": [
     "static/css/main.8df11811.css",
-    "static/js/main.7ce47c5a.js"
+    "static/js/main.dc947005.js"
   ]
 }
