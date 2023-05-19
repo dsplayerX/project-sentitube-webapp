@@ -15,6 +15,7 @@ import MeetTheTeam from "./pages/MeetTheTeam";
 import PerCommentResults from "./pages/PerCommentResults";
 import ChromeExtension from "./pages/ChromeExtension";
 import SentiTubeLogic from "./pages/SentiTubeLogic";
+import BlogArticles from "./pages/BlogArticles";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/ChromeExtension" element={<ChromeExtension />} />
           <Route path="/SentiTubeLogic" element={<SentiTubeLogic />} />
           <Route path="/TermsOfService" element={<TermsOfService />} />
+          <Route path="/BlogArticles" element={<BlogArticles />} />
           <Route
             exact
             path="/PerCommentResults"
