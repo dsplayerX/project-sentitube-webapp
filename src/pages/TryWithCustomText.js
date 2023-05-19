@@ -1,23 +1,59 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Form, Button, Container, Modal, Spinner, Card } from "react-bootstrap";
 
 function TryWithCustomText() {
+
   const [modalMessage, setModalMessage] = useState(null); // state variable for modal message
   const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [isAnalysing, setIsAnalysing] = useState(false);
   const [jsonData, setJsonData] = useState(null);
 
-  const navigate = useNavigate();
+  const sentimentPredictions = jsonData && jsonData[0] && jsonData[0].sentiment_predictions;
+
+  const getSentimentLabel = (predictions) => {
+    if (predictions === 0) {
+      return "Negative";
+    } else if (predictions === 1) {
+      return "Neutral";
+    } else if (predictions === 2) {
+      return "Positive";
+    } else {
+      return "Unknown";
+    }
+  };
+
+  const sarcasmPredictions = jsonData && jsonData[0] && jsonData[0].sarcasm_predictions;
+
+  const getSarcasmLabel = (predictions) => {
+    if (predictions === 0) {
+      return "Not Sarcastic";
+    } else {
+      return "Sarcastic";
+    } 
+  };
+
+  const sentitubePredictions = jsonData && jsonData[0] && jsonData[0].sentitube_results;
+
+  const getSentitubeLabel = (predictions) => {
+    if (predictions === "negative") {
+      return "Negative";
+    } else if (predictions === "neutral") {
+      return "Neutral";
+    } else if (predictions === "positive") {
+      return "Positive";
+    } else {
+      return "Unknown";
+    }
+  };
 
   const handleButtonClick = async (event) => {
     event.preventDefault();
     try {
       // Check if input value is empty
       if (!inputValue.trim()) {
-        setModalMessage("Please enter a text string!");
+        setModalMessage("Please enter a sentence or a paragraph to analyse!");
         setShowModal(true);
         return;
       }
@@ -60,11 +96,29 @@ function TryWithCustomText() {
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit" disabled={isAnalysing}>
+        <Button variant="primary" type="submit"  disabled={isAnalysing} 
+          className="try-button-hover"
+                    style={{
+                      color: "white",
+                      backgroundColor: "red",
+                      fontSize: "24px",
+                      padding: "10px",
+                      border: "none",
+                      borderRadius: "20px",
+                      width: "120px",
+                      height: "60px",
+                      transition: "background-color 0.3s ease-in-out",
+                      margin: "auto",
+                      display: "flex",
+                      textAlign: "center",
+                      justifyContent: "center",
+                      marginTop: "10px",
+                      marginBottom: "10px",
+
+                    }}>
           {isAnalysing ? (
             <>
-              <Spinner animation="border" size="sm" role="status" />
-              <span className="ml-2">Analyzing...</span>
+              <Spinner animation="border" />
             </>
           ) : (
             "Analyze"
@@ -78,13 +132,13 @@ function TryWithCustomText() {
             <Card.Title>Results</Card.Title>
             {/* <pre>{JSON.stringify(jsonData, null, 2)}</pre> */}
             <p>
-                Sentiment Predictions: {jsonData["0"]["sentiment_predictions"]}
+              Sentiment Predictions: {getSentimentLabel(sentimentPredictions)}
             </p>
             <p>
-                Sarcasm Predictions: {jsonData["0"]["sarcasm_predictions"]}
+              Sarcasm Predictions: {getSarcasmLabel(sarcasmPredictions)}
             </p>
             <p>
-                Sentiment Predictions: {jsonData["0"]["sentitube_results"]}
+              SentiTube Result: {getSentitubeLabel(sentitubePredictions)}
             </p>
           </Card.Body>
         </Card>

@@ -17,6 +17,8 @@ import ChromeExtension from "./pages/ChromeExtension";
 import SentiTubeLogic from "./pages/SentiTubeLogic";
 import BlogArticles from "./pages/BlogArticles";
 import TryWithCustomText from "./pages/TryWithCustomText";
+import ArticleDetails from "./pages/ArticleDetails";
+import { articles } from './components/articleData';
 
 function App() {
   return (
@@ -36,7 +38,6 @@ function App() {
           <Route path="/ChromeExtension" element={<ChromeExtension />} />
           <Route path="/SentiTubeLogic" element={<SentiTubeLogic />} />
           <Route path="/TermsOfService" element={<TermsOfService />} />
-          <Route path="/BlogArticles" element={<BlogArticles />} />
           <Route
             exact
             path="/PerCommentResults"
@@ -44,6 +45,8 @@ function App() {
           />
           <Route path="/TryWithCustomText" element={<TryWithCustomText />} />
           <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
+          <Route path="/BlogArticles" element={<BlogArticles />} />
+          <Route path="/articles/:index" element={<ArticleDetails articles={articles} />} />
         </Routes>
       </body>
       <Footer />
