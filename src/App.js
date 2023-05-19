@@ -16,6 +16,7 @@ import PerCommentResults from "./pages/PerCommentResults";
 import ChromeExtension from "./pages/ChromeExtension";
 import SentiTubeLogic from "./pages/SentiTubeLogic";
 import BlogArticles from "./pages/BlogArticles";
+import TryWithCustomText from "./pages/TryWithCustomText";
 
 function App() {
   return (
@@ -41,8 +42,7 @@ function App() {
             path="/PerCommentResults"
             component={<PerCommentResults />}
           />
-        </Routes>
-        <Routes>
+          <Route path="/TryWithCustomText" element={<TryWithCustomText />} />
           <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
         </Routes>
       </body>
