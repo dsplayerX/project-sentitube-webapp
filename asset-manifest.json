@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.47ea9870.css",
-    "main.js": "/static/js/main.b6821671.js",
-    "static/media/denys-nevozhai-w7YCquMkv2c-unsplash.jpg": "/static/media/denys-nevozhai-w7YCquMkv2c-unsplash.26196b89762e23f6bef8.jpg",
-    "static/media/sanuri.jpg": "/static/media/sanuri.78ed5ed8fe1338a4ccb6.jpg",
-    "static/media/pasindu.jpg": "/static/media/pasindu.c726bfa387901cd239ea.jpg",
-    "static/media/eshannew.jpg": "/static/media/eshannew.0ad7e20bf22304192390.jpg",
-    "static/media/dumindu.jpg": "/static/media/dumindu.cf2c88ace7ec0cb8cc2f.jpg",
-    "static/media/tharusha.jpg": "/static/media/tharusha.a60ae1fc8749ec0d5071.jpg",
-    "static/media/chrome_icon.png": "/static/media/chrome_icon.b237a5466c3f54f4937c.png",
-    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
-    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
-    "static/media/sentitubelogictrans.png": "/static/media/sentitubelogictrans.53b1c3d6e574c90ba7dc.png",
-    "static/media/background_anim2.svg": "/static/media/background_anim2.326e372383a9bd425a5332b841357778.svg",
-    "static/media/background_anim1.svg": "/static/media/background_anim1.de474ba30abd09f34faef6fc03d713fa.svg",
-    "index.html": "/index.html",
-    "main.47ea9870.css.map": "/static/css/main.47ea9870.css.map",
-    "main.b6821671.js.map": "/static/js/main.b6821671.js.map"
+    "main.css": "/project-sentitube-webapp/static/css/main.4234999e.css",
+    "main.js": "/project-sentitube-webapp/static/js/main.ce68fdca.js",
+    "static/media/denys-nevozhai-w7YCquMkv2c-unsplash.jpg": "/project-sentitube-webapp/static/media/denys-nevozhai-w7YCquMkv2c-unsplash.26196b89762e23f6bef8.jpg",
+    "static/media/sanuri.jpg": "/project-sentitube-webapp/static/media/sanuri.78ed5ed8fe1338a4ccb6.jpg",
+    "static/media/pasindu.jpg": "/project-sentitube-webapp/static/media/pasindu.c726bfa387901cd239ea.jpg",
+    "static/media/eshannew.jpg": "/project-sentitube-webapp/static/media/eshannew.0ad7e20bf22304192390.jpg",
+    "static/media/dumindu.jpg": "/project-sentitube-webapp/static/media/dumindu.cf2c88ace7ec0cb8cc2f.jpg",
+    "static/media/tharusha.jpg": "/project-sentitube-webapp/static/media/tharusha.a60ae1fc8749ec0d5071.jpg",
+    "static/media/chrome_icon.png": "/project-sentitube-webapp/static/media/chrome_icon.b237a5466c3f54f4937c.png",
+    "static/media/bootstrap-icons.woff?": "/project-sentitube-webapp/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/project-sentitube-webapp/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "static/media/sentitubelogictrans.png": "/project-sentitube-webapp/static/media/sentitubelogictrans.53b1c3d6e574c90ba7dc.png",
+    "static/media/background_anim2.svg": "/project-sentitube-webapp/static/media/background_anim2.326e372383a9bd425a5332b841357778.svg",
+    "static/media/background_anim1.svg": "/project-sentitube-webapp/static/media/background_anim1.de474ba30abd09f34faef6fc03d713fa.svg",
+    "index.html": "/project-sentitube-webapp/index.html",
+    "main.4234999e.css.map": "/project-sentitube-webapp/static/css/main.4234999e.css.map",
+    "main.ce68fdca.js.map": "/project-sentitube-webapp/static/js/main.ce68fdca.js.map"
   },
   "entrypoints": [
-    "static/css/main.47ea9870.css",
-    "static/js/main.b6821671.js"
+    "static/css/main.4234999e.css",
+    "static/js/main.ce68fdca.js"
   ]
 }
