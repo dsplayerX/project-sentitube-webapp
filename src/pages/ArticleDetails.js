@@ -13,7 +13,7 @@ const ArticleDetails = () => {
   }
 
   return (
-    <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.596)', margin:'40px', padding:'20px', borderRadius: '15px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',}}>
+    <div style={{ background: "rgba(255, 255, 255, 0.75)",backdropFilter: "blur(20px)", margin:'48px', padding:'40px', borderRadius: '15px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',}}>
       <h1><center>{article.title}</center></h1>
       <p><center>{article.date}</center></p>
       <center><img src={article.imageUrl} alt="Article" style={{ height: '400px', marginBottom: '1rem', borderRadius: '15px',}} /></center> 
