@@ -16,7 +16,7 @@ const ArticleDetails = () => {
     <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.596)', margin:'40px', padding:'20px', borderRadius: '15px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',}}>
       <h1>{article.title}</h1>
       <p>{article.date}</p>
-      <center><img src={article.imageUrl} alt="Article" style={{ height: '400px', marginBottom: '1rem', borderRadius: '15px',}} /></center>
+      <center><img src={article.imageUrl} alt="Article" style={{ height: '400px', marginBottom: '1rem', borderRadius: '15px',}} /></center> 
       <div dangerouslySetInnerHTML={{ __html: article.content }}></div>
       <p>by {article.author}</p>
     </div>
