@@ -34,10 +34,10 @@ const BlogArticles = () => {
                     )}
                   </div>
                   <Card.Body>
-                    <Card.Title>{article.title}</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">{article.author}</Card.Subtitle>
-                    <Card.Subtitle className="mb-2 text-muted">{article.date}</Card.Subtitle>
-                    <Card.Text>{article.headlinetext}</Card.Text>
+                    <Card.Title style={{ color: 'black' }}>{article.title}</Card.Title>
+                    <Card.Text style={{ color: 'black' }}>{article.headlinetext}</Card.Text>
+                    <Card.Subtitle className="mb-2 text-muted" style={{ color: 'black' }}>{article.author}</Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted" style={{ color: 'black' }}>{article.date}</Card.Subtitle>
                   </Card.Body>
                 </Card>
               </Link>

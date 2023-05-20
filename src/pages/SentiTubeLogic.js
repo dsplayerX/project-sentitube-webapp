@@ -1,7 +1,15 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import SentiLogicImg from "../images/sentitubelogictrans.png";
+import {Link} from "react-router-dom";
+
 function SentiTubeLogic() {
+  function handleClick() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <div>
       <Container
@@ -93,6 +101,15 @@ function SentiTubeLogic() {
               this might also be taken into account for Sentitube in the future.
             </p>
           </Row>
+          <Row><Link to="/TryWithCustomText" onClick={handleClick}>
+            <center>
+              <button class="button" style={{ marginTop: "1.5%" }}>
+                Test the models with custom phrases
+              </button>
+            </center>
+            <br />
+            <br />
+            </Link></Row>
           <Row>
             <h5>For Your Information</h5>
             <p>

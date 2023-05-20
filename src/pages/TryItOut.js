@@ -14,12 +14,7 @@ import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function TryItOut() {
-  function handleClick() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
+  
   const [modalMessage, setModalMessage] = useState(null); // state variable for modal message
   const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState("");
@@ -313,15 +308,7 @@ function TryItOut() {
           </div>
           <br />
           <br />
-          <Link to="/TryWithCustomText" onClick={handleClick}>
-            <center>
-              <button class="button" style={{ marginTop: "1.5%" }}>
-                Test with custom text
-              </button>
-            </center>
-            <br />
-            <br />
-            </Link>
+          
         </div>
       </div>
     </>

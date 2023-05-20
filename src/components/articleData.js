@@ -21,6 +21,52 @@ sample format to add new article
 
 export const articles = [
   {
+    title: 'Introducing the New Video Summarize Feature',
+    author: 'Dumindu Sameendra',
+    date: 'May 21, 2023',
+    headlinetext: 'Get a summary of any YouTube video with this new feature powered by ChatGPT!',
+    content: `
+    <p>At Sentitube, we are excited to announce the launch of our latest feature - Video Summarization! With this new capability, you can now generate concise summaries of YouTube videos, saving you time and allowing you to quickly grasp the key points.</p>
+
+    <h2>How to Use the Video Summarize Feature</h2>
+
+    <p>Using Sentitube's Video Summarize feature is simple and straightforward:</p>
+
+    <ol>
+        <li>Go to the <a href="https://dsplayerx.github.io/project-sentitube-webapp/#/TryItOut">Sentitube Try Out page</a>.</li>
+        <li>Enter the URL of the YouTube video you want to summarize.</li>
+        <li>Click the "Analyse" button.</li>
+        <li>Read the summarized text under "Video Summary" on results page!</li>
+    </ol>
+    <p>By using SentiTube, you can easily summarize any YouTube video's transcript to obtain a concise summary.</p>
+
+    <h2>Enhancing Your Video-Watching Experience</h2>
+
+    <p>With Sentitube's Video Summarize feature, you can significantly enhance your video-watching experience:</p>
+
+    <ul>
+        <li>Save time: Instead of watching an entire video, you can quickly read a summarized version to get the main points.</li>
+        <li>Efficient learning: Reviewing summarized videos allows you to cover more content in less time, making it easier to grasp new information.</li>
+        <li>Content curation: Summarized videos are great for content creators who want to curate relevant material for their audiences.</li>
+    </ul>
+
+    <p>Try out Sentitube's Video Summarize feature today and unlock a more efficient and effective way to consume video content!</p>
+    
+    <h2>How Does the Video Summarize Feature Work?</h2>
+
+    <p>The Video Summarize feature utilizes cutting-edge natural language processing technology to extract the most important information from a video's transcript. The process involves the following steps:</p>
+
+    <ol>
+        <li>Retrieve the transcript: The feature retrieves the transcript of the YouTube video using the YouTube Transcript API.</li>
+        <li>Summarize the transcript: Our ChatGPT-powered summarization algorithm analyzes the transcript and generates a condensed summary of the video's content.</li>
+        <li>Display the summary: The summarized text is then presented to you, allowing for quick understanding of the video's key points.</li>
+    </ol>
+    <p>By leveraging the latest advancements in natural language processing, Sentitube's Video Summarize feature is able to provide you with a concise summary of any YouTube video.</p>
+    <p>We hope to bring more exciting features like this to Sentitube in the future!</p>
+    `,
+    imageUrl: 'https://i.ibb.co/c6kN820/videosummaryfeature.png',
+  },
+  {
     title: 'How to Use SentiTube to Improve Your YouTube Experience and Make Informed Decisions',
     author: 'Dumindu Sameendra',
     date: 'May 21, 2023',
