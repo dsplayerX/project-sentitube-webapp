@@ -24,7 +24,7 @@ export const articles = [
     title: 'How to Use SentiTube to Improve Your YouTube Experience and Make Informed Decisions',
     author: 'Dumindu Sameendra',
     date: 'May 21, 2023',
-    content: `  <h2>Introduction:</h2>
+    content: `  <p style="color:red; font-size:40px;">Introduction:</p>
     <p>
       Are you tired of wasting time on YouTube videos that don't meet your expectations? Look no further than SentiTube, a powerful tool designed to enhance your YouTube experience. In this article, we will guide you through the steps of using SentiTube to make informed decisions and ensure that every video you watch aligns with your preferences.
     </p>
