@@ -98,7 +98,7 @@ function About() {
           <center>
             <Link to="/MeetTheTeam" onClick={handleClick}>
               <button class="button" style={{ marginTop: "1.5%" }}>
-                MeetTheTeam
+                Meet The Team
               </button>
             </Link>
           </center>

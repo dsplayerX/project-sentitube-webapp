@@ -59,6 +59,29 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+
+.Result_page .feedback-box-new {
+  color: rgb(255, 255, 255);
+  background: #ff0000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+  animation: glowing 2s infinite;
+  background-image: linear-gradient(to bottom right, #ff0000, #ff4500);
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+  }
+}
+
 .Result_page h6 {
   background-color: white;
   color: black;

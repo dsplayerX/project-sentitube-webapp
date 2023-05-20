@@ -11,8 +11,10 @@ import {
   Spinner,
 } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function TryItOut() {
+  
   const [modalMessage, setModalMessage] = useState(null); // state variable for modal message
   const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState("");
@@ -283,6 +285,8 @@ function TryItOut() {
                       textAlign: "center",
                       justifyContent: "center",
                       marginTop: "10px",
+                      marginBottom: "20px",
+
                     }}
                   >
                     {isAnalysing ? <Spinner animation="border" /> : "Analyse"}
@@ -304,6 +308,7 @@ function TryItOut() {
           </div>
           <br />
           <br />
+          
         </div>
       </div>
     </>

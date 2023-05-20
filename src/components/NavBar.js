@@ -90,6 +90,17 @@ function NavBar() {
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
+                  to="/BlogArticles"
+                  style={{
+                    color: location.pathname === "/BlogArticles" ? "red" : "",
+                    paddingLeft: "3%",
+                  }}
+                  onClick={handleLinkClick}
+                >
+                  Blog
+                </Nav.Link>
+                <Nav.Link
+                  as={Link}
                   to="/Contact"
                   style={{
                     color: location.pathname === "/Contact" ? "red" : "",
