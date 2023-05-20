@@ -85,7 +85,20 @@ function TryWithCustomText() {
   };
 
   return (
-    <Container>
+    <Container style={{  
+      backdropFilter: "blur(10px)",
+      backgroundColor: "rgba(245,245,245,0.5)",
+      boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+      padding:"40px",
+      borderRadius:"16px"
+    }}>
+
+      <center>
+        <h1 style={{ color: "red" }}>
+          <b>Our Models with Custom Phrases</b>
+        </h1>
+      </center>
+
       <Form onSubmit={handleButtonClick} className="mt-5">
         <Form.Group controlId="inputText">
           <Form.Control
