@@ -15,10 +15,10 @@ const ArticleDetails = () => {
   return (
     <div>
       <h1>{article.title}</h1>
-      <p>{article.author}</p>
       <p>{article.date}</p>
       <img src={article.imageUrl} alt="Article" style={{ maxWidth: '100%', marginBottom: '1rem' }} />
       <div dangerouslySetInnerHTML={{ __html: article.content }}></div>
+      <p>by {article.author}</p>
     </div>
   );
 };

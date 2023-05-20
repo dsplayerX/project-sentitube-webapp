@@ -18,8 +18,8 @@ const BlogArticles = () => {
           {articles.map((article, index) => (
             <Col key={index} sm={6}>
               <Link to={`/articles/${index}`} style={{ textDecoration: 'none' }}>
-                <Card className="mb-4">
-                  <div style={{ height: '300px', overflow: 'hidden' }}>
+                <Card className="mb-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.596)',  borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',}}>
+                  <div style={{ height: '300px', overflow: 'hidden', padding: '5px' }}>
                     {article.imageUrl && (
                       <div
                         style={{
@@ -28,6 +28,7 @@ const BlogArticles = () => {
                           backgroundSize: 'cover',
                           backgroundRepeat: 'no-repeat',
                           height: '100%',
+                          borderRadius:'5px',
                         }}
                       />
                     )}
