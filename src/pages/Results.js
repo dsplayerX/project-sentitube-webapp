@@ -71,6 +71,7 @@ function Results() {
   const feedbackItem = CustomFeedback.find(
     (item) => item.id === data["CustomFeedbackNo"]
   ); ////
+  
 
   return (
     <div style={{ marginLeft: "10px", marginRight: "10px" }}>
@@ -193,6 +194,23 @@ function Results() {
             boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
           }}
         >
+        
+        {data.hasOwnProperty("Video Summary") && data["Video Summary"] !== "" && (
+        <div>
+          <h4><span style={{color: "red"}}>Video Summary</span></h4>
+          <p
+            className="feedback-box-new"
+            style={{
+              fontSize: "20px",
+              textAlign: "left",
+              margin: "10px",
+            }}
+          >
+            {data["Video Summary"]}
+          </p>
+        </div>
+      )}
+
           <h4>Our Feedback</h4>
 
           <p
