@@ -24,7 +24,7 @@ export const articles = [
     title: 'How to Use SentiTube to Improve Your YouTube Experience and Make Informed Decisions',
     author: 'Dumindu Sameendra',
     date: 'May 21, 2023',
-    content: `  <p style="color:red; font-size:40px;">Introduction:</p>
+    content: `  <p style=font-size:40px;">Introduction:</p>
     <p>
       Are you tired of wasting time on YouTube videos that don't meet your expectations? Look no further than SentiTube, a powerful tool designed to enhance your YouTube experience. In this article, we will guide you through the steps of using SentiTube to make informed decisions and ensure that every video you watch aligns with your preferences.
     </p>
@@ -136,28 +136,28 @@ export const articles = [
     content: `  <h2>The Complexity of Sarcasm:</h2>
     <p>
       Sarcasm, a form of communication where the intended meaning is often the opposite of the literal interpretation, adds a layer of complexity to language processing. Detecting sarcasm is challenging due to its subtle nuances and reliance on context and tone. Here are some of the key challenges in accurately detecting sarcasm:</p>
-    <h3>1. Contextual Understanding:</h3>
+    <h4>1. Contextual Understanding:</h4>
     <p>
       Sarcasm heavily relies on context to convey its intended meaning. Without a proper understanding of the context in which a statement is made, it becomes difficult for automated systems to identify sarcastic remarks. Contextual cues such as previous statements, shared knowledge, or cultural references play a vital role in detecting sarcasm.</p>
-    <h3>2. Linguistic Ambiguity:</h3>
+    <h4>2. Linguistic Ambiguity:</h4>
     <p>
       Sarcasm often involves the use of language that can be interpreted both literally and sarcastically. The same words or phrases can carry different meanings depending on the speaker's tone, gestures, or surrounding words. This linguistic ambiguity poses a challenge for automated systems, as they need to accurately differentiate between literal statements and sarcastic ones.</p>
-    <h3>3. Figurative Language and Irony:</h3>
+    <h4>3. Figurative Language and Irony:</h4>
     <p>
       Sarcasm frequently employs figurative language, such as metaphors, hyperbole, or irony. These rhetorical devices add complexity to the detection process, as automated systems need to recognize and interpret these linguistic elements to identify sarcasm correctly. The figurative nature of sarcasm makes it challenging to rely solely on surface-level analysis.</p>
-    <h3>4. Tone and Emotion:</h3>
+    <h4>4. Tone and Emotion:</h4>
     <p>
       Sarcasm is often conveyed through subtle variations in tone, emphasizing certain words or phrases, or using particular vocal inflections. Detecting these nuances of tone and emotion requires advanced natural language processing capabilities, as automated systems need to analyze audio or text data to identify these cues accurately.</p>
     <h2>The Impact of Sarcasm Detection:</h2>
     <p>
       Despite the challenges, accurate sarcasm detection has significant implications across various domains:</p>
-    <h3>1. Sentiment Analysis:</h3>
+    <h4>1. Sentiment Analysis:</h4>
     <p>
       Sarcasm can significantly affect sentiment analysis results. Incorrectly identifying sarcastic statements as genuine can skew sentiment analysis, leading to inaccurate insights. Proper sarcasm detection enhances the accuracy of sentiment analysis, providing more reliable feedback and insights.</p>
-    <h3>2. Social Media Monitoring:</h3>
+    <h4>2. Social Media Monitoring:</h4>
     <p>
       With the widespread use of social media, monitoring and understanding user sentiment have become crucial for brands and organizations. Detecting sarcasm in social media posts allows for a more comprehensive understanding of public opinion, enabling businesses to respond effectively and adjust their strategies accordingly.</p>
-    <h3>3. Customer Support and Chatbots:</h3>
+    <h4>3. Customer Support and Chatbots:</h4>
     <p>
       Effective communication in customer support relies on understanding customer intent and sentiment accurately. Sarcasm detection in chatbots and customer support systems can improve the quality of responses, leading to better customer experiences and increased customer satisfaction.</p>
     <h2>Conclusion:</h2>

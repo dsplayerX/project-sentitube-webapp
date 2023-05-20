@@ -14,11 +14,11 @@ const ArticleDetails = () => {
 
   return (
     <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.596)', margin:'40px', padding:'20px', borderRadius: '15px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',}}>
-      <h1>{article.title}</h1>
-      <p>{article.date}</p>
+      <h1><center>{article.title}</center></h1>
+      <p><center>{article.date}</center></p>
       <center><img src={article.imageUrl} alt="Article" style={{ height: '400px', marginBottom: '1rem', borderRadius: '15px',}} /></center> 
       <div dangerouslySetInnerHTML={{ __html: article.content }}></div>
-      <p>by {article.author}</p>
+      <p style={{color:"red"}}>by {article.author}</p>
     </div>
   );
 };
