@@ -140,7 +140,7 @@ function TryWithCustomText() {
       </Form>
 
       {jsonData && (
-        <Card className="mt-5" style={{ transition: "none" }}>
+        <Card className="mt-5" style={{ transition: "none", transform: "none"}}>
           <Card.Body>
             <Card.Title>Results</Card.Title>
             {/* <pre>{JSON.stringify(jsonData, null, 2)}</pre> */}
