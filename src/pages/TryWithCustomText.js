@@ -95,7 +95,7 @@ function TryWithCustomText() {
 
       <center>
         <h1 style={{ color: "red" }}>
-          <b>Our Models with Custom Phrases</b>
+          <b>Test Our Models with Custom Phrases</b>
         </h1>
       </center>
 
@@ -140,7 +140,7 @@ function TryWithCustomText() {
       </Form>
 
       {jsonData && (
-        <Card className="mt-5">
+        <Card className="mt-5" style={{ transition: "none" }}>
           <Card.Body>
             <Card.Title>Results</Card.Title>
             {/* <pre>{JSON.stringify(jsonData, null, 2)}</pre> */}
