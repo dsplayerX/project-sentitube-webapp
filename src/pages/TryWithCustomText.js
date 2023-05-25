@@ -61,7 +61,7 @@ function TryWithCustomText() {
       // Set isAnalysing to true
       setIsAnalysing(true);
 
-      const response = await axios.post("http://localhost:5000/customtextanalysis", {
+      const response = await axios.post("https://flask-production-06d2.up.railway.app/customtextanalysis", {
         userinput: inputValue,
       });
 
