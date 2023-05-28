@@ -444,3 +444,22 @@ h3 {
   width: 100%;
   position: absolute;
 }
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .row-cols-desktop {
+    display: flex;
+  }
+
+  .col-desktop {
+    flex: 1;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .row-cols-mobile {
+    flex-direction: column;
+  }
+}
+

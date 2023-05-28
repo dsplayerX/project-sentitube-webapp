@@ -106,8 +106,8 @@ function About() {
       </div>
       <br />
 
-      <div class="cardrow">
-        <div class="cardcolumn">
+      <Row className="row-cols-desktop row-cols-mobile">
+        <Col className="col-desktop" style={{marginBottom:"2%"}}>
           <div class="cardab" align="justify">
             <div>
               <h3 class="thick" style={{ color: "red" }}>
@@ -121,9 +121,9 @@ function About() {
               </p>
             </div>
           </div>
-        </div>
+        </Col>
 
-        <div class="cardcolumn">
+        <Col className="col-desktop" style={{marginBottom:"2%"}}>
           <div class="cardab" align="justify">
             <div>
               <h3 class="thick" style={{ color: "red" }}>
@@ -138,8 +138,8 @@ function About() {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
         
         </Col>
       </Row>
