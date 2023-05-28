@@ -194,7 +194,9 @@ function Results() {
             boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
           }}
         >
-        
+               
+      <Row className="row-cols-desktop row-cols-mobile">
+        <Col className="col-desktop">
         {data.hasOwnProperty("Video Summary") && data["Video Summary"] !== "" && (
         <div>
           <h4><span style={{color: "red"}}>Video Summary</span></h4>
@@ -208,10 +210,37 @@ function Results() {
           >
             {data["Video Summary"]}
           </p>
+          
         </div>
       )}
+        </Col>
+        <Col className="col-desktop">
+        {data.hasOwnProperty("Comments Summary") && data["Comments Summary"] !== "" && (
+        <div>
+          <h4><span style={{color: "red"}}>Comments Section Summary</span></h4>
+          <p
+            className="feedback-box-new"
+            style={{
+              fontSize: "20px",
+              textAlign: "left",
+              margin: "10px",
+            }}
+          >
+            {data["Comments Summary"]}
+          </p>
+          <p style={{
+              fontSize: "10px",
+              textAlign: "right",
+              marginRight: "20px",
+              marginBottom: "-10px",
+            }}>*The summary is generated from a selected few comments.</p>
+        </div>
+      )}
+        </Col>
+      </Row>
 
-          <h4>Our Feedback</h4>
+
+          {/* <h4>Our Feedback</h4>
 
           <p
             className="feedback-box"
@@ -222,7 +251,7 @@ function Results() {
             }}
           >
             {feedbackItem.text}
-          </p>
+          </p> */}
 
           <h4>Final Results</h4>
           <Row
