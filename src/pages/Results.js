@@ -195,11 +195,11 @@ function Results() {
           }}
         >
                
-      <Row className="row-cols-desktop row-cols-mobile">
-        <Col className="col-desktop">
+      
+        <Row>
         {data.hasOwnProperty("Video Summary") && data["Video Summary"] !== "" && (
         <div>
-          <h4><span style={{color: "red"}}>Video Summary</span></h4>
+          <h4>Video Summary</h4>
           <p
             className="feedback-box-new"
             style={{
@@ -213,17 +213,18 @@ function Results() {
           
         </div>
       )}
-        </Col>
-        <Col className="col-desktop">
+        </Row>
+        <Row>
         {data.hasOwnProperty("Comments Summary") && data["Comments Summary"] !== "" && (
         <div>
-          <h4><span style={{color: "red"}}>Comments Section Summary</span></h4>
+          <h4>Comments Section Summary</h4>
           <p
-            className="feedback-box-new"
+          className="feedback-box-new"
             style={{
               fontSize: "20px",
               textAlign: "left",
               margin: "10px",
+
             }}
           >
             {data["Comments Summary"]}
@@ -236,8 +237,8 @@ function Results() {
             }}>*The summary is generated from a selected few comments.</p>
         </div>
       )}
-        </Col>
-      </Row>
+        </Row>
+    
 
 
           {/* <h4>Our Feedback</h4>
@@ -261,6 +262,7 @@ function Results() {
               padding: "10px",
               margin: "10px",
               borderRadius: "10px",
+              boxShadow: "0 0 10px 5px rgba(255, 0, 0, 0.23)",
             }}
           >
             <Row>

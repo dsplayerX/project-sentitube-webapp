@@ -106,7 +106,7 @@ function TryItOut() {
 
   return (
     <>
-      <div style={{ paddingLeft: "10%", paddingRight: "10%" }}>
+      <div style={{ paddingLeft: "10%", paddingRight: "10%", paddingBottom: "5%", }}>
         <div
           className="page-title"
           style={{
@@ -119,8 +119,8 @@ function TryItOut() {
           }}
         >
           <center>
-            <h1 style={{ color: "red" }}>
-              <b>Sentiment and Sarcasm Analysis on YouTube Video Comments</b>
+            <h1 style={{ color: "red", margin:"20px" }}>
+              <b>Uncover and Unleash YouTube Video Feedback Insights</b>
             </h1>
           </center>
 
@@ -154,27 +154,29 @@ function TryItOut() {
                     value={inputValue}
                     onChange={handleInputChange}
                     style={{
-                      maxWidth: 750,
+                      maxWidth: 550,
                       margin: "10px auto",
                       boxShadow: "0 0 10px rgba(245, 0, 0, 0.25)",
+                      textAlign: "center",
                     }}
                   />
                 </Form.Group>
 
                 <Container style={{ paddingLeft: "25%", paddingRight: "25%" }}>
-                  <Row>
-                    <Col>
+                <center>
                       <Row>
                         <Form.Group
                           controlId="formOrderResults"
                           style={{
                             display: "flex",
                             flexDirection: "row",
+                            justifyContent: "center",
+                            alignItems: "center",
                             gap: "12px",
                           }}
                         >
                           <Form.Label>
-                            <i>Sort Comments By :</i>
+                            <i>Sort Comments By</i>
                           </Form.Label>
                           {/* </div> */}
                         </Form.Group>
@@ -202,24 +204,26 @@ function TryItOut() {
                           </Dropdown.Item>
                         </DropdownButton>
                       </Row>
-                    </Col>
-                    <Col>
                       <Row>
+
                         <Form.Group
                           controlId="formNumResults"
                           style={{
                             display: "flex",
                             flexDirection: "row",
+                            justifyContent: "center",
+                            alignItems: "center",
                             gap: "12px",
                           }}
-                        >
+                          >
+
                           <Form.Label style={{ paddingTop: "6px" }}>
-                            <i>Comments to Analyse :</i>
+                          <i>Comments to Analyse</i>
                           </Form.Label>
+
                         </Form.Group>
                       </Row>
                       <Row>
-                        <center>
                           <DropdownButton
                             id="num-results-dropdown"
                             title={`${numResults}`}
@@ -257,10 +261,8 @@ function TryItOut() {
                               5000
                             </Dropdown.Item>
                           </DropdownButton>
-                        </center>
                       </Row>
-                    </Col>
-                  </Row>
+                      </center>
                 </Container>
 
                 <Form.Group>

@@ -62,15 +62,15 @@ body {
 
 .Result_page .feedback-box-new {
   color: rgb(255, 255, 255);
-  background: #ff0000;
+  background: rgba(255, 0, 0, 0.838);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
-  animation: glowing 2s infinite;
-  background-image: linear-gradient(to bottom right, #ff0000, #ff4500);
+  /* animation: glowing 2s infinite; */
+  /* background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.459), #de1a1a); */
 }
 
-@keyframes glowing {
+/* @keyframes glowing {
   0% {
     box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
   }
@@ -80,7 +80,7 @@ body {
   100% {
     box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
   }
-}
+} */
 
 .Result_page h6 {
   background-color: white;

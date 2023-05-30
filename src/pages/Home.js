@@ -16,8 +16,7 @@ function Home() {
           <Row>
             <Col sm={13} md={7} className="welcome_note">
               <h1
-                id="animate-h1"
-                class="text-start h1 animate__animated animate__fadeInLeft"
+                class="text-start"
               >
                 <b>
                   Introducing{" "}
@@ -31,19 +30,17 @@ function Home() {
                 </b>
               </h1>
               <h2
-                id="animate-h1"
-                class="text-start animate__animated animate__fadeInLeft"
+                class="text-start"
                 style={{
                   fontSize: 32,
                   border: "none",
                   color: "rgba(0, 0, 0, 0.637)",
                 }}
               >
-                Sentiment and Sarcasm Analysis on the YouTube Comment Section
+                Uncover and Unleash YouTube Video Feedback Insights
               </h2>
               <p
-                className="text-start animate__animated animate__fadeInLeft animate__delay-3"
-                id="animate-p"
+                className="text-start"
                 style={{
                   fontSize: 20,
                   border: "none",
@@ -52,12 +49,11 @@ function Home() {
                 }}
               >
                 SentiTube analyzes the sentiment and sarcasm of YouTube video
-                comments to provide you with valuable insights about the
-                audience's feedback and engagement. By analyzing sarcasm as well
-                as sentiment of YouTube video comments, we provide you with more
-                accurate sentiment results. SentiTube also provides custom
-                feedback and per comment analysis results. Whether you're a
-                content creator looking to improve your videos or a YouTube user
+                comments to provide you with valuable insights into
+                audience feedback and engagement. By considering both sentiment and sarcasm, 
+                our analysis offers more accurate sentiment results. SentiTube provides analysis results, 
+                video summaries, comment section summaries, and per comment analysis results, enhancing your understanding of the community's response.
+                Whether you're a content creator looking to improve your videos or a YouTube user
                 seeking to understand community's feedback towards a video,
                 SentiTube is the tool you need.
               </p>
