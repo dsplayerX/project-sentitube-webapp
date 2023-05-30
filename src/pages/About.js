@@ -40,8 +40,6 @@ function About() {
             // background: "rgba(210, 210, 210, 0.226)",
             fontSize: 18,
             paddingTop: "1%",
-            paddingLeft: "2%",
-            paddingRight: "2%",
             borderRadius: "20px",
           }}
         >
@@ -71,6 +69,7 @@ function About() {
           class="thick"
           style={{
             color: "black",
+
           }}
         >
           <center>Who are we ?</center>
@@ -81,8 +80,6 @@ function About() {
             // backdropFilter: "blur(20px)",
             fontSize: 18,
             paddingTop: "1%",
-            paddingLeft: "2%",
-            paddingRight: "2%",
             borderRadius: "20px",
           }}
         >
@@ -106,18 +103,17 @@ function About() {
       </div>
       <br />
 
-      <Row className="row-cols-desktop row-cols-mobile">
+      <Row className="row-cols-desktop row-cols-mobile" style={{paddingLeft:"5%", paddingRight:"5%"}}>
         <Col className="col-desktop" style={{marginBottom:"2%"}}>
           <div class="cardab" align="justify">
             <div>
               <h3 class="thick" style={{ color: "red" }}>
                 Our Vision
               </h3>
+              <img src="https://cdn-icons-png.flaticon.com/256/8672/8672987.png" alt="Vision Image" width={"120px"} style={{margin:"2%"}}/>
 
               <p style={{ fontSize: 18 }}>
-                To provide accurate sentiment results and personalized
-                commentary for YouTube videos by combining sentiment and sarcasm
-                analysis.
+              We believe that by empowering content creators and YouTube users with these valuable insights, we can enhance the overall video viewing experience and drive continuous improvement in content creation.
               </p>
             </div>
           </div>
@@ -129,12 +125,9 @@ function About() {
               <h3 class="thick" style={{ color: "red" }}>
                 Our Mission
               </h3>
+              <img src="https://cdn-icons-png.flaticon.com/512/1592/1592505.png" alt="Mission Image" width={"100px"} style={{margin:"2%"}}/>
               <p style={{ fontSize: 18 }}>
-                To create, put into practice, and assess a solution that will
-                make it simple and quick for YouTube users to locate worthwhile
-                content. To recognize both sentiments and sarcasm, it will use
-                sentiment and sarcasm analysis,which will increase the detection
-                system's accuracy and performance rate.
+              We are dedicated to creating a platform that not only identifies sentiments but also recognizes the subtle nuances of sarcasm through advanced sentiment and sarcasm analysis. Our ultimate goal is to provide a seamless and enjoyable user experience helping users uncover and unleash YouTube video feedback insights.
               </p>
             </div>
           </div>

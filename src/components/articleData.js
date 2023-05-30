@@ -56,7 +56,7 @@ export const articles = [
     imageUrl: 'https://api.backlinko.com/app/uploads/2020/02/get-youtube-views-post-banner.png',
 },
   {
-    title: 'Introducing the New Video Summarize Feature',
+    title: 'Introducing the New Video Summarize Feature to SentiTube!',
     author: 'Dumindu Sameendra',
     date: 'May 21, 2023',
     headlinetext: 'Get a summary of any YouTube video with this new feature powered by ChatGPT!',
